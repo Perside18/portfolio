@@ -1,0 +1,182 @@
+/* responsive.css - Media Queries & Layout Scaling */
+
+/* Container margins scaling */
+@media (max-width: 768px) {
+  .container {
+    padding-left: var(--space-margin-mobile);
+    padding-right: var(--space-margin-mobile);
+  }
+  
+  .pt-32 {
+    padding-top: 6rem;
+  }
+  
+  .pb-stack-lg {
+    padding-bottom: var(--space-stack-md);
+  }
+}
+
+/* Grid columns scaling */
+@media (max-width: 1024px) {
+  .grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-cols-2, .grid-cols-3, .grid-cols-4 {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* 12-Column Grid system for Bento Layouts */
+.grid-cols-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-gutter);
+}
+
+.col-span-12 { grid-column: span 12 / span 12; }
+.col-span-8 { grid-column: span 8 / span 8; }
+.col-span-7 { grid-column: span 7 / span 7; }
+.col-span-6 { grid-column: span 6 / span 6; }
+.col-span-5 { grid-column: span 5 / span 5; }
+.col-span-4 { grid-column: span 4 / span 4; }
+.col-span-3 { grid-column: span 3 / span 3; }
+
+@media (max-width: 768px) {
+  .grid-cols-12 {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .col-span-12, .col-span-8, .col-span-7, .col-span-6, .col-span-5, .col-span-4, .col-span-3 {
+    grid-column: span 1 / span 1;
+  }
+}
+
+/* Typography responsive adjustments */
+@media (max-width: 1024px) {
+  .font-display-lg {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .font-display-lg {
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  
+  .font-headline-lg {
+    font-size: 30px;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+  }
+  
+  .font-headline-md {
+    font-size: 20px;
+  }
+  
+  .font-body-lg {
+    font-size: 16px;
+  }
+}
+
+/* Header & Mobile Drawer Navigation */
+@media (max-width: 768px) {
+  .menu-toggle-btn {
+    display: flex;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 260px;
+    height: calc(100vh - 80px);
+    background-color: var(--color-surface);
+    border-left: 1px solid var(--color-outline-variant);
+    flex-direction: column;
+    padding: var(--space-stack-md) 24px;
+    gap: 24px;
+    align-items: flex-start;
+    transition: right var(--transition-normal);
+    box-shadow: -10px 10px 35px rgba(15, 23, 42, 0.08);
+    z-index: 99;
+  }
+  
+  html.dark .nav-links {
+    background-color: var(--color-surface-dim);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  header.top-nav.scroll-shadow .nav-links {
+    top: 64px;
+    height: calc(100vh - 64px);
+  }
+  
+  .nav-links.mobile-active {
+    right: 0;
+  }
+  
+  .nav-links a {
+    font-size: 16px;
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  html.dark .nav-links a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .nav-links a.active-dot::after {
+    bottom: 50%;
+    right: 0;
+    left: auto;
+    transform: translateY(50%);
+    width: 6px;
+    height: 6px;
+  }
+}
+
+/* Layout Specific Adapters */
+@media (max-width: 768px) {
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+  }
+  
+  .hero-portrait-wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+/* Footer layout collapses */
+@media (max-width: 768px) {
+  footer.site-footer .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-stack-md);
+  }
+  
+  footer.site-footer .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}

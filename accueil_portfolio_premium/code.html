@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ARCHITECT.PRO | Portfolio Senior Architecte</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#2f3131",
+                    "tertiary-fixed": "#e0e3e5",
+                    "outline-variant": "#c6c6cd",
+                    "on-background": "#1a1c1c",
+                    "tertiary": "#000000",
+                    "background": "#f9f9f9",
+                    "on-tertiary-fixed": "#191c1e",
+                    "primary-container": "#131b2e",
+                    "inverse-on-surface": "#f0f1f1",
+                    "tertiary-fixed-dim": "#c4c7c9",
+                    "surface-container-high": "#e8e8e8",
+                    "surface-variant": "#e2e2e2",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#444749",
+                    "surface": "#f9f9f9",
+                    "outline": "#76777d",
+                    "secondary-container": "#2170e4",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#d8e2ff",
+                    "surface-tint": "#565e74",
+                    "on-primary-container": "#7c839b",
+                    "surface-dim": "#dadada",
+                    "surface-container-highest": "#e2e2e2",
+                    "primary": "#000000",
+                    "surface-container-low": "#f3f3f4",
+                    "on-surface": "#1a1c1c",
+                    "tertiary-fixed-dim": "#c4c7c9",
+                    "on-surface-variant": "#45464d",
+                    "on-primary-fixed": "#131b2e",
+                    "secondary": "#0058be",
+                    "inverse-primary": "#bec6e0",
+                    "on-tertiary-container": "#818486",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-container": "#fefcff",
+                    "on-secondary-fixed": "#001a42",
+                    "surface-container": "#eeeeee",
+                    "on-secondary-fixed-variant": "#004395",
+                    "surface-bright": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#dae2fd",
+                    "primary-fixed-dim": "#bec6e0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "stack-sm": "16px",
+                    "stack-lg": "80px",
+                    "margin-desktop": "64px",
+                    "stack-md": "32px"
+            },
+            "fontFamily": {
+                    "caption": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"]
+            },
+            "fontSize": {
+                    "caption": ["12px", {"lineHeight": "1.4", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                    "display-lg-mobile": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+        }
+        .dark .glass-card {
+            background: rgba(47, 49, 49, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .hero-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .active-dot::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 4px;
+            background-color: #0058be;
+            border-radius: 9999px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="font-body-md text-body-md antialiased">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-surface-container/20 backdrop-blur-md border-b border-white/30 dark:bg-inverse-surface/20 dark:border-outline-variant/10 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition-all duration-300">
+<nav class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary" style="font-size: 32px;">architecture</span>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-on-primary-fixed tracking-tight">ARCHITECT.PRO</span>
+</div>
+<div class="hidden md:flex items-center gap-stack-md">
+<a class="relative font-label-md text-label-md uppercase tracking-wider text-secondary active-dot transition-colors" href="#hero">Accueil</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#services">Services</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#about">À propos</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-surface-variant transition-colors active:scale-95" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-symbols-outlined text-on-surface-variant">dark_mode</span>
+</button>
+<a class="hidden md:flex bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md uppercase transition-all hover:bg-primary/90 active:scale-95" href="#contact">Recruter</a>
+</div>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex items-center overflow-hidden" id="hero">
+
+<div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center relative z-10">
+<div class="order-2 lg:order-1" data-aos="fade-up">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md uppercase mb-4">Disponible pour missions</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4 text-primary leading-tight">Julien Lefebvre</h1>
+<h2 class="font-headline-md text-headline-md text-secondary mb-6">Architecte Logiciel Senior &amp; Consultant Cloud</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md max-w-lg">
+                        Je conçois des écosystèmes numériques scalables et durables pour les entreprises en pleine croissance. Mon expertise transforme la complexité technique en avantage compétitif.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-xl flex items-center justify-center gap-2 font-label-md text-label-md uppercase transition-all hover:shadow-lg active:scale-95" href="#">
+<span class="material-symbols-outlined">download</span> Télécharger CV
+                        </a>
+<a class="border border-primary text-primary px-8 py-4 rounded-xl flex items-center justify-center gap-2 font-label-md text-label-md uppercase transition-all hover:bg-primary/5 active:scale-95" href="#contact">
+                            Me contacter
+                        </a>
+</div>
+</div>
+<div class="order-1 lg:order-2 flex justify-center lg:justify-end" data-aos="fade-left">
+<div class="relative w-full max-w-[450px] aspect-square rounded-[2rem] overflow-hidden shadow-2xl hero-float">
+<img class="w-full h-full object-cover" data-alt="A professional high-end portrait of a 40-year-old male software architect in a minimalist white-walled studio. He is wearing a dark navy cashmere sweater, looking confidently into the lens. The lighting is soft and cinematic, highlighting sophisticated facial features. The background is slightly out of focus, showcasing a modern, clean workspace aesthetic with subtle glass elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMRluEzZQ6dSIeaj28FiesI271GfTZo7JHUYTl585KdPQ-oz6wYfwJa-jTD5nq8tBOD6UJZNHDVil7itiXpEM4Qo6k7JvBqsGa_Ws2kpc7woii4SFS9rXzcGwUBp_vF5VuX6zUXumL6sFDwRXvUu98PowCisTMKUQV3PRo2FYmzIeaIhbqBUsueg67P_1kQF6enIhueZkMzg9Ch2AzaA6mh5mLs1A-IZmYnMhIdhG7O6VHH8P8xFNgYbBBnP1zwciFYX5UaFkAPgdr"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-stack-lg bg-surface-container-lowest">
+<div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+<div class="p-stack-md rounded-2xl glass-card" data-aos="fade-up" data-aos-delay="0">
+<div class="font-display-lg-mobile text-display-lg-mobile text-primary font-bold mb-2">12+</div>
+<div class="font-label-md text-label-md text-on-surface-variant uppercase">Années d'expérience</div>
+</div>
+<div class="p-stack-md rounded-2xl glass-card" data-aos="fade-up" data-aos-delay="100">
+<div class="font-display-lg-mobile text-display-lg-mobile text-primary font-bold mb-2">150+</div>
+<div class="font-label-md text-label-md text-on-surface-variant uppercase">Projets livrés</div>
+</div>
+<div class="p-stack-md rounded-2xl glass-card" data-aos="fade-up" data-aos-delay="200">
+<div class="font-display-lg-mobile text-display-lg-mobile text-primary font-bold mb-2">45+</div>
+<div class="font-label-md text-label-md text-on-surface-variant uppercase">Clients satisfaits</div>
+</div>
+<div class="p-stack-md rounded-2xl glass-card" data-aos="fade-up" data-aos-delay="300">
+<div class="font-display-lg-mobile text-display-lg-mobile text-primary font-bold mb-2">99%</div>
+<div class="font-label-md text-label-md text-on-surface-variant uppercase">Taux de rétention</div>
+</div>
+</div>
+</section>
+<!-- Services Section (Bento Grid) -->
+<section class="py-stack-lg" id="services">
+<div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Expertises &amp; Services</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Une approche holistique du développement logiciel, mêlant vision stratégique et excellence opérationnelle.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Service 1 -->
+<div class="md:col-span-2 group relative h-80 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500" data-aos="fade-right">
+<div class="absolute inset-0 bg-primary-container">
+<img class="w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-700" data-alt="A dark, moody abstract background representing complex cloud infrastructure. Glowing blue and cyan neon lines interweaving across a dark crystalline grid. The style is sleek, tech-focused, and premium, suggesting advanced software architecture and system flows. Soft volumetric lighting highlights the depth of the network." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEXlJfRcLyBBJUe1hQSTFVMAZYOTkTb8VpUHX0iZRcxpor2uYGmv9sf_Jy3vzIcOsL1Cmkh-UE30baFbxGdMVczXb8vjNfOgW6bbcY6OmVGZMvmRAj3BAwgjQgQFF-6sMHeLZaf4o8AUDWB1dDzkfDgpVHimjjgmOcEcfvZlae_Rjx84F4XORsJDO5DC_g3hahrT3R8RK_h_7QyaF1OzJcQ7BlEcfXsy0m0CmpMTAmqLFOpmo-uTguzfvAaAOr31KGkh4IWrZPHMSH"/>
+</div>
+<div class="absolute inset-0 p-stack-md flex flex-col justify-end bg-gradient-to-t from-primary/80 to-transparent">
+<span class="material-symbols-outlined text-on-primary text-4xl mb-2">cloud_sync</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Architecture Cloud &amp; DevOps</h3>
+<p class="font-body-md text-body-md text-on-primary/80 max-w-md">Solutions résilientes sur AWS, GCP et Azure avec une automatisation CI/CD complète.</p>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="group relative h-80 rounded-3xl overflow-hidden glass-card p-stack-md flex flex-col justify-between" data-aos="fade-left">
+<div class="w-16 h-16 rounded-2xl bg-secondary-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl">lightbulb</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Conseil Stratégique</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Audit technique, roadmap technologique et accompagnement à la transformation digitale.</p>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all" href="#">En savoir plus <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="group relative h-80 rounded-3xl overflow-hidden glass-card p-stack-md flex flex-col justify-between" data-aos="fade-up">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">developer_mode</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Développement Full-Stack</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Expertise TypeScript, Go et Rust pour des applications robustes et performantes.</p>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="md:col-span-2 group relative h-80 rounded-3xl overflow-hidden glass-card p-stack-md flex items-center gap-stack-md" data-aos="fade-up">
+<div class="flex-1">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Expertise IA &amp; Data</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Intégration de modèles de Machine Learning et pipelines de données haute performance.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-md text-label-md">PyTorch</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-md text-label-md">LLMs</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-md text-label-md">DataViz</span>
+</div>
+</div>
+<div class="hidden sm:block w-1/3 aspect-square rounded-2xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist 3D rendering of abstract geometric nodes connecting like a neural network. The objects are made of frosted glass and brushed metal. Soft lighting casts delicate shadows on a light gray background. The aesthetic is sophisticated and represents artificial intelligence and data science." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbVvo-i1gKERr8oU3gVg1f-jhlx_WEvc7c1JjlWd5R_808-0S1vvul8kZImZgG_qk59xspvOH8R9H6sGOz4n--s5T0jN-Q6FL3GzMWhM6SJR1Bn2UtGR1khYCG-ZejeoQiLodWnqKhuHeHX-wcpVspzf-6UNApaiQ1RnFYQUseYjBrBttPdsjJ7DPIXGr4S_ZEWL2VjvtApfMfoR7gBz0386HpNkBfZN0CXvxKrCJpPwBXwBrO0GopSlQQLBPMKk6YVRxu-he7QN6Q"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-stack-lg bg-surface" id="about">
+<div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div data-aos="fade-right">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Expertise humaine au service de la performance technique.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                        Avec plus de dix ans passés à naviguer dans les eaux changeantes de l'ingénierie logicielle, j'ai acquis une conviction : la technologie ne vaut rien sans une vision claire et une exécution rigoureuse.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        J'ai accompagné des startups en phase d'hyper-croissance ainsi que des grands comptes du CAC 40 dans la refonte de leurs systèmes critiques. Mon rôle est de faire le pont entre les objectifs business et la réalité technique.
+                    </p>
+<a class="inline-flex items-center gap-4 text-primary font-bold text-lg group" href="#">
+                        Découvrir mon parcours complet
+                        <span class="w-12 h-12 rounded-full border border-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</span>
+</a>
+</div>
+<div class="grid grid-cols-2 gap-4" data-aos="zoom-in">
+<div class="pt-12">
+<img class="w-full h-64 object-cover rounded-3xl mb-4 shadow-lg" data-alt="A close-up photograph of architectural blueprints and code on a high-resolution monitor. The scene is bathed in cool, professional blue light. The desk is clean, featuring a sleek modern keyboard and a minimalist silver laptop. The focus is sharp on the intricate details of a system diagram." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiz4eL5ZAuqTaHmqdS1IkI2tY6qYdX9SgRUD3AnE8LkUdKyoXep1wVmA5ku35nC98pdEgJH7RD-sQghnV8vBLMsxpbJUE5VMV-VkQQIAMxvj_5kt0MmbIxyrZJ8BSTxZ41411JUXBakLc5htboaB4Euwkq4G_e-HKtdFR41FogP3_P6xfhlT4et-4csMFTzqtDJUxWsBYbohQMDMsWevSm19nfhnobk725qnJoR3_amZ-G8a8NxnihZ4KtSRD_S-LaGJwOca7Trl7x"/>
+<img class="w-full h-48 object-cover rounded-3xl shadow-lg" data-alt="An abstract, high-fashion photograph of a modern office building interior with soaring glass atriums and minimalist white stairs. The composition uses strong diagonal lines and reflections to create a sense of scale and futuristic architecture. Bright, airy light mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfjhOUCLWmqvkwvwa4Bsr5qFBcOjrdk-invudttVcbOfjjm-D-WJrOUGCkh2U3bAdZogkk20-wbT6pirhmgW6ljMLCfhzrbsHJKdW4MWDAOUEQvb7oO_nlpWCmQ4BbXeS9VVn_8KePR9nari6zHhltgKxkLSjSynddOlKr9xZ4lgGTDpA4GbqUZ67UpHQ_YYzOHHyxLdUnVwxEuPcmCriNOFCVIoF-1M33ZR4E569Cf2e3LvTk6muWiXVVgZkUnY-hKcrPw-7QD_PD"/>
+</div>
+<div>
+<img class="w-full h-48 object-cover rounded-3xl mb-4 shadow-lg" data-alt="A minimalist workspace setting with a cup of specialty coffee, a luxury notebook with a fountain pen, and a high-end designer tablet. The setting is bright and clean, with soft natural light coming from a large window. It evokes a feeling of calm focus and professional excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhYYTIOXEkFhsoqQMkL8gz8NNqowvpy1qDakYgm586i0FY0jxY86-S1I5_Lxm4zbcXUiY9dynaV8foZme3vji2yhijkesdWe0rkd4wVoB5-zgODlqUIJTU6-MI5mNNLxcy8uirBCmmNo_KWvkBpfC3TvrKSrCs_D5AgoQVGiuxfXJbUNxeCJx1iOgSgoDWmFY6Z2jHO6SaznDnIhHmuwuwdZzRZiYjtuLEOqow-t6RzgpdIPKrx1eBbCQDrBl8Kn9e6C6AsuULIgpR"/>
+<img class="w-full h-64 object-cover rounded-3xl shadow-lg" data-alt="A high-tech server room background with glowing server racks. The image is stylized with a lens blur and soft focus to maintain professional elegance. Cool teal and deep navy colors dominate the palette, suggesting secure and advanced infrastructure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAATT_Z87WGQhS3MzJ6cWMLTiQ8shuToJaVdBhsxL7CuoDFEeIyO4YVt1i9cJzF-gh7wEmoPcwC6veVzyKG775EJ5Y4X28oEd7rjTKs1iFPjewWhcsB9WQHzS1CZoKMgK0aJOMgmVpZxkSXziSfjlvtrPFuw_Z1EEuShbYemy_3OUzYwN3OA8hnVGmjk0J_vJjzM8E26ufiW_MHRpw6FsDiMXpZD6uk_FTZGVIHydiAEe_qqNpsSZqvRO7h_lE3a0vHkuwvPPyOz4VF"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-stack-lg bg-surface-container-lowest overflow-hidden">
+<div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop">
+<div class="mb-stack-md text-center">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Confiance</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Ils m'ont fait confiance</h2>
+</div>
+<div class="relative px-12">
+<div class="flex gap-gutter transition-transform duration-500 ease-in-out" id="testimonial-slider">
+<!-- Testimonial 1 -->
+<div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.33%-16px)] glass-card p-stack-md rounded-3xl">
+<div class="flex gap-1 text-secondary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md italic text-on-surface-variant mb-6">
+                                "Julien a transformé notre infrastructure vieillissante en un système cloud moderne et scalable. Son expertise a été cruciale pour notre levée de fonds."
+                            </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a female tech CEO in a bright, modern office. She has a confident smile and is wearing a stylish blazer. Soft lighting and a shallow depth of field create a premium executive feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaBmzdbQk9GRvm4XYje4Ex-1csHpDn1alPaLDNe976YIxn9X4CAIfS603ClVJbRqZkBT6c2EIOH7BMKF4t3pr4buFC9f43kBuYbp0CBs9PbL3UcSGo9OLsw2zI0CNnEPa3R2_nvLB3BgCuIwFo0PDJ8jluSgLwMcOzTbpfDS65W6wWanBgUf9si4os_9eCVazddmXbUyStD4B8q1ZNQWJal2EM1_8Ct17BcJCR3UDw0ja444q38mMNA59n88-yaeap_xm-qCDxJKRR"/>
+</div>
+<div>
+<div class="font-bold text-primary">Sarah Durand</div>
+<div class="text-caption text-on-surface-variant uppercase">CEO, TechFlow</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.33%-16px)] glass-card p-stack-md rounded-3xl">
+<div class="flex gap-1 text-secondary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md italic text-on-surface-variant mb-6">
+                                "Une vision stratégique rare couplée à une maîtrise technique impressionnante. Julien est un atout pour n'importe quelle équipe tech."
+                            </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A portrait of a male CTO in a creative tech hub. He is wearing glasses and a casual but smart polo shirt. The background is a vibrant blur of a modern open-space office with greenery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt8bHujdIvVF1HD2Wm-fYerhosaQ42ovAn9waK1LkTDaSEuJbcqFWvfW6STcIsaC9Fqssg5Ao8FWo1zmUClW7_9jQFX0guI-u1OCyT-2DPkQSEEMmn_ojAnMXjEZzgKAGOGHPds8OETeW68htpsUb2spJSaaJBg98mQ6cqd3M3qiUCoVu28ISJ0NhXHOfD-ZM8hTZCjesoH3ckRhSh9U76mGynGxfjyoX4zFeaJoGYzj8_znvGoD3EmOqlwqNeyiSP2xxhSri9IesV"/>
+</div>
+<div>
+<div class="font-bold text-primary">Marc Voisin</div>
+<div class="text-caption text-on-surface-variant uppercase">CTO, DataWave</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.33%-16px)] glass-card p-stack-md rounded-3xl">
+<div class="flex gap-1 text-secondary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md italic text-on-surface-variant mb-6">
+                                "Excellent consultant, pédagogue et très rigoureux. Il nous a aidés à recruter et structurer notre pôle ingénierie."
+                            </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A portrait of a male startup founder in a trendy urban loft. He is leaning against a brick wall, looking thoughtful and professional. Warm evening light flows through industrial windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXIx2nvNhIHDszz-fkrOZVUaCc3eeyRfd6cho-B7c-T04-UPjf_ffeL6gmQeej6FsAJtSahAm7yPB19KwNGFsCCxdo8F7mNSfflQRln7al15UU7HmpXi6ZYaRBTlb_UddHdk_qYt1ZZYdoERtjRxcUIMe0o2AYtHNC8k6o5XHaztqXrlW4Dd_5GMCQO_Qx-Zub-Kx8STOLf4jprqGc06N8FLy7nAmVxpzSJOer2OyH4DkoG0TFoeQvD8T0X77W9KKL-9AmcxtsjZGA"/>
+</div>
+<div>
+<div class="font-bold text-primary">Thomas Petit</div>
+<div class="text-caption text-on-surface-variant uppercase">Fondateur, Innovate</div>
+</div>
+</div>
+</div>
+</div>
+<button class="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-all" id="prevBtn">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-all" id="nextBtn">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- CTA Final -->
+<section class="py-stack-lg relative overflow-hidden" id="contact">
+
+<div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop relative z-10">
+<div class="bg-primary text-on-primary rounded-[3rem] p-stack-lg text-center shadow-2xl" data-aos="zoom-in">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-6">Prêt à lancer votre projet ?</h2>
+<p class="font-body-lg text-body-lg text-on-primary/70 mb-stack-md max-w-2xl mx-auto">
+                        Qu'il s'agisse d'une refonte complète ou d'un besoin de conseil ponctuel, discutons de vos défis technologiques.
+                    </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a class="bg-on-primary text-primary px-10 py-5 rounded-2xl font-headline-md text-headline-md transition-all hover:scale-105 active:scale-95 shadow-lg" href="mailto:contact@architect.pro">
+                            Démarrer une conversation
+                        </a>
+<a class="border border-on-primary/30 text-on-primary px-10 py-5 rounded-2xl font-headline-md text-headline-md transition-all hover:bg-on-primary/10 active:scale-95" href="https://linkedin.com" target="_blank">
+                            Suivre sur LinkedIn
+                        </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-surface-container-lowest dark:bg-tertiary-container border-t border-outline-variant dark:border-outline">
+<div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter items-start">
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary" style="font-size: 28px;">architecture</span>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-on-primary-fixed">ARCHITECT.PRO</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    Solutions d'ingénierie premium pour entreprises exigeantes.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-stack-md">
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-primary font-bold uppercase mb-2">Navigation</span>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="#hero">Accueil</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="#services">Services</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="#about">À propos</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-primary font-bold uppercase mb-2">Réseaux</span>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="#">Malt</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-md text-label-md text-primary font-bold uppercase mb-2">Contact</span>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined">mail</span>
+<span>hello@architect.pro</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined">location_on</span>
+<span>Paris, FR / Remote Worldwide</span>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop mt-stack-lg pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between gap-4 text-caption text-on-surface-variant">
+<span>© 2024 Senior Architect Portfolio. All rights reserved.</span>
+<div class="flex gap-4">
+<a class="hover:text-primary" href="#">Mentions Légales</a>
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+<!-- AOS & Custom Scripts -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+        // Initialization
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 120
+        });
+
+        // Testimonial Slider Logic
+        const slider = document.getElementById('testimonial-slider');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIdx = 0;
+
+        function updateSlider() {
+            const cardWidth = slider.firstElementChild.offsetWidth + 24; // Width + gutter
+            slider.style.transform = `translateX(-${currentIdx * cardWidth}px)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            const maxIdx = slider.children.length - (window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1);
+            if (currentIdx < maxIdx) {
+                currentIdx++;
+                updateSlider();
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIdx > 0) {
+                currentIdx--;
+                updateSlider();
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            currentIdx = 0;
+            updateSlider();
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-xl', 'h-16');
+                header.classList.remove('h-20');
+            } else {
+                header.classList.remove('shadow-xl', 'h-16');
+                header.classList.add('h-20');
+            }
+        });
+
+        // Detect dark mode preference
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            // Uncomment to default to dark if preferred
+            // document.documentElement.classList.add('dark');
+        }
+    </script>
+</body></html>

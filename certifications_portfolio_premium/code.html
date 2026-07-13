@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Certifications | ARCHITECT.PRO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-dot::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 4px;
+            background-color: #0058be;
+            border-radius: 9999px;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "inverse-surface": "#2f3131",
+                "tertiary-fixed": "#e0e3e5",
+                "outline-variant": "#c6c6cd",
+                "on-background": "#1a1c1c",
+                "tertiary": "#000000",
+                "background": "#f9f9f9",
+                "on-tertiary-fixed": "#191c1e",
+                "primary-container": "#131b2e",
+                "inverse-on-surface": "#f0f1f1",
+                "tertiary-fixed-dim": "#c4c7c9",
+                "surface-container-high": "#e8e8e8",
+                "surface-variant": "#e2e2e2",
+                "on-primary": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "on-tertiary-fixed-variant": "#444749",
+                "surface": "#f9f9f9",
+                "outline": "#76777d",
+                "secondary-container": "#2170e4",
+                "error-container": "#ffdad6",
+                "error": "#ba1a1a",
+                "secondary-fixed": "#d8e2ff",
+                "surface-tint": "#565e74",
+                "on-primary-container": "#7c839b",
+                "surface-dim": "#dadada",
+                "surface-container-highest": "#e2e2e2",
+                "primary": "#000000",
+                "surface-container-low": "#f3f3f4",
+                "on-surface": "#1a1c1c",
+                "tertiary-container": "#191c1e",
+                "on-primary-fixed-variant": "#3f465c",
+                "secondary-fixed-dim": "#adc6ff",
+                "on-surface-variant": "#45464d",
+                "on-primary-fixed": "#131b2e",
+                "secondary": "#0058be",
+                "inverse-primary": "#bec6e0",
+                "on-tertiary-container": "#818486",
+                "on-secondary": "#ffffff",
+                "on-error": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-container": "#fefcff",
+                "on-secondary-fixed": "#001a42",
+                "surface-container": "#eeeeee",
+                "on-secondary-fixed-variant": "#004395",
+                "surface-bright": "#f9f9f9",
+                "on-error-container": "#93000a",
+                "primary-fixed": "#dae2fd",
+                "primary-fixed-dim": "#bec6e0"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "gutter": "24px",
+                "container-max": "1200px",
+                "unit": "8px",
+                "margin-mobile": "20px",
+                "stack-sm": "16px",
+                "stack-lg": "80px",
+                "margin-desktop": "64px",
+                "stack-md": "32px"
+            },
+            "fontFamily": {
+                "caption": ["Inter"],
+                "headline-lg": ["Inter"],
+                "label-md": ["Inter"],
+                "headline-lg-mobile": ["Inter"],
+                "display-lg": ["Inter"],
+                "display-lg-mobile": ["Inter"],
+                "body-md": ["Inter"],
+                "body-lg": ["Inter"],
+                "headline-md": ["Inter"]
+            },
+            "fontSize": {
+                "caption": ["12px", {"lineHeight": "1.4", "letterSpacing": "0em", "fontWeight": "400"}],
+                "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                "display-lg-mobile": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 w-full z-50 bg-surface-container/20 backdrop-blur-md border-b border-white/30 shadow-[0_10px_30px_rgba(15,23,42,0.05)] h-20">
+<nav class="max-w-[1200px] mx-auto px-margin-desktop h-full flex items-center justify-between">
+<div class="flex items-center gap-2 group cursor-pointer">
+<span class="material-symbols-outlined text-primary text-headline-md" data-icon="architecture">architecture</span>
+<span class="font-headline-md text-headline-md font-bold text-primary tracking-tight">ARCHITECT.PRO</span>
+</div>
+<div class="hidden md:flex items-center gap-stack-md">
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-secondary relative after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-secondary after:rounded-full" href="#">Certifications</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Experience</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 active:scale-95 transition-transform text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="dark_mode">dark_mode</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="pt-32 min-h-screen">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-stack-lg">
+<div class="max-w-2xl">
+<h1 class="font-display-lg text-display-lg mb-stack-sm tracking-tighter">Academic &amp; Technical <span class="text-secondary">Excellence</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">A curated collection of industry-leading certifications and professional validations that underscore a decade of architectural innovation.</p>
+</div>
+</section>
+<!-- Bento Grid Certifications -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop pb-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Main Cert 1 -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl glass-card p-stack-md flex flex-col justify-between min-h-[400px] transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
+<div class="flex justify-between items-start">
+<div class="flex flex-col gap-2">
+<span class="px-4 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md w-fit">CLOUD ARCHITECTURE</span>
+<h2 class="font-headline-lg text-headline-lg mt-2">AWS Certified Solutions Architect – Professional</h2>
+<p class="text-on-surface-variant max-w-md mt-stack-sm">Advanced technical skills and experience in designing distributed applications and systems on the AWS platform.</p>
+</div>
+<div class="w-24 h-24 bg-white/50 rounded-xl flex items-center justify-center p-4">
+<img class="object-contain w-full h-full opacity-90 group-hover:scale-110 transition-transform duration-500" data-alt="A minimalist professional certification badge for AWS Solutions Architect Professional, rendered in a crisp 3D style with subtle metallic gradients. The lighting is soft and studio-quality, emphasizing a premium technical achievement aesthetic. The background is a clean, neutral white with a hint of architectural blueprint patterns in the very faint distance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5eNSzR-QArZHZKcG2KsWqnTlW4hB21LRPi1xvUp1BqQllSON49WsN-EBQ-czhiSR9U9W7X671JOFSYLN70FC0syea9IGdwjw1ZES8WyCIdXdapCOMRhrVkK2OjLlaCZebKQmb3rnQKE-i7IY9DQzNw5-gnFYyokIBtY1bGeo64a06-jk-XnPjeVBwNPg-t-1kEPxSdwJ8rJmhgUvdattfW8Y1fg-6gj-KLT_fuogL_Ws339bHpgaFpCxd7Qi3IOzh5idhxFzisRLd"/>
+</div>
+</div>
+<div class="flex items-center justify-between mt-stack-md pt-stack-md border-t border-white/20">
+<div class="flex items-center gap-6">
+<div>
+<span class="text-caption font-caption text-outline block uppercase tracking-widest">ISSUER</span>
+<span class="font-body-md text-body-md font-semibold">Amazon Web Services</span>
+</div>
+<div>
+<span class="text-caption font-caption text-outline block uppercase tracking-widest">DATE</span>
+<span class="font-body-md text-body-md font-semibold">October 2023</span>
+</div>
+</div>
+<a class="flex items-center gap-2 text-secondary font-label-md text-label-md uppercase tracking-wider font-bold hover:underline" href="#">
+                            Verify Credential
+                            <span class="material-symbols-outlined text-[18px]" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Side Cert 2 -->
+<div class="md:col-span-4 group rounded-xl bg-primary-container text-on-primary flex flex-col p-stack-md transition-all duration-500 hover:-translate-y-1">
+<div class="mb-auto">
+<div class="w-16 h-16 bg-white/10 rounded-lg flex items-center justify-center mb-6">
+<img class="object-contain w-10 h-10" data-alt="A sleek, modern Google Cloud Professional Cloud Architect badge with vibrant corporate colors on a dark navy background. The style is flat-vector with subtle glassmorphic overlays and sharp geometric lines, representing high-end cloud technology proficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFNNuheonFqb5j0U6m1VMTiwwdCJ_leL9utMVnC5MYNP2gmeOACvukGNoZb2rSck-NiAc05ctwar7TkBZsf53_3KjiB2Bno9JMveLXgKXkhGDvV5O8ZP5UKq2yDzliNPpeChIoSLprIekiNmuaEgQUPvq6f87Mc8ux_vT-pN-gyAkkTlebL8USd5m5t4rw6Ca4WBx-T7mE0s1TWLjjOyzxAMNIdf9J0Xdn4O1dn2j7Z04-3gYycpXKX6EyuAOsrm1-0lxOeirOEbye"/>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">Google Cloud Professional Architect</h3>
+<p class="text-on-primary-container font-body-md">Specializing in designing, developing, and managing robust, secure, and highly scalable solutions.</p>
+</div>
+<div class="mt-8">
+<div class="flex justify-between items-end">
+<span class="text-on-primary-container font-label-md text-label-md">Nov 2022</span>
+<a class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center hover:bg-white hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Row of smaller cards -->
+<div class="md:col-span-4 group rounded-xl glass-card p-stack-md flex flex-col border border-outline-variant/30 transition-all duration-300 hover:shadow-lg">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="verified_user">verified_user</span>
+</div>
+<div>
+<h4 class="font-headline-md text-body-lg font-bold">CISSP</h4>
+<p class="text-caption font-caption text-outline">ISC² • May 2023</p>
+</div>
+</div>
+<p class="text-on-surface-variant font-body-md text-sm mb-6 flex-grow">Information systems security professional certification for advanced cybersecurity practitioners.</p>
+<a class="text-secondary font-label-md text-label-md flex items-center gap-1 hover:underline" href="#">Verify ID <span class="material-symbols-outlined text-[14px]" data-icon="chevron_right">chevron_right</span></a>
+</div>
+<div class="md:col-span-4 group rounded-xl glass-card p-stack-md flex flex-col border border-outline-variant/30 transition-all duration-300 hover:shadow-lg">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="cloud">cloud</span>
+</div>
+<div>
+<h4 class="font-headline-md text-body-lg font-bold">Azure Solutions Expert</h4>
+<p class="text-caption font-caption text-outline">Microsoft • Jan 2023</p>
+</div>
+</div>
+<p class="text-on-surface-variant font-body-md text-sm mb-6 flex-grow">Mastery of compute, network, storage, and security to design solutions that run on Azure.</p>
+<a class="text-secondary font-label-md text-label-md flex items-center gap-1 hover:underline" href="#">Verify ID <span class="material-symbols-outlined text-[14px]" data-icon="chevron_right">chevron_right</span></a>
+</div>
+<div class="md:col-span-4 group rounded-xl glass-card p-stack-md flex flex-col border border-outline-variant/30 transition-all duration-300 hover:shadow-lg">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="terminal">terminal</span>
+</div>
+<div>
+<h4 class="font-headline-md text-body-lg font-bold">CKA: Kubernetes Admin</h4>
+<p class="text-caption font-caption text-outline">Cloud Native Foundation</p>
+</div>
+</div>
+<p class="text-on-surface-variant font-body-md text-sm mb-6 flex-grow">Proficiency in Kubernetes ecosystem, container orchestration, and microservices management.</p>
+<a class="text-secondary font-label-md text-label-md flex items-center gap-1 hover:underline" href="#">Verify ID <span class="material-symbols-outlined text-[14px]" data-icon="chevron_right">chevron_right</span></a>
+</div>
+<!-- Large Interactive Section -->
+<div class="md:col-span-12 relative h-64 rounded-xl overflow-hidden mt-stack-md group">
+<div class="absolute inset-0 z-0">
+
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent z-10"></div>
+<div class="relative z-20 h-full p-stack-lg flex flex-col justify-center">
+<h2 class="font-headline-lg text-headline-lg text-white mb-2">Lifelong Learning Philosophy</h2>
+<p class="text-on-primary-container max-w-xl text-white/80">Every certification represents a commitment to mastering the evolving landscape of digital architecture. I actively pursue 2-3 advanced specializations annually.</p>
+<div class="mt-8 flex gap-4">
+<button class="px-8 py-3 bg-white text-primary font-label-md text-label-md uppercase tracking-widest rounded-full hover:bg-secondary hover:text-white transition-all">Download Full CV</button>
+<button class="px-8 py-3 border border-white/30 text-white font-label-md text-label-md uppercase tracking-widest rounded-full hover:bg-white/10 transition-all">Request Verification</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recognition & Logos -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop py-stack-lg border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row items-center justify-between gap-stack-md opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
+<span class="font-label-md text-label-md uppercase tracking-[0.3em] text-outline">Trusted By</span>
+<div class="flex flex-wrap justify-center gap-12 items-center">
+<img class="h-8 w-auto" data-alt="A clean, minimalist monochrome logo for a top-tier tech corporation like Amazon Web Services, professionally balanced for a high-end portfolio footer." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9x5IcXuD6FPLCntC5QqB5faQy1d-C_rTmyF5TnCz_EEV3m-ifuZpo1EYL3h2p1MrSzygwYoQ9NsbbPhrHRJSVHhK0VtKRXC0CsOtBPHlykGQ5MC0obqH2CJm28HO1dlCW6aVNBnC-yz1DSmz8m_vvLjzjjwnG64O5ssfPvJP91O4wpJyhFXqU6dzxVRwwraOb7erSvs95on9CO2Q3byX6DuJUsUTKBsp9kPfWg_3MfjRnrMGTr_fpNbCUlmY7FMRbq2Obk7i9GW-r"/>
+<img class="h-8 w-auto" data-alt="A clean, minimalist monochrome logo for a top-tier tech corporation like Microsoft, professionally balanced for a high-end portfolio footer." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8f9kWKAOybBHQIPJGncAc5fdMLTmtjX9yroXKgPxuKHPEANh28YBQ6tr_AJDxvOeQtUGZmmkTO3R5ojuaKWNa3Bg7zy3L4O5ZLRFDUzqS031E5dKpTBu6PfmJv9UXzPCPEm1k0lUfek2MkMbOQlmM38n46S7LE8A4fpOlS1ZTuwuba-AWoWkpQ42xQYIfPgQmcnQsG4TADQsMCY39Y5hT5jtYQGZn9PboNA-P5GlxUZwlWSRwMtpgTsvk7c9q_J7MXYiAWjFijxCZ"/>
+<img class="h-8 w-auto" data-alt="A clean, minimalist monochrome logo for a top-tier tech corporation like Google Cloud, professionally balanced for a high-end portfolio footer." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFxQbxqWlAL3ch4_6MbVE_yZiUbtvQaEZSZfJg7n019wX81KqU_1s-fjrZpnzap6Yu8_pazwr-vw0WNoVkiQv8YxP0igrUXouAlGj588g5WA0JfkbGif5IGPGHRf4Z1FSlnVjiKkk4T6jG1X80ZpKkW-JzdPx18mozUaHXS3D30faswPHIjW03egRv8XRvdbMlxFfMl_nT4kkuWGK0upzJm22bZ4c9q1OO1g_GrgcKAq9ar6BshSbY__VQmjuEdon0PMqpDD_mT6Tu"/>
+<img class="h-8 w-auto" data-alt="A clean, minimalist monochrome logo for a top-tier tech corporation like Red Hat, professionally balanced for a high-end portfolio footer." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJJIcf1X5HVMGtnmppj9OyBe93_CbKcqhdEJB3ci56KvDa7fs00mgngz66ILhech1gdQPFDmHOMqhcDs9IzfWx8P7w83TRTx2ALfDUdAr3_QV4O-T7gSiGpP2oF9df_U_THC6p872WA77B2GMIfLmpeLgrtH09Nu5JoU79hz0sPVgd0lskNwyYgsoU-8tfOzVOIW5_DpQrj6p9vgYDas440UYWUp-nP0iuJ5JX2bbY3JqXllT-G4CwWyV3UVgagXebgsA59dIi-Pjv"/>
+<img class="h-8 w-auto" data-alt="A clean, minimalist monochrome logo for a top-tier tech corporation like Cisco, professionally balanced for a high-end portfolio footer." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHhrHMHJNYitNMZ9i3DJ8PNrF76RhACTnVNA7wkF-XvtLF39pW9ED_y2Olj3BKBu5qPNjtQw8wYRYORBhqzpqhEqww2qWiE6cSe0z8XXmT23NHXJY_M73tg2StwgpQy157JeIBlYuneKgOtfirXgEhIH7avcHOyMIQRwK4YHN1DIo00asVBf2F05153sw3PHpOtBjxbY2JRt52sSNe6h5A_Ipq0PosvN1H36sRLIQCRLYHA1nQ1M611ZwVEGbQTXgQwmP86msprOUy"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant py-stack-lg">
+<div class="max-w-[1200px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md text-primary font-bold">ARCHITECT.PRO</span>
+<p class="text-on-surface-variant font-body-md pr-8">Defining the next generation of cloud and security infrastructure through technical excellence.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md font-bold uppercase mb-2">Social</span>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="#">GitHub</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md font-bold uppercase mb-2">Explore</span>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="#">Contact</a>
+</div>
+</div>
+<div class="flex flex-col md:items-end justify-between">
+<div class="text-right hidden md:block">
+<span class="material-symbols-outlined text-outline text-4xl" data-icon="architecture">architecture</span>
+</div>
+<p class="text-caption font-caption text-outline mt-8 md:mt-0">© 2024 Senior Architect Portfolio. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll reveal effect for cards
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(20px)";
+            card.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
+            observer.observe(card);
+        });
+
+        // Background atmosphere micro-script
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            const cards = document.querySelectorAll('.glass-card');
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const cardX = (e.clientX - rect.left) / rect.width;
+                const cardY = (e.clientY - rect.top) / rect.height;
+                
+                if (cardX > 0 && cardX < 1 && cardY > 0 && cardY < 1) {
+                    card.style.setProperty('--mouse-x', `${cardX * 100}%`);
+                    card.style.setProperty('--mouse-y', `${cardY * 100}%`);
+                }
+            });
+        });
+    </script>
+</body></html>

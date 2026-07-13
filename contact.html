@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr" class="light">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | ARCHITECT.PRO</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Contactez Julien Lefebvre, Architecte Logiciel Senior, pour discuter de vos besoins en cloud, architecture logicielle, DevOps ou audits."/>
+  <meta name="robots" content="index, follow"/>
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Contact | ARCHITECT.PRO"/>
+  <meta property="og:description" content="Discutons de vos besoins technologiques. Remplissez le formulaire ou envoyez-moi un email pour planifier un audit."/>
+  <meta property="og:image" content="images/julien-hero.jpg"/>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/global-tech-logo.png"/>
+  
+  <!-- Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+</head>
+<body class="selection:bg-secondary/20">
+
+  <!-- Top Navigation Header -->
+  <header class="top-nav">
+    <div class="nav-container container">
+      <div class="logo-wrapper">
+        <span class="material-symbols-outlined">architecture</span>
+        <span class="font-headline-md">ARCHITECT.PRO</span>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="font-label-md">Accueil</a>
+        <a href="services.html" class="font-label-md">Services &amp; Offres</a>
+        <a href="about.html" class="font-label-md">À propos</a>
+        <a href="contact.html" class="font-label-md active active-dot">Contact</a>
+      </nav>
+      <div class="nav-controls">
+        <button class="theme-toggle-btn active-scale" aria-label="Toggle Theme">
+          <span class="material-symbols-outlined">dark_mode</span>
+        </button>
+        <button class="menu-toggle-btn active-scale" aria-label="Open Menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-32">
+    <!-- Hero Header -->
+    <section class="container pb-stack-lg reveal">
+      <div style="text-align: center; max-w: 680px; margin: 0 auto;">
+        <h1 class="font-display-lg" style="margin-bottom: 24px;">Parlons de votre projet.</h1>
+        <p class="font-body-lg" style="color: var(--color-on-surface-variant); line-height: 1.7;">
+          Vous avez une vision ambitieuse ? Je suis là pour la transformer en réalité avec précision technique et innovation architecturale.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content: Form & Details Bento Grid -->
+    <section class="container pb-stack-lg">
+      <div class="grid-cols-12" style="align-items: stretch; gap: 32px;">
+        
+        <!-- Contact Form Card (col-span-7) -->
+        <div class="col-span-7 glass-card" style="border-radius: var(--rounded-xl); padding: 48px; background-color: var(--color-surface-container-lowest); display: flex; flex-direction: column; justify-content: center; position: relative;">
+          
+          <form class="reveal" id="contactForm" style="display: flex; flex-direction: column; gap: 24px;" novalidate>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;" class="hero-grid">
+              <div class="form-group">
+                <label class="font-label-md" for="firstName" style="font-weight: 700; font-size: 12px; color: var(--color-primary);">Prénom</label>
+                <input type="text" class="input-underline" id="firstName" name="firstName" placeholder="Jean" required/>
+                <span class="error-msg font-caption" style="color: var(--color-error); margin-top: 4px; display: none;">Prénom obligatoire</span>
+              </div>
+              <div class="form-group">
+                <label class="font-label-md" for="lastName" style="font-weight: 700; font-size: 12px; color: var(--color-primary);">Nom</label>
+                <input type="text" class="input-underline" id="lastName" name="lastName" placeholder="Dupont" required/>
+                <span class="error-msg font-caption" style="color: var(--color-error); margin-top: 4px; display: none;">Nom obligatoire</span>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="font-label-md" for="email" style="font-weight: 700; font-size: 12px; color: var(--color-primary);">Email</label>
+              <input type="email" class="input-underline" id="email" name="email" placeholder="jean.dupont@business.com" required/>
+              <span class="error-msg font-caption" style="color: var(--color-error); margin-top: 4px; display: none;">Adresse email invalide</span>
+            </div>
+
+            <div class="form-group">
+              <label class="font-label-md" for="subject" style="font-weight: 700; font-size: 12px; color: var(--color-primary);">Objet du projet</label>
+              <select class="input-underline" id="subject" name="subject" style="cursor: pointer; background: transparent;">
+                <option value="conception">Conception Architecturale</option>
+                <option value="renovation">Transformation Cloud / DevOps</option>
+                <option value="consulting">Conseil Stratégique / Audit</option>
+                <option value="other">Autre demande</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="font-label-md" for="message" style="font-weight: 700; font-size: 12px; color: var(--color-primary);">Votre vision</label>
+              <textarea class="input-underline" id="message" name="message" placeholder="Décrivez brièvement votre projet ou vos besoins..." rows="4" required></textarea>
+              <span class="error-msg font-caption" style="color: var(--color-error); margin-top: 4px; display: none;">Message obligatoire (10 caract. min)</span>
+            </div>
+
+            <div style="margin-top: 16px;">
+              <button type="submit" class="btn btn-primary btn-rounded-xl font-label-md active-scale" style="width: 100%; padding: 16px 24px; letter-spacing: 0.1em;">
+                Envoyer le message <span class="material-symbols-outlined" style="font-size: 20px;">send</span>
+              </button>
+            </div>
+          </form>
+
+          <!-- Premium Success Animation Overlay (Hidden initially) -->
+          <div id="successCard" style="display: none; text-align: center; padding: 48px 0;" class="reveal">
+            <div class="flex-center" style="width: 80px; height: 80px; border-radius: var(--rounded-full); background-color: var(--color-secondary-fixed); color: var(--color-secondary); margin: 0 auto 24px auto;">
+              <span class="material-symbols-outlined" style="font-size: 40px; font-weight: 700;">done</span>
+            </div>
+            <h3 class="font-headline-md" style="margin-bottom: 16px; font-weight: 700;">Message envoyé avec succès !</h3>
+            <p class="font-body-md" style="color: var(--color-on-surface-variant); max-w: 360px; margin: 0 auto 32px auto; line-height: 1.6;">
+              Merci d'avoir pris contact. Je reviendrai vers vous par email sous 24 à 48 heures pour organiser un premier échange.
+            </p>
+            <button class="btn btn-secondary btn-rounded-xl font-label-md active-scale" onclick="resetContactForm()">
+              Envoyer un autre message
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Contact Info Bento Cards (col-span-5) -->
+        <div class="col-span-5" style="display: flex; flex-direction: column; gap: 24px;">
+          <!-- Card Email -->
+          <div class="glass-card hover-float" style="padding: 32px; border-radius: var(--rounded-xl); display: flex; align-items: flex-start; gap: 20px;">
+            <div class="flex-center" style="width: 48px; height: 48px; border-radius: var(--rounded-default); background-color: var(--color-surface-container-high); flex-shrink: 0;">
+              <span class="material-symbols-outlined" style="color: var(--color-secondary);">mail</span>
+            </div>
+            <div>
+              <h3 class="font-label-md" style="font-weight: 700; color: var(--color-outline); margin-bottom: 8px;">EMAIL</h3>
+              <a href="mailto:hello@architect.pro" class="font-headline-md" style="font-size: 18px; font-weight: 700; word-break: break-all;">hello@architect.pro</a>
+              <p class="font-caption" style="color: var(--color-on-surface-variant); margin-top: 8px;">Disponible pour propositions et audits rapides.</p>
+            </div>
+          </div>
+
+          <!-- Card Location -->
+          <div class="glass-card hover-float" style="padding: 32px; border-radius: var(--rounded-xl); display: flex; align-items: flex-start; gap: 20px;">
+            <div class="flex-center" style="width: 48px; height: 48px; border-radius: var(--rounded-default); background-color: var(--color-surface-container-high); flex-shrink: 0;">
+              <span class="material-symbols-outlined" style="color: var(--color-secondary);">location_on</span>
+            </div>
+            <div>
+              <h3 class="font-label-md" style="font-weight: 700; color: var(--color-outline); margin-bottom: 8px;">LOCATION</h3>
+              <p class="font-headline-md" style="font-size: 18px; font-weight: 700; color: var(--color-primary);">Paris, FR / Remote</p>
+              <p class="font-caption" style="color: var(--color-on-surface-variant); margin-top: 8px;">Déplacements ponctuels possibles en Europe.</p>
+            </div>
+          </div>
+
+          <!-- Card Networks -->
+          <div class="glass-card hover-float" style="padding: 32px; border-radius: var(--rounded-xl); display: flex; align-items: flex-start; gap: 20px; flex-grow: 1;">
+            <div class="flex-center" style="width: 48px; height: 48px; border-radius: var(--rounded-default); background-color: var(--color-surface-container-high); flex-shrink: 0;">
+              <span class="material-symbols-outlined" style="color: var(--color-secondary);">share</span>
+            </div>
+            <div style="width: 100%;">
+              <h3 class="font-label-md" style="font-weight: 700; color: var(--color-outline); margin-bottom: 16px;">RÉSEAUX</h3>
+              <div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
+                <a href="https://linkedin.com" target="_blank" class="btn btn-secondary btn-rounded-xl font-label-md active-scale" style="width: 100%; justify-content: flex-start; border-color: var(--color-outline-variant); text-transform: none; font-size: 14px;">
+                  <span class="material-symbols-outlined" style="font-size: 18px;">link</span> Suivre sur LinkedIn
+                </a>
+                <a href="https://github.com" target="_blank" class="btn btn-secondary btn-rounded-xl font-label-md active-scale" style="width: 100%; justify-content: flex-start; border-color: var(--color-outline-variant); text-transform: none; font-size: 14px;">
+                  <span class="material-symbols-outlined" style="font-size: 18px;">code</span> Voir mes dépôts GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo-wrapper">
+            <span class="material-symbols-outlined">architecture</span>
+            <span class="font-headline-md">ARCHITECT.PRO</span>
+          </div>
+          <p class="font-body-md" style="color: var(--color-on-surface-variant); max-w: 320px;">
+            Solutions d'ingénierie premium pour entreprises exigeantes.
+          </p>
+        </div>
+        <div class="footer-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+          <div>
+            <h4 class="font-label-md" style="color: var(--color-primary); font-weight: 700; margin-bottom: 16px;">Navigation</h4>
+            <div class="footer-links">
+              <a href="index.html" class="font-body-md" style="color: var(--color-on-surface-variant);">Accueil</a>
+              <a href="services.html" class="font-body-md" style="color: var(--color-on-surface-variant);">Services</a>
+              <a href="about.html" class="font-body-md" style="color: var(--color-on-surface-variant);">À propos</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-label-md" style="color: var(--color-primary); font-weight: 700; margin-bottom: 16px;">Réseaux</h4>
+            <div class="footer-links">
+              <a href="https://linkedin.com" target="_blank" class="font-body-md" style="color: var(--color-on-surface-variant);">LinkedIn</a>
+              <a href="https://github.com" target="_blank" class="font-body-md" style="color: var(--color-on-surface-variant);">GitHub</a>
+              <a href="https://malt.fr" target="_blank" class="font-body-md" style="color: var(--color-on-surface-variant);">Malt</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="font-label-md" style="color: var(--color-primary); font-weight: 700; margin-bottom: 16px;">Contact</h4>
+          <div style="display: flex; flex-direction: column; gap: 12px; color: var(--color-on-surface-variant);">
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span class="material-symbols-outlined" style="font-size: 20px;">mail</span>
+              <span class="font-body-md">hello@architect.pro</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span class="material-symbols-outlined" style="font-size: 20px;">location_on</span>
+              <span class="font-body-md">Paris, FR / Remote</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span class="font-caption" style="color: var(--color-on-surface-variant);">© 2026 Senior Architect Portfolio. Tous droits réservés.</span>
+        <div style="display: flex; gap: 24px;">
+          <a href="#" class="font-caption" style="color: var(--color-on-surface-variant);">Mentions Légales</a>
+          <a href="#" class="font-caption" style="color: var(--color-on-surface-variant);">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+
+  <!-- Local Form Validation Script -->
+  <script>
+    const form = document.getElementById('contactForm');
+    const successCard = document.getElementById('successCard');
+
+    if (form && successCard) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        let isValid = true;
+
+        // Reset errors
+        const errorMsgs = form.querySelectorAll('.error-msg');
+        errorMsgs.forEach(msg => msg.style.display = 'none');
+        
+        // 1. First Name Validation
+        const firstName = document.getElementById('firstName');
+        if (!firstName.value.trim()) {
+          firstName.nextElementSibling.style.display = 'block';
+          isValid = false;
+        }
+
+        // 2. Last Name Validation
+        const lastName = document.getElementById('lastName');
+        if (!lastName.value.trim()) {
+          lastName.nextElementSibling.style.display = 'block';
+          isValid = false;
+        }
+
+        // 3. Email Validation
+        const email = document.getElementById('email');
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email.value.trim())) {
+          email.nextElementSibling.style.display = 'block';
+          isValid = false;
+        }
+
+        // 4. Message Validation
+        const message = document.getElementById('message');
+        if (message.value.trim().length < 10) {
+          message.nextElementSibling.style.display = 'block';
+          isValid = false;
+        }
+
+        if (isValid) {
+          // Animate Form Fade-Out
+          form.style.transition = 'opacity 0.3s ease';
+          form.style.opacity = '0';
+          
+          setTimeout(() => {
+            form.style.display = 'none';
+            successCard.style.display = 'block';
+            setTimeout(() => {
+              successCard.classList.add('active');
+            }, 50);
+          }, 300);
+        }
+      });
+    }
+
+    function resetContactForm() {
+      if (form && successCard) {
+        successCard.classList.remove('active');
+        setTimeout(() => {
+          successCard.style.display = 'none';
+          form.reset();
+          form.style.display = 'flex';
+          setTimeout(() => {
+            form.style.opacity = '1';
+          }, 50);
+        }, 300);
+      }
+    }
+  </script>
+</body>
+</html>

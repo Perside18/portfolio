@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Compétences | ARCHITECT.PRO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-up {
+            animation: slideInUp 0.6s ease-out forwards;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2f3131",
+                        "tertiary-fixed": "#e0e3e5",
+                        "outline-variant": "#c6c6cd",
+                        "on-background": "#1a1c1c",
+                        "tertiary": "#000000",
+                        "background": "#f9f9f9",
+                        "on-tertiary-fixed": "#191c1e",
+                        "primary-container": "#131b2e",
+                        "inverse-on-surface": "#f0f1f1",
+                        "tertiary-fixed-dim": "#c4c7c9",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-variant": "#e2e2e2",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "surface": "#f9f9f9",
+                        "outline": "#76777d",
+                        "secondary-container": "#2170e4",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#d8e2ff",
+                        "surface-tint": "#565e74",
+                        "on-primary-container": "#7c839b",
+                        "surface-dim": "#dadada",
+                        "surface-container-highest": "#e2e2e2",
+                        "primary": "#000000",
+                        "surface-container-low": "#f3f3f4",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-container": "#191c1e",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "on-surface-variant": "#45464d",
+                        "on-primary-fixed": "#131b2e",
+                        "secondary": "#0058be",
+                        "inverse-primary": "#bec6e0",
+                        "on-tertiary-container": "#818486",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#fefcff",
+                        "on-secondary-fixed": "#001a42",
+                        "surface-container": "#eeeeee",
+                        "on-secondary-fixed-variant": "#004395",
+                        "surface-bright": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#dae2fd",
+                        "primary-fixed-dim": "#bec6e0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "stack-sm": "16px",
+                        "stack-lg": "80px",
+                        "margin-desktop": "64px",
+                        "stack-md": "32px"
+                    },
+                    "fontFamily": {
+                        "caption": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "caption": ["12px", {"lineHeight": "1.4", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary/20 overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-container/20 backdrop-blur-md border-b border-white/30 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
+<div class="max-w-[1200px] mx-auto px-margin-desktop h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-headline-md" data-icon="architecture">architecture</span>
+<h1 class="font-headline-md text-headline-md font-bold text-primary tracking-tight">ARCHITECT.PRO</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Portfolio</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-secondary relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-secondary after:rounded-full" href="#">Compétences</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Expérience</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary active:scale-95 transition-transform" data-icon="dark_mode">dark_mode</button>
+<button class="md:hidden material-symbols-outlined text-primary" data-icon="menu">menu</button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-stack-lg">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-stack-lg">
+<div class="animate-fade-up">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-stack-sm">Expertise &amp; <span class="text-secondary">Savoir-faire</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Une approche holistique combinant maîtrise technique de pointe, vision fonctionnelle agile et leadership stratégique pour des solutions logicielles d'exception.
+                </p>
+</div>
+</section>
+<!-- Technical Skills (Animated Bars) -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-stack-lg">
+<div class="mb-stack-md flex items-center gap-4">
+<div class="h-[2px] w-12 bg-secondary"></div>
+<h3 class="font-headline-md text-headline-md uppercase tracking-widest text-primary">Compétences Techniques</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-gutter gap-y-stack-md bg-surface-container-low p-stack-md rounded-xl border border-outline-variant/30">
+<!-- Skill 1 -->
+<div class="space-y-2">
+<div class="flex justify-between items-center px-1">
+<span class="font-label-md text-primary">JavaScript / TypeScript</span>
+<span class="font-label-md text-secondary" id="val-js">0%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary transition-all duration-1000 ease-out skill-bar" data-width="95%"></div>
+</div>
+</div>
+<!-- Skill 2 -->
+<div class="space-y-2">
+<div class="flex justify-between items-center px-1">
+<span class="font-label-md text-primary">Architecture Cloud (AWS/Azure)</span>
+<span class="font-label-md text-secondary" id="val-cloud">0%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary transition-all duration-1000 ease-out skill-bar" data-width="90%"></div>
+</div>
+</div>
+<!-- Skill 3 -->
+<div class="space-y-2">
+<div class="flex justify-between items-center px-1">
+<span class="font-label-md text-primary">DevOps &amp; CI/CD</span>
+<span class="font-label-md text-secondary" id="val-devops">0%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary transition-all duration-1000 ease-out skill-bar" data-width="85%"></div>
+</div>
+</div>
+<!-- Skill 4 -->
+<div class="space-y-2">
+<div class="flex justify-between items-center px-1">
+<span class="font-label-md text-primary">Microservices &amp; K8s</span>
+<span class="font-label-md text-secondary" id="val-micro">0%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary transition-all duration-1000 ease-out skill-bar" data-width="88%"></div>
+</div>
+</div>
+<!-- Skill 5 -->
+<div class="space-y-2">
+<div class="flex justify-between items-center px-1">
+<span class="font-label-md text-primary">Base de données (SQL/NoSQL)</span>
+<span class="font-label-md text-secondary" id="val-db">0%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary transition-all duration-1000 ease-out skill-bar" data-width="82%"></div>
+</div>
+</div>
+<!-- Skill 6 -->
+<div class="space-y-2">
+<div class="flex justify-between items-center px-1">
+<span class="font-label-md text-primary">Sécurité Applicative</span>
+<span class="font-label-md text-secondary" id="val-sec">0%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary transition-all duration-1000 ease-out skill-bar" data-width="75%"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Functional Skills (Cards with Icons) -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-stack-lg">
+<div class="mb-stack-md flex items-center gap-4">
+<div class="h-[2px] w-12 bg-secondary"></div>
+<h3 class="font-headline-md text-headline-md uppercase tracking-widest text-primary">Compétences Fonctionnelles</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="glass-effect p-stack-md rounded-xl hover:-translate-y-1 transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-stack-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white" data-icon="groups">groups</span>
+</div>
+<h4 class="font-headline-md text-body-lg font-bold text-primary mb-2">Méthodologies Agile</h4>
+<p class="font-caption text-on-surface-variant">Expertise Scrum, Kanban et Safe pour une livraison continue de valeur métier.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-effect p-stack-md rounded-xl hover:-translate-y-1 transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-stack-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white" data-icon="assignment_turned_in">assignment_turned_in</span>
+</div>
+<h4 class="font-headline-md text-body-lg font-bold text-primary mb-2">Gestion de Projet</h4>
+<p class="font-caption text-on-surface-variant">Pilotage de projets complexes, de la phase d'idéation jusqu'à la mise en production.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-effect p-stack-md rounded-xl hover:-translate-y-1 transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-stack-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white" data-icon="insights">insights</span>
+</div>
+<h4 class="font-headline-md text-body-lg font-bold text-primary mb-2">Analyse Métier</h4>
+<p class="font-caption text-on-surface-variant">Traduction des besoins business en spécifications techniques robustes et scalables.</p>
+</div>
+<!-- Card 4 -->
+<div class="glass-effect p-stack-md rounded-xl hover:-translate-y-1 transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-stack-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white" data-icon="psychology">psychology</span>
+</div>
+<h4 class="font-headline-md text-body-lg font-bold text-primary mb-2">Design Thinking</h4>
+<p class="font-caption text-on-surface-variant">Approche centrée utilisateur pour concevoir des parcours fluides et performants.</p>
+</div>
+</div>
+</section>
+<!-- Managerial Skills (Leadership & Mentoring) -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop">
+<div class="mb-stack-md flex items-center gap-4">
+<div class="h-[2px] w-12 bg-secondary"></div>
+<h3 class="font-headline-md text-headline-md uppercase tracking-widest text-primary">Compétences Managériales</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Management Card 1 -->
+<div class="relative overflow-hidden rounded-xl h-[400px] flex flex-col justify-end p-stack-md group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A professional business leadership meeting in a bright, modern glass office during sunset. A confident senior architect is mentoring a group of junior developers around a minimalist wooden table with high-tech laptops. The atmosphere is warm, collaborative, and sophisticated with soft cinematic lighting and a premium corporate aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCLVuDwSWCbPJtzwQso818YQkCQm0z1_KnQyOWYk5QiKIN82wZYOC3_UHN1vzjHXHrl0YGEKEUJgngdKeudYjqMrxG44zzmKb3xMjqRovPyK2BELuME9FoN7E_Iv9miyHE-zEzet1RAoiSOz8nPGp7C2wwtEknY6gJvfAlDc8O_65prxQ1NVyNJKcHF4yGuPPXUvgMSxO4DPatK_guB4BsinKc2iigAUdRhqdjt-O0ImM-6Euw87PjmN_JVXeeYKuhXugJ3o7OBztu')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="relative z-10">
+<h4 class="font-headline-md text-white mb-2">Leadership Stratégique</h4>
+<p class="font-body-md text-white/80">Direction technique de squads multidisciplinaires, alignement des objectifs technologiques avec la vision d'entreprise.</p>
+<div class="mt-4 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-white text-[10px] uppercase font-bold tracking-widest">Vision</span>
+<span class="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-white text-[10px] uppercase font-bold tracking-widest">Stratégie</span>
+</div>
+</div>
+</div>
+<!-- Management Card 2 -->
+<div class="relative overflow-hidden rounded-xl h-[400px] flex flex-col justify-end p-stack-md group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Close up of a collaborative code review session in a clean, minimalist design studio. A high-resolution screen shows complex code architecture being discussed by two professionals. The lighting is crisp, using soft blue and white tones to convey technical excellence and a focus on mentoring and quality." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQszB7WRO_vqrZCmWWBMipBxegb2QE_5IUvLTzFQ53sGQ93VGg120d7H5T3LqE5L5ee0hp7Spwhr8SY1P2zC-1rttFQ2Mt5RNC3MIThwiH9vUirDiHmBlmmxtUxyah6ssWUsK3IweuKVIxvCwL0OPIUocdaDoO76k3pse773HdWByR47jNo2mWLjN1pJjfTWk9n_MtplIIxJGIpYEPOUoOQJFy0ltZyHOw0qWzq8QY1kE3quEWf-UnL_Deyb7TQ6AgMfMrYJn_C5zE')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="relative z-10">
+<h4 class="font-headline-md text-white mb-2">Mentoring &amp; Accompagnement</h4>
+<p class="font-body-md text-white/80">Transmission de savoir, montée en compétences des équipes et promotion des meilleures pratiques d'ingénierie.</p>
+<div class="mt-4 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-white text-[10px] uppercase font-bold tracking-widest">Coaching</span>
+<span class="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-white text-[10px] uppercase font-bold tracking-widest">Qualité</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant w-full py-stack-lg">
+<div class="max-w-[1200px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter items-start">
+<div class="space-y-4">
+<h2 class="font-headline-md text-headline-md text-primary font-bold">ARCHITECT.PRO</h2>
+<p class="font-body-md text-on-surface-variant max-w-xs">
+                    Architecte Solution Senior spécialisé dans la transformation digitale et les architectures haute performance.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="font-label-md text-primary uppercase font-bold tracking-widest mb-2">Navigation</h3>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-all" href="#">Portfolio</a>
+<a class="font-body-md text-secondary font-bold" href="#">Compétences</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-all" href="#">Expérience</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-all" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="font-label-md text-primary uppercase font-bold tracking-widest mb-2">Réseaux</h3>
+<div class="flex gap-4">
+<a class="opacity-80 hover:opacity-100 transition-all font-body-md text-primary" href="#">LinkedIn</a>
+<a class="opacity-80 hover:opacity-100 transition-all font-body-md text-primary" href="#">GitHub</a>
+</div>
+<p class="font-caption text-on-surface-variant mt-8">© 2024 Senior Architect Portfolio. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Skills Animation Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const bars = entry.target.querySelectorAll('.skill-bar');
+                        bars.forEach(bar => {
+                            const width = bar.getAttribute('data-width');
+                            bar.style.width = width;
+                            
+                            // Animate percentage text
+                            const percentageLabel = bar.parentElement.previousElementSibling.querySelector('span:last-child');
+                            animateValue(percentageLabel, 0, parseInt(width), 1000);
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const skillSection = document.querySelector('.skill-bar').closest('section');
+            observer.observe(skillSection);
+
+            function animateValue(obj, start, end, duration) {
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    obj.innerHTML = Math.floor(progress * (end - start) + start) + "%";
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    }
+                };
+                window.requestAnimationFrame(step);
+            }
+        });
+
+        // Sticky Header Effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('bg-white/80');
+            } else {
+                header.classList.remove('bg-white/80');
+            }
+        });
+    </script>
+</body></html>

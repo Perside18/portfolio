@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | ARCHITECT.PRO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#2f3131",
+                    "tertiary-fixed": "#e0e3e5",
+                    "outline-variant": "#c6c6cd",
+                    "on-background": "#1a1c1c",
+                    "tertiary": "#000000",
+                    "background": "#f9f9f9",
+                    "on-tertiary-fixed": "#191c1e",
+                    "primary-container": "#131b2e",
+                    "inverse-on-surface": "#f0f1f1",
+                    "tertiary-fixed-dim": "#c4c7c9",
+                    "surface-container-high": "#e8e8e8",
+                    "surface-variant": "#e2e2e2",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#444749",
+                    "surface": "#f9f9f9",
+                    "outline": "#76777d",
+                    "secondary-container": "#2170e4",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#d8e2ff",
+                    "surface-tint": "#565e74",
+                    "on-primary-container": "#7c839b",
+                    "surface-dim": "#dadada",
+                    "surface-container-highest": "#e2e2e2",
+                    "primary": "#000000",
+                    "surface-container-low": "#f3f3f4",
+                    "on-surface": "#1a1c1c",
+                    "tertiary-container": "#191c1e",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "on-surface-variant": "#45464d",
+                    "on-primary-fixed": "#131b2e",
+                    "secondary": "#0058be",
+                    "inverse-primary": "#bec6e0",
+                    "on-tertiary-container": "#818486",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-container": "#fefcff",
+                    "on-secondary-fixed": "#001a42",
+                    "surface-container": "#eeeeee",
+                    "on-secondary-fixed-variant": "#004395",
+                    "surface-bright": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#dae2fd",
+                    "primary-fixed-dim": "#bec6e0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "stack-sm": "16px",
+                    "stack-lg": "80px",
+                    "margin-desktop": "64px",
+                    "stack-md": "32px"
+            },
+            "fontFamily": {
+                    "caption": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"]
+            },
+            "fontSize": {
+                    "caption": ["12px", {"lineHeight": "1.4", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                    "display-lg-mobile": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f9;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .input-underline {
+            border-bottom: 2px solid #c6c6cd;
+            transition: border-color 0.3s ease;
+        }
+        .input-underline:focus {
+            outline: none;
+            border-color: #0058be;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-container/20 backdrop-blur-md border-b border-white/30 shadow-[0_10px_30px_rgba(15,23,42,0.05)] h-20 flex items-center">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop w-full flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+<span class="font-headline-md text-headline-md font-extrabold text-primary tracking-tight">ARCHITECT.PRO</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Services</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-secondary relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-secondary after:rounded-full" href="#">Contact</a>
+<span class="material-symbols-outlined text-primary cursor-pointer active:scale-95 transition-transform">dark_mode</span>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg">
+<div class="flex flex-col items-center text-center space-y-4">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary">Parlons de votre projet.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Vous avez une vision ambitieuse ? Je suis là pour la transformer en réalité avec précision technique et innovation architecturale.</p>
+</div>
+</section>
+<!-- Main Content: Form & Info Bento Grid -->
+<section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop pb-stack-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Contact Form Card -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_10px_30px_rgba(15,23,42,0.05)] border border-outline-variant/30">
+<form class="space-y-8" id="contactForm" novalidate="">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-primary uppercase mb-2" for="firstName">Prénom</label>
+<input class="bg-transparent input-underline py-2 font-body-md text-body-md placeholder:text-outline-variant" id="firstName" name="firstName" placeholder="Jean" required="" type="text"/>
+<span class="error-msg text-error text-caption mt-1 hidden">Ce champ est requis</span>
+</div>
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-primary uppercase mb-2" for="lastName">Nom</label>
+<input class="bg-transparent input-underline py-2 font-body-md text-body-md placeholder:text-outline-variant" id="lastName" name="lastName" placeholder="Dupont" required="" type="text"/>
+<span class="error-msg text-error text-caption mt-1 hidden">Ce champ est requis</span>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-primary uppercase mb-2" for="email">Email</label>
+<input class="bg-transparent input-underline py-2 font-body-md text-body-md placeholder:text-outline-variant" id="email" name="email" placeholder="jean.dupont@business.com" required="" type="email"/>
+<span class="error-msg text-error text-caption mt-1 hidden">Veuillez entrer une adresse email valide</span>
+</div>
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-primary uppercase mb-2" for="subject">Objet du projet</label>
+<select class="bg-transparent input-underline py-2 font-body-md text-body-md text-on-surface-variant cursor-pointer" id="subject" name="subject">
+<option value="conception">Conception Architecturale</option>
+<option value="renovation">Rénovation &amp; Design Intérieur</option>
+<option value="consulting">Conseil Stratégique</option>
+<option value="other">Autre demande</option>
+</select>
+</div>
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-primary uppercase mb-2" for="message">Votre vision</label>
+<textarea class="bg-transparent input-underline py-2 font-body-md text-body-md placeholder:text-outline-variant resize-none" id="message" name="message" placeholder="Décrivez brièvement votre projet ou vos besoins..." required="" rows="4"></textarea>
+<span class="error-msg text-error text-caption mt-1 hidden">Veuillez détailler votre message</span>
+</div>
+<div class="pt-4">
+<button class="w-full md:w-auto px-10 py-4 bg-primary text-on-primary rounded-lg font-label-md text-label-md uppercase tracking-widest hover:bg-primary-container transition-all duration-300 active:scale-95 shadow-lg flex items-center justify-center gap-2 group" type="submit">
+                                Envoyer le message
+                                <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">send</span>
+</button>
+</div>
+</form>
+<!-- Success Message (Hidden) -->
+<div class="hidden text-center py-12 space-y-4" id="successState">
+<span class="material-symbols-outlined text-secondary text-6xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<h3 class="font-headline-md text-headline-md text-primary">Message Reçu !</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Je reviendrai vers vous sous 24 à 48 heures ouvrées.</p>
+<button class="font-label-md text-label-md text-secondary border-b border-secondary hover:opacity-70 transition-opacity" onclick="location.reload()">Envoyer un autre message</button>
+</div>
+</div>
+<!-- Info Sidebar & Map -->
+<div class="lg:col-span-5 space-y-8">
+<!-- Contact Details Card -->
+<div class="bg-primary-container text-on-primary p-8 md:p-10 rounded-xl space-y-10 shadow-[0_20px_40px_rgba(15,23,42,0.1)]">
+<div>
+<h3 class="font-headline-md text-headline-md mb-6">Coordonnées</h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">mail</span>
+<div>
+<p class="font-label-md text-label-md uppercase opacity-60">Email professionnel</p>
+<p class="font-body-lg text-body-lg font-semibold">contact@architect.pro</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">call</span>
+<div>
+<p class="font-label-md text-label-md uppercase opacity-60">Téléphone Direct</p>
+<p class="font-body-lg text-body-lg font-semibold">+33 (0)1 45 67 89 00</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">location_on</span>
+<div>
+<p class="font-label-md text-label-md uppercase opacity-60">Siège Social</p>
+<p class="font-body-lg text-body-lg font-semibold">12 Avenue de l'Opéra, 75001 Paris</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md mb-6">Réseaux Sociaux</h3>
+<div class="flex flex-wrap gap-4">
+<a class="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full hover:bg-secondary transition-colors group" href="#">
+<img class="w-5 h-5 opacity-80 group-hover:opacity-100" data-alt="Minimalist LinkedIn icon in white on a transparent background, following the professional architectural design language of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAje_vA-AIasLnWKVq1yKfQdMpdipUxFsxcOJcWFbz2FOTqmONCvkpLboivpRh8k0BxUymEulN18MGkkt9o5Cu5-9b0Kp7O-KXNDpvhV-nzX9pYeiLx4yExrs-1aeKxBuVhHSek6bEG_KS0RajRHmQIgIeQzb470iUWayRGrkxxv33lYAEnODpEA4vhrAlM9clDiiLNPIpp6ih330t0OAdZezMSYTKIR_u1xW90bD6JVs8r6ZUPDOjZvDFNdRgcbrKnzOkc7QIqd0S0"/>
+</a>
+<a class="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full hover:bg-secondary transition-colors group" href="#">
+<img class="w-5 h-5 opacity-80 group-hover:opacity-100" data-alt="Minimalist GitHub icon in white on a transparent background, representing technical expertise in the professional architectural portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsbxiDa_Fep3T8RlU_NzyNo10AyVQgLNNYtkN9gu5Tx52ffB_2cjqGmuUwkJai-hWIDBpfc5ezOTwdi-Y1NEbkm3O6mq7lla-uZBoyIFkknCfbFLWp11Mj6DByXKIElLUqqICnw5wXVsC_XCUlrv9iSLiq5xwiuwkmbuadbLj2oZDraY4TvXltWS00x-6nyp_uX2g75fcjWK3ntTqoc4ikq1-bw3sjgGxD4nwUeA9_nhW2F1PMMZ5Tg5zEzzDOc0taR4qk1Y3UqgXx"/>
+</a>
+<a class="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full hover:bg-secondary transition-colors group" href="#">
+<img class="w-5 h-5 opacity-80 group-hover:opacity-100" data-alt="Minimalist WhatsApp icon in white on a transparent background for quick professional communication, styled with clean architectural lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZXWbmmh-EVMJPnpZ6KD_c0YfXTaywf2cr2B5zFiuwJYnnPRZfEODJl3lQA_Yhi8uY3rB8V9dxmJL4b2XHqy_2JbfGZ-x5-CcCt_xSyr0zkr2OMnROR5NYNR5JWf-XZgZQRZrS_SgG2KTOMXtNx3u3tJ_yihNE3IuC4uTdm8H4nlj1h5Kc83Sz5w2Zkl7CPN91gvgNUL-uWuT_BrHOo-6CHdASGySLeq9F4i3bc6JGrNFNDvKm1bumCuOeg41KGuQ3uODaDZiiXnNB"/>
+</a>
+<a class="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full hover:bg-secondary transition-colors group" href="#">
+<img class="w-5 h-5 opacity-80 group-hover:opacity-100" data-alt="Minimalist Instagram icon in white on a transparent background, representing the aesthetic and design-focused side of the architectural practice." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCctgCyAuLBI_2oiRllu91cScuS1mGbUGbtrJIIKo4utBKUgxj5ElDF4abEIEP8270p1rQYWbwLKDMxF95zFzYCoRgAGqezAr3-Ot-JOoHNgjIpVyTPLz64HqNAfb0ZWeCnMaWXij586YKznCeKWFrvXEQKbB0JF7tHV6WdDejH0NINBHMEzUixzAwS0PmSzVUxi2mnXTL_jUVbcOl0wR3p4_gZhCPg0jgIgvMrpUimfL0-dpg-7G5I_DmJdivjKvWa-YkXTc9JIROP"/>
+</a>
+</div>
+</div>
+</div>
+<!-- Map Container -->
+<div class="relative w-full h-[300px] rounded-xl overflow-hidden shadow-sm border border-outline-variant/20 grayscale hover:grayscale-0 transition-all duration-500 cursor-crosshair">
+<div class="absolute inset-0 bg-surface-container flex items-center justify-center" data-location="Paris" style="">
+<div class="z-10 bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-xl text-center">
+<span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<p class="font-label-md text-label-md text-primary mt-1 font-bold">PARIS OFFICE</p>
+</div>
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A sophisticated, high-contrast black and white satellite map view of the Avenue de l'Opéra area in Paris. The image has a clean, architectural blueprint feel with highlighted arterial roads and minimalist building outlines, aligning with the premium professional brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk29mSUuORcEZanXiku2HVwEcsP5vDk6r7QdqU9oIafr-ZyAoN7CUEzS9M1c5D0uP9WDRJKbk3rGLDpJYL-ojt0avvAddLl40WMN3ds4y6LDBPceGyMR4cinj5nbaYjV5AFlxT_Zr2BKVFsvaSXACoNZZIr-xqazdtR5u_yNpxdnfzfHcERpgxxH22RkEgVZppNqTRw8AImRvAuFq2Qtsc7FtiUmhWTNp9EBRTGzN6AYuLibrxhREBbmp93I6BLWjjOy4eLNzjl9aL"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom CTA -->
+<section class="bg-surface-container-low py-stack-lg border-t border-outline-variant/10">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<div class="max-w-3xl mx-auto space-y-6">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Confidentialité &amp; Excellence.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Chaque projet commence par une conversation. Mes échanges sont strictement confidentiels et mes devis sont détaillés sous 72h après notre première rencontre.</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center pt-4">
+<button class="px-8 py-3 bg-secondary text-on-secondary rounded-full font-label-md text-label-md uppercase hover:shadow-lg transition-all active:scale-95">Réserver une consultation</button>
+<button class="px-8 py-3 border border-primary text-primary rounded-full font-label-md text-label-md uppercase hover:bg-primary hover:text-on-primary transition-all active:scale-95">Télécharger ma brochure (PDF)</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant w-full py-stack-lg">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">architecture</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">ARCHITECT.PRO</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Concevoir le futur de l'espace urbain avec une approche technologique et durable.</p>
+</div>
+<div class="flex flex-col gap-2">
+<p class="font-label-md text-label-md text-primary uppercase font-bold mb-2">Navigation</p>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all" href="#">Projets</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all" href="#">Expertise</a>
+<a class="font-body-md text-body-md text-secondary font-bold" href="#">Contact</a>
+</div>
+<div class="space-y-4">
+<p class="font-label-md text-label-md text-primary uppercase font-bold mb-2">Newsletter</p>
+<div class="flex">
+<input class="bg-surface-container w-full px-4 py-2 border-none rounded-l-lg focus:ring-1 focus:ring-secondary" placeholder="votre@email.com" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-r-lg hover:bg-secondary transition-colors">OK</button>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">© 2024 Senior Architect Portfolio. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+            const form = this;
+            const inputs = form.querySelectorAll('input[required], textarea[required]');
+            
+            inputs.forEach(input => {
+                const errorSpan = input.nextElementSibling;
+                if (!input.value.trim() || (input.type === 'email' && !validateEmail(input.value))) {
+                    input.classList.add('border-error');
+                    if (errorSpan) errorSpan.classList.remove('hidden');
+                    isValid = false;
+                } else {
+                    input.classList.remove('border-error');
+                    if (errorSpan) errorSpan.classList.add('hidden');
+                }
+            });
+
+            if (isValid) {
+                // Animation of sending
+                const btn = form.querySelector('button[type="submit"]');
+                const originalText = btn.innerHTML;
+                btn.disabled = true;
+                btn.innerHTML = `<span class="animate-spin material-symbols-outlined">progress_activity</span> Envoi en cours...`;
+                
+                setTimeout(() => {
+                    form.classList.add('hidden');
+                    document.getElementById('successState').classList.remove('hidden');
+                    window.scrollTo({
+                        top: form.offsetTop - 150,
+                        behavior: 'smooth'
+                    });
+                }, 1500);
+            }
+        });
+
+        function validateEmail(email) {
+            return String(email)
+                .toLowerCase()
+                .match(
+                    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                );
+        }
+
+        // Real-time validation removal
+        document.querySelectorAll('input, textarea').forEach(el => {
+            el.addEventListener('input', function() {
+                this.classList.remove('border-error');
+                if (this.nextElementSibling && this.nextElementSibling.classList.contains('error-msg')) {
+                    this.nextElementSibling.classList.add('hidden');
+                }
+            });
+        });
+
+        // Hover effect for inputs
+        const formFields = document.querySelectorAll('.input-underline');
+        formFields.forEach(field => {
+            field.addEventListener('focus', () => {
+                field.parentElement.querySelector('label').classList.add('text-secondary');
+            });
+            field.addEventListener('blur', () => {
+                field.parentElement.querySelector('label').classList.remove('text-secondary');
+            });
+        });
+    </script>
+</body></html>

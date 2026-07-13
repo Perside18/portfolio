@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>À Propos | ARCHITECT.PRO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hover-float {
+            transition: transform 0.2s ease-in-out;
+        }
+        .hover-float:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2f3131",
+                        "tertiary-fixed": "#e0e3e5",
+                        "outline-variant": "#c6c6cd",
+                        "on-background": "#1a1c1c",
+                        "tertiary": "#000000",
+                        "background": "#f9f9f9",
+                        "on-tertiary-fixed": "#191c1e",
+                        "primary-container": "#131b2e",
+                        "inverse-on-surface": "#f0f1f1",
+                        "tertiary-fixed-dim": "#c4c7c9",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-variant": "#e2e2e2",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "surface": "#f9f9f9",
+                        "outline": "#76777d",
+                        "secondary-container": "#2170e4",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#d8e2ff",
+                        "surface-tint": "#565e74",
+                        "on-primary-container": "#7c839b",
+                        "surface-dim": "#dadada",
+                        "surface-container-highest": "#e2e2e2",
+                        "primary": "#000000",
+                        "surface-container-low": "#f3f3f4",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-container": "#191c1e",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "on-surface-variant": "#45464d",
+                        "on-primary-fixed": "#131b2e",
+                        "secondary": "#0058be",
+                        "inverse-primary": "#bec6e0",
+                        "on-tertiary-container": "#818486",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#fefcff",
+                        "on-secondary-fixed": "#001a42",
+                        "surface-container": "#eeeeee",
+                        "on-secondary-fixed-variant": "#004395",
+                        "surface-bright": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#dae2fd",
+                        "primary-fixed-dim": "#bec6e0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "stack-sm": "16px",
+                        "stack-lg": "80px",
+                        "margin-desktop": "64px",
+                        "stack-md": "32px"
+                    },
+                    "fontFamily": {
+                        "caption": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "caption": ["12px", {"lineHeight": "1.4", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-container/20 backdrop-blur-md border-b border-white/30 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
+<div class="max-w-[1200px] mx-auto px-margin-desktop h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="architecture">architecture</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">ARCHITECT.PRO</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-200 active:scale-95" href="#">Projets</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-secondary relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-secondary after:rounded-full" href="#">À propos</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-200 active:scale-95" href="#">Contact</a>
+<span class="material-symbols-outlined text-primary cursor-pointer active:scale-95 transition-transform" data-icon="dark_mode">dark_mode</span>
+</nav>
+<button class="md:hidden material-symbols-outlined" data-icon="menu">menu</button>
+</div>
+</header>
+<main class="pt-32 pb-stack-lg">
+<!-- Hero Section / Biography -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md items-center">
+<div class="order-2 md:order-1">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-stack-sm">Construire le futur, <span class="text-secondary">brique par brique.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md max-w-xl">
+                        Architecte senior avec plus de 15 ans d'expérience, je transforme des visions complexes en réalités structurelles. Mon approche allie rigueur technique et innovation esthétique pour créer des espaces qui inspirent et perdurent.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Diplômé de l'École Nationale Supérieure d'Architecture, j'ai dirigé des projets d'envergure internationale, allant de complexes résidentiels durables à des gratte-ciels iconiques. Mon expertise réside dans la capacité à naviguer entre les contraintes environnementales et les aspirations humaines.
+                    </p>
+</div>
+<div class="order-1 md:order-2 flex justify-center">
+<div class="relative w-full aspect-square max-w-md">
+<div class="absolute inset-0 bg-secondary rounded-full opacity-5 blur-3xl"></div>
+<img class="w-full h-full object-cover rounded-xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="A professional portrait of a senior architect with a confident expression, dressed in a sharp charcoal suit. He is standing in a brightly lit, modern architectural studio with blueprints and scale models blurred in the background. The lighting is high-key and soft, emphasizing a premium and authoritative brand identity with a clean, light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD67kaU0Fzm6oXnqmefazWAvTP2KMZua_fUFfU9TFa1rxEhoc_tMg_CfeFXCazHH2x82ZtKSgrQq5wrtsYyHjxe69UlYSf52nVFA40QK4yrfD3TXznjMOPDYmuxNlkmSxDyJTnIQclrLF4hy65SyiqvyPPMrUId5gkaAznr16TqvZs8QXP2CS728COk66OrwxpiZHGacaPVGLPWdEu5Cs1C7a3Ae-T5ZQjpEZaHf2ult6nUqOsAhEAwODcWsNzHh5v0VT67hWAH3gdJ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Vision & Valeurs (Bento Grid) -->
+<section class="bg-surface-container-low py-stack-lg">
+<div class="max-w-[1200px] mx-auto px-margin-desktop">
+<div class="mb-stack-md text-center">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Vision &amp; Valeurs</h2>
+<div class="w-12 h-1 bg-secondary mx-auto mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="glass-card p-stack-md rounded-xl hover-float">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="lightbulb">lightbulb</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Innovation Radicale</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Repousser les limites du possible en intégrant les dernières technologies de construction et de design paramétrique.</p>
+</div>
+<div class="glass-card p-stack-md rounded-xl hover-float">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="eco">eco</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Durabilité</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Concevoir pour les générations futures en minimisant l'empreinte carbone et en utilisant des matériaux biosourcés.</p>
+</div>
+<div class="glass-card p-stack-md rounded-xl hover-float">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="groups">groups</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Leadership Collaboratif</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Fédérer des équipes multidisciplinaires autour d'un objectif commun : l'excellence architecturale.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Career Timeline -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop py-stack-lg">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-stack-md">Parcours Professionnel</h2>
+<div class="relative border-l-2 border-outline-variant/30 ml-4 pl-8 space-y-stack-md">
+<div class="relative">
+<div class="absolute -left-[41px] top-1 w-4 h-4 bg-secondary rounded-full ring-4 ring-background"></div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">2018 - Présent</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Directeur de Design, Urban Studio</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-2xl">Supervision des grands projets d'infrastructure et de revitalisation urbaine à travers l'Europe et l'Asie du Sud-Est.</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[41px] top-1 w-4 h-4 bg-outline rounded-full ring-4 ring-background"></div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">2012 - 2018</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Architecte Principal, Skyline Partners</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-2xl">Conception et réalisation de tours résidentielles haut de gamme et d'espaces commerciaux innovants.</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[41px] top-1 w-4 h-4 bg-outline rounded-full ring-4 ring-background"></div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">2008 - 2012</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Architecte Junior, GreenBuild Collective</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-2xl">Spécialisation dans les structures à ossature bois et les certifications environnementales LEED/BREEAM.</p>
+</div>
+</div>
+</section>
+<!-- Qualités & Objectifs -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+<!-- Professional Qualities -->
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-stack-md">Qualités Professionnelles</h2>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-4 rounded-lg bg-surface-container-highest/50">
+<span class="material-symbols-outlined text-secondary" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span class="font-body-md text-body-md text-primary font-bold">Précision Technique Millimétrée</span>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-surface-container-highest/50">
+<span class="material-symbols-outlined text-secondary" data-icon="psychology">psychology</span>
+<span class="font-body-md text-body-md text-primary font-bold">Résolution de Problèmes Complexes</span>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-surface-container-highest/50">
+<span class="material-symbols-outlined text-secondary" data-icon="communication">communication</span>
+<span class="font-body-md text-body-md text-primary font-bold">Communication Interpersonnelle Fluide</span>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-surface-container-highest/50">
+<span class="material-symbols-outlined text-secondary" data-icon="speed">speed</span>
+<span class="font-body-md text-body-md text-primary font-bold">Gestion Efficace des Délais</span>
+</div>
+</div>
+</div>
+<!-- Future Goals -->
+<div class="bg-primary text-on-primary p-stack-md rounded-2xl flex flex-col justify-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4 relative z-10">Objectifs Futurs</h2>
+<p class="font-body-md text-body-md text-on-primary/80 mb-6 relative z-10">
+                    Mon ambition est d'initier un manifeste architectural pour les villes intelligentes, où l'IA et l'écologie convergent pour créer des habitats ultra-performants et humains. Je vise à diriger un projet de régénération urbaine zéro-carbone d'ici 2026.
+                </p>
+<div class="relative z-10">
+<button class="px-8 py-3 bg-secondary text-on-secondary rounded-full font-label-md text-label-md uppercase tracking-widest hover:bg-secondary-container transition-all active:scale-95 shadow-lg">
+                        Collaborons ensemble
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-surface-container-lowest border-t border-outline-variant">
+<div class="max-w-[1200px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div>
+<span class="font-headline-md text-headline-md text-primary font-bold">ARCHITECT.PRO</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4">Redéfinir le paysage urbain avec élégance et intention.</p>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all opacity-80 hover:opacity-100" href="#">GitHub</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all opacity-80 hover:opacity-100" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all opacity-80 hover:opacity-100" href="#">Contact</a>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto px-margin-desktop mt-stack-md pt-stack-sm border-t border-outline-variant/10">
+<p class="font-body-md text-body-md text-on-surface-variant opacity-60">© 2024 Senior Architect Portfolio. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
