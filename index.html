@@ -1,477 +1,613 @@
 <!DOCTYPE html>
-<html lang="fr" class="light">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ARCHITECT.PRO | Julien Lefebvre - Architecte Logiciel Senior</title>
-  
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Expert en Architecture Logiciel et Cloud avec plus de 12 ans d'expérience. Découvrez mes projets de Nexus Cloud, Ledger, IA et mes services de consulting."/>
-  <meta name="robots" content="index, follow"/>
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="ARCHITECT.PRO | Julien Lefebvre - Architecte Logiciel Senior"/>
-  <meta property="og:description" content="Expert en Architecture Logiciel et Cloud. Découvrez mes projets, mes compétences techniques et mon parcours."/>
-  <meta property="og:image" content="images/julien-hero.jpg"/>
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/global-tech-logo.png"/>
-  
-  <!-- Fonts & Material Symbols -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  
-  <!-- Custom Stylesheets -->
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="css/responsive.css"/>
-  <link rel="stylesheet" href="css/animations.css"/>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CYBERSEC.PRO | Portfolio Junior Consultant cybersécurité</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#2f3131",
+                    "tertiary-fixed": "#e0e3e5",
+                    "outline-variant": "#c6c6cd",
+                    "on-background": "#1a1c1c",
+                    "tertiary": "#000000",
+                    "background": "#f9f9f9",
+                    "on-tertiary-fixed": "#191c1e",
+                    "primary-container": "#131b2e",
+                    "inverse-on-surface": "#f0f1f1",
+                    "tertiary-fixed-dim": "#c4c7c9",
+                    "surface-container-high": "#e8e8e8",
+                    "surface-variant": "#e2e2e2",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#444749",
+                    "surface": "#f9f9f9",
+                    "outline": "#76777d",
+                    "secondary-container": "#2170e4",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#d8e2ff",
+                    "surface-tint": "#565e74",
+                    "on-primary-container": "#7c839b",
+                    "surface-dim": "#dadada",
+                    "surface-container-highest": "#e2e2e2",
+                    "primary": "#000000",
+                    "surface-container-low": "#f3f3f4",
+                    "on-surface": "#1a1c1c",
+                    "tertiary-fixed-dim": "#c4c7c9",
+                    "on-surface-variant": "#45464d",
+                    "on-primary-fixed": "#131b2e",
+                    "secondary": "#0058be",
+                    "inverse-primary": "#bec6e0",
+                    "on-tertiary-container": "#818486",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-container": "#fefcff",
+                    "on-secondary-fixed": "#001a42",
+                    "surface-container": "#eeeeee",
+                    "on-secondary-fixed-variant": "#004395",
+                    "surface-bright": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#dae2fd",
+                    "primary-fixed-dim": "#bec6e0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "stack-sm": "16px",
+                    "stack-lg": "80px",
+                    "margin-desktop": "64px",
+                    "stack-md": "32px"
+            },
+            "fontFamily": {
+                    "caption": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"]
+            },
+            "fontSize": {
+                    "caption": ["12px", {"lineHeight": "1.4", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                    "display-lg-mobile": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        /* CORRECTION CORE DU MODE SOMBRE : Applique un fond sombre global */
+        .dark body {
+            background-color: #121314 !important;
+            color: #f0f1f1 !important;
+        }
+        
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+             /* Empêche la traduction de toutes les icônes Google du site */
+            content-visibility: auto;
+             unicode-bidi: isolate;
+
+        }
+
+        /* Ajustement des cartes pour les deux modes */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8) !important;
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.03);
+            transition: all 0.3s ease;
+        }
+        /* Devient sombre et lisible quand la classe .dark est active */
+        .dark .glass-card {
+            background: rgba(35, 37, 38, 0.9) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Correction forcée des couleurs de texte pour tout le site en mode sombre */
+        .dark h1, .dark h2, .dark h3, .dark h4, .dark font, .dark strong {
+            color: #ffffff !important;
+        }
+        .dark p, .dark span:not(.material-symbols-outlined) {
+            color: #c6c6cd !important;
+        }
+        .dark a:not(.bg-primary):not(.bg-secondary) {
+            color: #bec6e0 !important;
+        }
+
+        .hero-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .active-dot::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 4px;
+            background-color: #0058be;
+            border-radius: 9999px;
+        }
+        /* Correction du footer pour le mode sombre */
+            .dark footer {
+                background-color: #17181a !important;
+                border-top-color: rgba(255, 255, 255, 0.08) !important;
+            }
+            .dark footer span, .dark footer p {
+                color: #9ca3af !important;
+            }
+            .dark footer a {
+                color: #e5e7eb !important;
+            }
+            .dark footer a:hover {
+                color: #0058be !important;
+            }
+            /* Empêche les bugs de traduction et le mélange des textes */
+.glass-card, .group.relative.h-80 {
+    height: auto !important;
+    min-height: 20rem !important; /* Équivalent à h-80 pour garder le design initial */
+    padding-bottom: 2rem !important;
+}
+
+/* Force les grilles Bento à s'adapter si le texte grandit */
+.grid {
+    align-items: stretch !important;
+}
+</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
 </head>
-<body>
-
-  <!-- Top Navigation Header -->
-  <header class="top-nav">
-    <div class="nav-container container">
-      <div class="logo-wrapper">
-        <span class="material-symbols-outlined">architecture</span>
-        <span class="font-headline-md">ARCHITECT.PRO</span>
-      </div>
-      <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="font-label-md active active-dot">Accueil</a>
-        <a href="services.html" class="font-label-md">Services &amp; Offres</a>
-        <a href="about.html" class="font-label-md">À propos</a>
-        <a href="contact.html" class="font-label-md">Contact</a>
-      </nav>
-      <div class="nav-controls">
-        <button class="theme-toggle-btn active-scale" aria-label="Toggle Theme">
-          <span class="material-symbols-outlined">dark_mode</span>
-        </button>
-        <button class="menu-toggle-btn active-scale" aria-label="Open Menu">
-          <span class="material-symbols-outlined">menu</span>
-        </button>
-        <a href="contact.html" class="btn btn-primary btn-full font-label-md active-scale" style="display: none; padding: 10px 20px;">Recruter</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="pt-20">
-    <!-- Hero Section -->
-    <section class="container" style="min-height: 750px; display: flex; align-items: center; padding-top: 64px; padding-bottom: 64px;">
-      <div class="grid-cols-2 hero-grid" style="align-items: center; width: 100%;">
-        <div class="reveal animate-fade-up">
-          <span class="chip" style="font-size: 12px; margin-bottom: 24px; pointer-events: none; background-color: var(--color-secondary-fixed); color: var(--color-on-secondary-fixed); border: none;">DISPONIBLE POUR MISSIONS</span>
-          <h1 class="font-display-lg" style="margin-bottom: 16px;">Julien Lefebvre</h1>
-          <h2 class="font-headline-md" style="color: var(--color-secondary); margin-bottom: 24px; font-weight: 500;">Architecte Logiciel Senior &amp; Consultant Cloud</h2>
-          <p class="font-body-lg" style="color: var(--color-on-surface-variant); margin-bottom: 40px; max-w: 520px;">
-            Je conçois des écosystèmes numériques scalables, sécurisés et durables pour les entreprises en pleine croissance. Mon expertise transforme la complexité technique en avantage compétitif.
-          </p>
-          <div class="flex-center hero-buttons" style="justify-content: flex-start; gap: 16px;">
-            <a href="#" class="btn btn-primary btn-rounded-xl font-label-md active-scale">
-              <span class="material-symbols-outlined" style="font-size: 20px;">download</span> Télécharger CV
-            </a>
-            <a href="contact.html" class="btn btn-secondary btn-rounded-xl font-label-md active-scale">
-              Me contacter
-            </a>
-          </div>
-        </div>
-        <div class="reveal" style="display: flex; justify-content: center;">
-          <div class="hero-portrait-wrapper hero-float" style="position: relative; width: 100%; max-width: 450px; aspect-ratio: 1/1; border-radius: 2rem; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);">
-            <img class="hover-zoom-img" style="width: 100%; height: 100%; object-cover: cover;" src="images/julien-hero.jpg" alt="Julien Lefebvre - Senior Software Architect"/>
-            <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.3) 0%, transparent 60%); pointer-events: none;"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="pb-stack-lg" style="background-color: var(--color-surface-container-lowest); padding-top: 80px; padding-bottom: 80px;">
-      <div class="container">
-        <div class="grid-cols-4" style="gap: var(--space-gutter);">
-          <div class="glass-card hover-float" style="padding: 24px; border-radius: var(--rounded-xl); text-align: center;">
-            <div class="font-headline-lg" style="font-weight: 700; margin-bottom: 8px;">12+</div>
-            <div class="font-label-md" style="color: var(--color-on-surface-variant);">Années d'expérience</div>
-          </div>
-          <div class="glass-card hover-float" style="padding: 24px; border-radius: var(--rounded-xl); text-align: center;">
-            <div class="font-headline-lg" style="font-weight: 700; margin-bottom: 8px;">150+</div>
-            <div class="font-label-md" style="color: var(--color-on-surface-variant);">Projets livrés</div>
-          </div>
-          <div class="glass-card hover-float" style="padding: 24px; border-radius: var(--rounded-xl); text-align: center;">
-            <div class="font-headline-lg" style="font-weight: 700; margin-bottom: 8px;">45+</div>
-            <div class="font-label-md" style="color: var(--color-on-surface-variant);">Clients satisfaits</div>
-          </div>
-          <div class="glass-card hover-float" style="padding: 24px; border-radius: var(--rounded-xl); text-align: center;">
-            <div class="font-headline-lg" style="font-weight: 700; margin-bottom: 8px;">99%</div>
-            <div class="font-label-md" style="color: var(--color-on-surface-variant);">Taux de rétention</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Overview Bento Grid -->
-    <section class="pb-stack-lg" style="padding-top: 80px; padding-bottom: 80px;">
-      <div class="container">
-        <div style="text-align: center; margin-bottom: var(--space-stack-lg);">
-          <h2 class="font-headline-lg" style="margin-bottom: 16px;">Expertises &amp; Services</h2>
-          <p class="font-body-lg" style="color: var(--color-on-surface-variant); max-w: 640px; margin: 0 auto;">
-            Une approche holistique du développement logiciel, mêlant vision stratégique et excellence opérationnelle.
-          </p>
-        </div>
+<body class="font-body-md text-body-md antialiased">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-surface-container/20 backdrop-blur-md border-b border-white/30 dark:bg-inverse-surface/20 dark:border-outline-variant/10 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition-all duration-300">
+    <nav class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop h-20 flex items-center justify-between">
         
-        <div class="grid-cols-3" style="gap: var(--space-gutter);">
-          <!-- Large Service Card 1 -->
-          <div class="glass-card hover-float" style="grid-column: span 2; position: relative; height: 320px; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 32px;">
-            <div style="position: absolute; inset: 0; z-index: 0;">
-              <img src="images/cloud-bg.jpg" alt="Architecture Cloud" class="hover-zoom-img" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.25; filter: grayscale(10%);"/>
-              <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(15, 23, 42, 0.9) 20%, transparent 90%);"></div>
-            </div>
-            <div style="position: relative; z-index: 1;">
-              <span class="material-symbols-outlined" style="font-size: 40px; color: var(--color-on-primary); margin-bottom: 16px;">cloud_sync</span>
-              <h3 class="font-headline-md" style="color: var(--color-on-primary); margin-bottom: 8px;">Architecture Cloud &amp; DevOps</h3>
-              <p class="font-body-md" style="color: rgba(255,255,255,0.8); max-w: 480px;">Solutions résilientes sur AWS, GCP et Azure avec une automatisation CI/CD complète.</p>
-            </div>
-          </div>
-          
-          <!-- Small Service Card 2 -->
-          <div class="glass-card hover-float" style="border-radius: 24px; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; height: 320px;">
-            <div class="flex-center" style="width: 64px; height: 64px; border-radius: 16px; background-color: var(--color-secondary-container); margin-bottom: 24px;">
-              <span class="material-symbols-outlined" style="font-size: 32px; color: var(--color-on-secondary-container);">lightbulb</span>
+        <!-- Bloc Logo (Gauche) -->
+        <div class="flex items-center gap-2">
+            <span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-on-surface tracking-tight">CYBERSEC.PRO</span>
+        </div>
+
+        <!-- Bloc Menu de Liens (Milieu) -->
+        <div class="hidden md:flex items-center gap-stack-md">
+    <a class="relative font-label-md text-label-md uppercase tracking-wider text-secondary active-dot transition-colors" href="index.html">Home</a>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="portfolio_portfolio_premium/code.html">Projects</a>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="comp_tences_portfolio_premium/code.html">Skills</a>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="certifications_portfolio_premium/code.html">Certifications</a>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="experiences_portfolio_premium/code.html">Experiences</a>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="contact_portfolio_premium/code.html">Contact</a>
+</div>
+        <!-- Bloc Boutons Action (Droite) -->
+        <div class="flex items-center gap-4">
+            <button class="p-2 rounded-full hover:bg-surface-variant dark:hover:bg-outline-variant/10 transition-colors active:scale-95" onclick="document.documentElement.classList.toggle('dark')">
+                <span class="material-symbols-outlined text-on-surface-variant dark:text-inverse-on-surface" translate="no">dark_mode</span>
+            </button>
+        </div>
+
+    </nav>
+</header>
+<main class="pt-20">
+<section class="relative min-h-[795px] flex items-center overflow-hidden" id="hero">
+
+<div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center relative z-10">
+<div class="order-2 lg:order-1" data-aos="fade-up">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md uppercase mb-4">Available for Employment</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4 text-primary leading-tight">Perside DEGBE</h1>
+<h2 class="font-headline-md text-headline-md text-secondary mb-6">SOC Analyst &amp; Application Security</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md max-w-lg">
+    Passionate about securing systems and developing robust applications. I combine technical expertise in threat analysis (SOC, Zeek, MITRE ATT&CK) and secure programming (HTML/PHP) to protect digital infrastructures.
+</p>
+<div class="flex flex-col sm:flex-row gap-4">
+    <!-- Lien CV corrigé : pointe directement vers le dossier images à la racine -->
+    <a class="bg-primary text-on-primary px-8 py-4 rounded-xl flex items-center justify-center gap-2 font-label-md text-label-md uppercase transition-all hover:shadow-lg active:scale-95" href="images/CV_Perside_DEGBE.pdf" download="CV_Perside_DEGBE.pdf">
+        <span class="material-symbols-outlined" translate="no">download</span> Download CV
+    </a>
+    <!-- Lien Contact corrigé : entre directement dans le sous-dossier sans remonter -->
+    <a class="border border-primary text-primary px-8 py-4 rounded-xl flex items-center justify-center gap-2 font-label-md text-label-md uppercase transition-all hover:bg-primary/5 active:scale-95" href="contact_portfolio_premium/code.html">
+        Contact Me
+    </a>
+</div>
+</div>
+<div class="order-1 lg:order-2 flex justify-center lg:justify-end" data-aos="fade-left">
+<div class="relative w-full max-w-[450px] aspect-square rounded-[2rem] overflow-hidden shadow-2xl hero-float">
+<img class="w-full h-full object-cover" data-alt="Perside DEGBE — SOC Analyst &amp; Application Security" src="images/Portfolio_DPUS.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<!-- Stats Section -->
+<section class="py-stack-lg bg-surface-container-lowest">
+<div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+    <!-- Stat 1: Années d'expérience -->
+    <div class="p-stack-md rounded-3xl bg-white border border-slate-100 shadow-[0_10px_30px_rgba(15,23,42,0.04)] dark:bg-zinc-800 dark:border-zinc-700/50" data-aos="fade-up" data-aos-delay="0">
+        <div class="font-display-lg-mobile text-display-lg-mobile text-slate-900 dark:text-white font-bold mb-2 tracking-tight" translate="no">2+</div>
+        <div class="font-label-md text-xs font-semibold text-slate-500 dark:text-zinc-400 uppercase tracking-wider">Années d'expérience</div>
+    </div>
+    <!-- Stat 2: Projets livrés -->
+    <div class="p-stack-md rounded-3xl bg-white border border-slate-100 shadow-[0_10px_30px_rgba(15,23,42,0.04)] dark:bg-zinc-800 dark:border-zinc-700/50" data-aos="fade-up" data-aos-delay="100">
+        <div class="font-display-lg-mobile text-display-lg-mobile text-slate-900 dark:text-white font-bold mb-2 tracking-tight" translate="no">20+</div>
+        <div class="font-label-md text-xs font-semibold text-slate-500 dark:text-zinc-400 uppercase tracking-wider">Delivered projects</div>
+    </div>
+    <!-- Stat 3: Clients satisfaits -->
+    <div class="p-stack-md rounded-3xl bg-white border border-slate-100 shadow-[0_10px_30px_rgba(15,23,42,0.04)] dark:bg-zinc-800 dark:border-zinc-700/50" data-aos="fade-up" data-aos-delay="200">
+        <div class="font-display-lg-mobile text-display-lg-mobile text-slate-900 dark:text-white font-bold mb-2 tracking-tight" translate="no">5+</div>
+        <div class="font-label-md text-xs font-semibold text-slate-500 dark:text-zinc-400 uppercase tracking-wider">Satisfied clients</div>
+    </div>
+    <!-- Stat 4: Taux de rétention -->
+    <div class="p-stack-md rounded-3xl bg-white border border-slate-100 shadow-[0_10px_30px_rgba(15,23,42,0.04)] dark:bg-zinc-800 dark:border-zinc-700/50" data-aos="fade-up" data-aos-delay="300">
+        <div class="font-display-lg-mobile text-display-lg-mobile text-slate-900 dark:text-white font-bold mb-2 tracking-tight" translate="no">99%</div>
+        <div class="font-label-md text-xs font-semibold text-slate-500 dark:text-zinc-400 uppercase tracking-wider">Retention rate</div>
+    </div>
+</div>
+</section>
+<!-- Services Section (Bento Grid) -->
+<section class="py-stack-lg" id="services">
+<div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Expertise &amp; Services</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">A comprehensive approach to digital defense, aligning real-time threat auditing with robust application hardening workflows.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Service 1 -->
+<!-- Service 1 : Opérations SOC & Surveillance (Grande carte sombre) -->
+<div class="md:col-span-2 group relative min-h-[20rem] h-auto rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-end" data-aos="fade-right">
+    <div class="absolute inset-0 bg-primary-container">
+        <img class="w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700" alt="SOC Operations and Monitoring" src="images/soc_surveillance.jpeg"/>
+    </div>
+    <div class="absolute inset-0 p-stack-md flex flex-col justify-end bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent z-10">
+        <span class="material-symbols-outlined text-secondary dark:text-secondary-fixed text-4xl mb-2" translate="no">policy</span>
+        <h3 class="font-headline-md text-headline-md text-on-primary mb-2">SOC Operations and Monitoring</h3>
+        <p class="font-body-md text-body-md text-on-primary/80 max-w-md leading-relaxed">Continuous perimeter monitoring, telemetry data analysis, and log correlation (Zeek, Wireshark). Implementing defensive strategies aligned with the MITRE ATT&CK framework.</p>
+    </div>
+</div>
+
+<!-- Service 2 : Tests d'Intrusion & Pentest (Petite carte claire) -->
+<div class="group relative min-h-[20rem] h-auto rounded-3xl overflow-hidden bg-white border border-slate-100 shadow-[0_10px_30px_rgba(15,23,42,0.04)] dark:bg-zinc-800 dark:border-zinc-700/50 p-stack-md flex flex-col justify-between transition-all duration-300" data-aos="fade-left">
+    <div>
+        <div class="w-16 h-16 rounded-2xl bg-secondary-container flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined text-on-secondary-container text-3xl" translate="no">terminal</span>
+        </div>
+        <div>
+            <h3 class="font-headline-md text-headline-md text-slate-900 dark:text-white mb-2">Audits and Penetration Testing</h3>
+            <p class="font-body-md text-body-md text-slate-600 dark:text-zinc-300 leading-relaxed mb-6">Offensive simulations are executed in deployment environments (Kioptrix labs), mapping infrastructure weaknesses, testing lateral mobility, and identifying privilege escalation vectors.</p>
+        </div>
+    </div>
+    <div class="pt-4 border-t border-slate-100 dark:border-zinc-700/50">
+        <a class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all" href="#projets">
+            Explore my labs <span class="material-symbols-outlined" translate="no">arrow_forward</span>
+        </a>
+    </div>
+</div>
+<!-- Service 3 : Sécurité Applicative / Code Sécurisé (Petite carte claire) -->
+<div class="group relative h-80 rounded-3xl overflow-hidden glass-card p-stack-md flex flex-col justify-between" data-aos="fade-up">
+    <div class="w-16 h-16 rounded-2xl bg-surface-container-high dark:bg-white/10 flex items-center justify-center mb-4">
+        <span class="material-symbols-outlined text-primary dark:text-inverse-on-surface text-3xl" translate="no">gavel</span>
+    </div>
+    <div>
+        <h3 class="font-headline-md text-headline-md text-primary dark:text-inverse-on-surface mb-2">Application Security (AppSec)</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">Static and dynamic analysis of source code, payload input filtering controls, and structural shielding against active OWASP Top 10 exploits.</p>
+    </div>
+</div>
+
+<!-- Service 4 : Durcissement Système & Gestion des Risques (Grande carte claire avec image) -->
+<div class="md:col-span-2 group relative h-80 rounded-3xl overflow-hidden glass-card p-stack-md flex items-center gap-stack-md" data-aos="fade-up">
+    <div class="flex-1">
+        <h3 class="font-headline-md text-headline-md text-primary dark:text-inverse-on-surface mb-2">System Hardening &amp; Remediation</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant mb-4">Secure node provision blueprints across target systems (Linux/Windows OS), automated tracking workflows, and system patching sequences triggered via EMN Machine event logs.</p>
+        <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-surface-container dark:bg-white/10 text-on-surface dark:text-inverse-on-surface font-label-md text-label-md" translate="no">OWASP</span>
+            <span class="px-3 py-1 rounded-full bg-surface-container dark:bg-white/10 text-on-surface dark:text-inverse-on-surface font-label-md text-label-md" >Hardening</span>
+            <span class="px-3 py-1 rounded-full bg-surface-container dark:bg-white/10 text-on-surface dark:text-inverse-on-surface font-label-md text-label-md" >Patch Management</span>
+        </div>
+    </div>
+    <div class="hidden sm:block w-1/3 aspect-square rounded-2xl overflow-hidden">
+        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Secure Infrastructure" src="images/cloud-nine-logo.png"/>
+    </div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-stack-lg bg-surface dark:bg-inverse-surface" id="about">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+        <div data-aos="fade-right">
+            <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary dark:text-inverse-on-surface mb-6">Technical Rigor at the Service of Your Security</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant dark:text-outline-variant mb-6">
+                Graduated from the École des Métiers du Numérique (EMN) and holding a Bachelor's Degree, I have built a strong engineering culture centered around defensive strategies and systemic threat remediation.
+            </p>
+            <p class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant mb-8">
+                My operational commitment remains distinct: auditing application stacks against edge vectors (OWASP Top 10) and hardening nodes to dismantle threat models. Converging infrastructure engineering and defensive analysis empowers me to inspect software systems from within.
+            </p>
+            <a class="inline-flex items-center gap-4 text-primary dark:text-inverse-on-surface font-bold text-lg group" href="#parcours">
+                Explore my full background
+                <span class="w-12 h-12 rounded-full border border-primary dark:border-inverse-on-surface flex items-center justify-center group-hover:bg-primary dark:group-hover:bg-inverse-on-surface group-hover:text-on-primary dark:group-hover:text-primary transition-all" translate="no">
+                    <span class="material-symbols-outlined" translate="no">arrow_forward</span>
+                </span>
+            </a>
+        </div>
+        <div class="grid grid-cols-2 gap-4" data-aos="zoom-in">
+            <div class="pt-12">
+                <!-- Image 1 : Écran de code / Monitoring -->
+                <img class="w-full h-64 object-cover rounded-3xl mb-4 shadow-lg" alt="Log analysis and network security" src="images/server-room.jpg"/>
+                <!-- Image 2 : Structure ou infrastructure -->
+                <img class="w-full h-48 object-cover rounded-3xl shadow-lg" alt="Secured digital infrastructure" src="images/cloud-bg.jpg"/>
             </div>
             <div>
-              <h3 class="font-headline-md" style="margin-bottom: 8px;">Conseil Stratégique</h3>
-              <p class="font-body-md" style="color: var(--color-on-surface-variant); font-size: 15px;">Audit technique, roadmap technologique et accompagnement à la transformation digitale.</p>
+                <!-- Image 3 : Espace de travail / Analyse -->
+                <img class="w-full h-48 object-cover rounded-3xl mb-4 shadow-lg" alt="Cybersecurity analysis workspace" src="images/rien_que_des_ecrans.jpg"/>
+                <!-- Image 4 : Salle des serveurs / Protection -->
+                <img class="w-full h-64 object-cover rounded-3xl shadow-lg" alt="Servers and data protection" src="images/serveur_vert.jpg"/>
             </div>
-            <div style="margin-top: 16px;">
-              <a href="services.html" class="font-label-md" style="color: var(--color-secondary); display: inline-flex; align-items: center; gap: 8px; font-weight: 700;">
-                En savoir plus <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Small Service Card 3 -->
-          <div class="glass-card hover-float" style="border-radius: 24px; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; height: 320px;">
-            <div class="flex-center" style="width: 64px; height: 64px; border-radius: 16px; background-color: var(--color-surface-container-high); margin-bottom: 24px;">
-              <span class="material-symbols-outlined" style="font-size: 32px; color: var(--color-primary);">developer_mode</span>
-            </div>
-            <div>
-              <h3 class="font-headline-md" style="margin-bottom: 8px;">Développement Full-Stack</h3>
-              <p class="font-body-md" style="color: var(--color-on-surface-variant); font-size: 15px;">Expertise TypeScript, Go et Rust pour des applications robustes et performantes.</p>
-            </div>
-            <div style="margin-top: 16px;">
-              <a href="services.html" class="font-label-md" style="color: var(--color-secondary); display: inline-flex; align-items: center; gap: 8px; font-weight: 700;">
-                Détails <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Large Service Card 4 -->
-          <div class="glass-card hover-float" style="grid-column: span 2; border-radius: 24px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 32px; height: 320px;">
-            <div style="flex: 1;">
-              <h3 class="font-headline-md" style="margin-bottom: 8px;">Expertise IA &amp; Data</h3>
-              <p class="font-body-md" style="color: var(--color-on-surface-variant); margin-bottom: 24px; max-w: 420px;">Intégration de modèles de Machine Learning et pipelines de données haute performance.</p>
-              <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                <span class="chip" style="font-size: 12px; pointer-events: none;">PyTorch</span>
-                <span class="chip" style="font-size: 12px; pointer-events: none;">LLMs</span>
-                <span class="chip" style="font-size: 12px; pointer-events: none;">DataViz</span>
-              </div>
-            </div>
-            <div class="hero-portrait-wrapper" style="width: 180px; aspect-ratio: 1/1; border-radius: 16px; overflow: hidden; flex-shrink: 0; box-shadow: 0 10px 20px rgba(0,0,0,0.05);">
-              <img src="images/ai-bg.jpg" alt="Intelligence Artificielle" class="hover-zoom-img" style="width: 100%; height: 100%; object-fit: cover;"/>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Portfolio Projects Section -->
-    <section class="pb-stack-lg" style="padding-top: 80px; padding-bottom: 80px; background-color: var(--color-surface-container-low);">
-      <div class="container">
-        <div class="reveal" style="margin-bottom: 40px;">
-          <h2 class="font-headline-lg" style="margin-bottom: 16px;">Engineering Digital Architectures.</h2>
-          <p class="font-body-lg" style="color: var(--color-on-surface-variant); max-w: 640px;">
-            Un catalogue de solutions techniques de haute performance, d'infrastructures cloud et de systèmes complexes conçus pour la scalabilité.
-          </p>
-        </div>
-
-        <!-- Filters Grid -->
-        <div class="reveal" style="margin-bottom: 32px; display: flex; flex-wrap: wrap; gap: 12px;">
-          <button class="btn btn-secondary filter-btn active font-label-md active-scale" onclick="filterProjects('all')" style="border-radius: var(--rounded-full); padding: 8px 24px;">All Work</button>
-          <button class="btn btn-secondary filter-btn font-label-md active-scale" onclick="filterProjects('cloud')" style="border-radius: var(--rounded-full); padding: 8px 24px;">Cloud Infrastructure</button>
-          <button class="btn btn-secondary filter-btn font-label-md active-scale" onclick="filterProjects('fintech')" style="border-radius: var(--rounded-full); padding: 8px 24px;">FinTech Systems</button>
-          <button class="btn btn-secondary filter-btn font-label-md active-scale" onclick="filterProjects('ai')" style="border-radius: var(--rounded-full); padding: 8px 24px;">AI Platforms</button>
-        </div>
-
-        <!-- Projects List Grid -->
-        <div class="grid-cols-2" id="projects-grid" style="gap: var(--space-gutter);">
-          
-          <!-- Project 1 -->
-          <div class="project-card glass-card hover-float" data-category="cloud" style="border-radius: var(--rounded-xl); overflow: hidden; background-color: var(--color-surface-container-lowest);">
-            <div style="position: relative; aspect-ratio: 16/9; overflow: hidden;" class="group">
-              <img src="images/project-nexus.jpg" alt="Nexus Cloud Orchestrator" class="hover-zoom-img" style="width: 100%; height: 100%; object-fit: cover;"/>
-              <div class="project-overlay" style="position: absolute; inset: 0;">
-                <button class="btn btn-primary font-label-md active-scale"><span class="material-symbols-outlined" style="font-size: 18px;">visibility</span> Démonstration</button>
-                <button class="btn btn-secondary font-label-md active-scale" style="background-color: var(--color-surface-container-lowest); border-color: var(--color-outline-variant);"><span class="material-symbols-outlined" style="font-size: 18px;">code</span> GitHub</button>
-              </div>
-            </div>
-            <div style="padding: 24px;">
-              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
-                <span class="chip" style="font-size: 12px; pointer-events: none;">AWS Cloud</span>
-                <span class="chip" style="font-size: 12px; pointer-events: none;">Terraform</span>
-                <span class="chip" style="font-size: 12px; pointer-events: none;">Kubernetes</span>
-              </div>
-              <h3 class="font-headline-md" style="margin-bottom: 8px;">Nexus Cloud Orchestrator</h3>
-              <p class="font-body-md" style="color: var(--color-on-surface-variant); font-size: 15px;">
-                A highly scalable multi-region deployment framework automating the orchestration of microservices across heterogeneous cloud environments.
-              </p>
-            </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="project-card glass-card hover-float" data-category="fintech" style="border-radius: var(--rounded-xl); overflow: hidden; background-color: var(--color-surface-container-lowest);">
-            <div style="position: relative; aspect-ratio: 16/9; overflow: hidden;" class="group">
-              <img src="images/project-ledger.jpg" alt="Equilibrium Ledger" class="hover-zoom-img" style="width: 100%; height: 100%; object-fit: cover;"/>
-              <div class="project-overlay" style="position: absolute; inset: 0;">
-                <button class="btn btn-primary font-label-md active-scale"><span class="material-symbols-outlined" style="font-size: 18px;">visibility</span> Démonstration</button>
-                <button class="btn btn-secondary font-label-md active-scale" style="background-color: var(--color-surface-container-lowest); border-color: var(--color-outline-variant);"><span class="material-symbols-outlined" style="font-size: 18px;">code</span> GitHub</button>
-              </div>
-            </div>
-            <div style="padding: 24px;">
-              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
-                <span class="chip" style="font-size: 12px; pointer-events: none;">React</span>
-                <span class="chip" style="font-size: 12px; pointer-events: none;">Node.js</span>
-                <span class="chip" style="font-size: 12px; pointer-events: none;">PostgreSQL</span>
-              </div>
-              <h3 class="font-headline-md" style="margin-bottom: 8px;">Equilibrium Ledger</h3>
-              <p class="font-body-md" style="color: var(--color-on-surface-variant); font-size: 15px;">
-                A distributed ledger system designed for real-time transaction processing with bank-grade encryption and audited security protocols.
-              </p>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="project-card glass-card hover-float" data-category="ai" style="border-radius: var(--rounded-xl); overflow: hidden; background-color: var(--color-surface-container-lowest);">
-            <div style="position: relative; aspect-ratio: 16/9; overflow: hidden;" class="group">
-              <img src="images/project-cortex.jpg" alt="Cortex Analytics Platform" class="hover-zoom-img" style="width: 100%; height: 100%; object-fit: cover;"/>
-              <div class="project-overlay" style="position: absolute; inset: 0;">
-                <button class="btn btn-primary font-label-md active-scale"><span class="material-symbols-outlined" style="font-size: 18px;">visibility</span> Démonstration</button>
-                <button class="btn btn-secondary font-label-md active-scale" style="background-color: var(--color-surface-container-lowest); border-color: var(--color-outline-variant);"><span class="material-symbols-outlined" style="font-size: 18px;">code</span> GitHub</button>
-              </div>
-            </div>
-            <div style="padding: 24px;">
-              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
-                <span class="chip" style="font-size: 12px; pointer-events: none;">Python</span>
-                <span class="chip" style="font-size: 12px; pointer-events: none;">PyTorch</span>
-                <span class="chip" style="font-size: 12px; pointer-events: none;">FastAPI</span>
-              </div>
-              <h3 class="font-headline-md" style="margin-bottom: 8px;">Cortex Analytics Platform</h3>
-              <p class="font-body-md" style="color: var(--color-on-surface-variant); font-size: 15px;">
-                Next-generation predictive engine leveraging deep learning for large-scale enterprise behavioral analysis and market forecasting.
-              </p>
-            </div>
-          </div>
-
-          <!-- Project 4 -->
-          <div class="project-card glass-card hover-float" data-category="cloud" style="border-radius: var(--rounded-xl); overflow: hidden; background-color: var(--color-surface-container-lowest);">
-            <div style="position: relative; aspect-ratio: 16/9; overflow: hidden;" class="group">
-              <img src="images/project-grid.jpg" alt="SmartGrid IoT Hub" class="hover-zoom-img" style="width: 100%; height: 100%; object-fit: cover;"/>
-              <div class="project-overlay" style="position: absolute; inset: 0;">
-                <button class="btn btn-primary font-label-md active-scale"><span class="material-symbols-outlined" style="font-size: 18px;">visibility</span> Démonstration</button>
-                <button class="btn btn-secondary font-label-md active-scale" style="background-color: var(--color-surface-container-lowest); border-color: var(--color-outline-variant);"><span class="material-symbols-outlined" style="font-size: 18px;">code</span> GitHub</button>
-              </div>
-            </div>
-            <div style="padding: 24px;">
-              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
-                <span class="chip" style="font-size: 12px; pointer-events: none;">GoLang</span>
-                <span class="chip" style="font-size: 12px; pointer-events: none;">gRPC</span>
-                <span class="chip" style="font-size: 12px; pointer-events: none;">Docker</span>
-              </div>
-              <h3 class="font-headline-md" style="margin-bottom: 8px;">SmartGrid IoT Hub</h3>
-              <p class="font-body-md" style="color: var(--color-on-surface-variant); font-size: 15px;">
-                Low-latency messaging gateway connecting thousands of industrial IoT sensors to a central monitoring dashboard with real-time alerts.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="pb-stack-lg" style="padding-top: 80px; padding-bottom: 80px; overflow: hidden;">
-      <div class="container">
-        <div style="text-align: center; margin-bottom: var(--space-stack-md);">
-          <span class="chip" style="font-size: 12px; margin-bottom: 16px; font-weight: 700; pointer-events: none; border: none; background-color: var(--color-surface-container-high);">CONFIANCE</span>
-          <h2 class="font-headline-lg">Ils m'ont fait confiance</h2>
-        </div>
-        
-        <div style="position: relative; padding: 0 48px;">
-          <!-- Slider Wrapper -->
-          <div style="overflow: hidden; width: 100%;">
-            <div id="testimonial-slider" style="display: flex; gap: var(--space-gutter); transition: transform 0.5s ease-in-out; will-change: transform;">
-              
-              <!-- Testimonial 1 -->
-              <div class="glass-card" style="min-width: 100%; border-radius: 24px; padding: 32px; flex: 1;">
-                <div style="display: flex; gap: 4px; color: var(--color-secondary); margin-bottom: 16px;">
-                  <span class="material-symbols-outlined filled-icon">star</span>
-                  <span class="material-symbols-outlined filled-icon">star</span>
-                  <span class="material-symbols-outlined filled-icon">star</span>
-                  <span class="material-symbols-outlined filled-icon">star</span>
-                  <span class="material-symbols-outlined filled-icon">star</span>
-                </div>
-                <p class="font-body-md" style="font-style: italic; color: var(--color-on-surface-variant); margin-bottom: 24px; line-height: 1.7;">
-                  "Julien a transformé notre infrastructure vieillissante en un système cloud moderne et scalable. Son expertise a été cruciale pour notre levée de fonds."
-                </p>
-                <div style="display: flex; align-items: center; gap: 16px;">
-                  <div style="width: 48px; height: 48px; border-radius: var(--rounded-full); overflow: hidden; flex-shrink: 0;">
-                    <img src="images/sarah.jpg" alt="Sarah Durand" style="width: 100%; height: 100%; object-fit: cover;"/>
-                  </div>
-                  <div>
-                    <div style="font-weight: 700; color: var(--color-primary);">Sarah Durand</div>
-                    <div class="font-caption" style="color: var(--color-on-surface-variant); text-transform: uppercase;">CEO, TechFlow</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Testimonial 2 -->
-              <div class="glass-card" style="min-width: 100%; border-radius: 24px; padding: 32px; flex: 1;">
-                <div style="display: flex; gap: 4px; color: var(--color-secondary); margin-bottom: 16px;">
-                  <span class="material-symbols-outlined filled-icon">star</span>
-                  <span class="material-symbols-outlined filled-icon">star</span>
-                  <span class="material-symbols-outlined filled-icon">star</span>
-                  <span class="material-symbols-outlined filled-icon">star</span>
-                  <span class="material-symbols-outlined filled-icon">star</span>
-                </div>
-                <p class="font-body-md" style="font-style: italic; color: var(--color-on-surface-variant); margin-bottom: 24px; line-height: 1.7;">
-                  "Une vision stratégique rare couplée à une maîtrise technique impressionnante. Julien est un atout pour n'importe quelle équipe tech."
-                </p>
-                <div style="display: flex; align-items: center; gap: 16px;">
-                  <div style="width: 48px; height: 48px; border-radius: var(--rounded-full); overflow: hidden; flex-shrink: 0;">
-                    <img src="images/marc.jpg" alt="Marc Voisin" style="width: 100%; height: 100%; object-fit: cover;"/>
-                  </div>
-                  <div>
-                    <div style="font-weight: 700; color: var(--color-primary);">Marc Voisin</div>
-                    <div class="font-caption" style="color: var(--color-on-surface-variant); text-transform: uppercase;">CTO, DataWave</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Testimonial 3 -->
-              <div class="glass-card" style="min-width: 100%; border-radius: 24px; padding: 32px; flex: 1;">
-                <div style="display: flex; gap: 4px; color: var(--color-secondary); margin-bottom: 16px;">
-                  <span class="material-symbols-outlined filled-icon">star</span>
-                  <span class="material-symbols-outlined filled-icon">star</span>
-                  <span class="material-symbols-outlined filled-icon">star</span>
-                  <span class="material-symbols-outlined filled-icon">star</span>
-                  <span class="material-symbols-outlined filled-icon">star</span>
-                </div>
-                <p class="font-body-md" style="font-style: italic; color: var(--color-on-surface-variant); margin-bottom: 24px; line-height: 1.7;">
-                  "Excellent consultant, pédagogue et très rigoureux. Il nous a aidés à recruter et structurer notre pôle ingénierie."
-                </p>
-                <div style="display: flex; align-items: center; gap: 16px;">
-                  <div style="width: 48px; height: 48px; border-radius: var(--rounded-full); overflow: hidden; flex-shrink: 0;">
-                    <img src="images/thomas.jpg" alt="Thomas Petit" style="width: 100%; height: 100%; object-fit: cover;"/>
-                  </div>
-                  <div>
-                    <div style="font-weight: 700; color: var(--color-primary);">Thomas Petit</div>
-                    <div class="font-caption" style="color: var(--color-on-surface-variant); text-transform: uppercase;">Fondateur, Innovate</div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <!-- Slider Actions -->
-          <button class="theme-toggle-btn active-scale glass-card" id="prevBtn" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: var(--rounded-full); z-index: 10;">
-            <span class="material-symbols-outlined">chevron_left</span>
-          </button>
-          <button class="theme-toggle-btn active-scale glass-card" id="nextBtn" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: var(--rounded-full); z-index: 10;">
-            <span class="material-symbols-outlined">chevron_right</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Final Section -->
-    <section class="pb-stack-lg" style="padding-top: 80px; padding-bottom: 80px;">
-      <div class="container">
-        <div style="background-color: var(--color-primary); color: var(--color-on-primary); border-radius: 3rem; padding: var(--space-stack-lg) 24px; text-align: center; box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);" class="reveal">
-          <h2 class="font-display-lg" style="color: var(--color-on-primary); margin-bottom: 24px; line-height: 1.2;">Prêt à lancer votre projet ?</h2>
-          <p class="font-body-lg" style="color: rgba(255,255,255,0.7); max-w: 640px; margin: 0 auto 40px auto;">
-            Qu'il s'agisse d'une refonte complète ou d'un besoin de conseil ponctuel, discutons de vos défis technologiques.
-          </p>
-          <div style="display: flex; flex-direction: column; justify-content: center; gap: 16px;" class="hero-buttons">
-            <a href="contact.html" class="btn btn-primary active-scale" style="background-color: var(--color-on-primary); color: var(--color-primary); border-radius: 1rem; padding: 18px 40px;">
-              Démarrer une conversation
-            </a>
-            <a href="https://linkedin.com" target="_blank" class="btn btn-secondary active-scale" style="border-color: rgba(255,255,255,0.3); color: var(--color-on-primary); border-radius: 1rem; padding: 18px 40px;">
-              Suivre sur LinkedIn
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <div class="logo-wrapper">
-            <span class="material-symbols-outlined">architecture</span>
-            <span class="font-headline-md">ARCHITECT.PRO</span>
-          </div>
-          <p class="font-body-md" style="color: var(--color-on-surface-variant); max-w: 320px;">
-            Solutions d'ingénierie premium pour entreprises exigeantes.
-          </p>
-        </div>
-        <div class="footer-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
-          <div>
-            <h4 class="font-label-md" style="color: var(--color-primary); font-weight: 700; margin-bottom: 16px;">Navigation</h4>
-            <div class="footer-links">
-              <a href="index.html" class="font-body-md" style="color: var(--color-on-surface-variant);">Accueil</a>
-              <a href="services.html" class="font-body-md" style="color: var(--color-on-surface-variant);">Services</a>
-              <a href="about.html" class="font-body-md" style="color: var(--color-on-surface-variant);">À propos</a>
-            </div>
-          </div>
-          <div>
-            <h4 class="font-label-md" style="color: var(--color-primary); font-weight: 700; margin-bottom: 16px;">Réseaux</h4>
-            <div class="footer-links">
-              <a href="https://linkedin.com" target="_blank" class="font-body-md" style="color: var(--color-on-surface-variant);">LinkedIn</a>
-              <a href="https://github.com" target="_blank" class="font-body-md" style="color: var(--color-on-surface-variant);">GitHub</a>
-              <a href="https://malt.fr" target="_blank" class="font-body-md" style="color: var(--color-on-surface-variant);">Malt</a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4 class="font-label-md" style="color: var(--color-primary); font-weight: 700; margin-bottom: 16px;">Contact</h4>
-          <div style="display: flex; flex-direction: column; gap: 12px; color: var(--color-on-surface-variant);">
-            <div style="display: flex; align-items: center; gap: 12px;">
-              <span class="material-symbols-outlined" style="font-size: 20px;">mail</span>
-              <span class="font-body-md">hello@architect.pro</span>
-            </div>
-            <div style="display: flex; align-items: center; gap: 12px;">
-              <span class="material-symbols-outlined" style="font-size: 20px;">location_on</span>
-              <span class="font-body-md">Paris, FR / Remote</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <span class="font-caption" style="color: var(--color-on-surface-variant);">© 2026 Senior Architect Portfolio. Tous droits réservés.</span>
-        <div style="display: flex; gap: 24px;">
-          <a href="#" class="font-caption" style="color: var(--color-on-surface-variant);">Mentions Légales</a>
-          <a href="#" class="font-caption" style="color: var(--color-on-surface-variant);">Privacy Policy</a>
-        </div>
-      </div>
     </div>
-  </footer>
+</section>
+<!-- Testimonials -->
+<section class="py-stack-lg bg-surface-container-lowest dark:bg-inverse-surface/10 overflow-hidden">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop">
+        <div class="mb-stack-md text-center">
+            <span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Endorsements</span>
+            <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary dark:text-inverse-on-surface">Academic &amp; Professional Support</h2>
+        </div>
+        <div class="relative px-12">
+            <div class="flex gap-gutter transition-transform duration-500 ease-in-out" id="testimonial-slider">
+                <!-- Testimonial 1 : Stage OMEGA-TECH -->
+                <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.33%-16px)] glass-card p-stack-md rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex gap-1 text-secondary mb-4">
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
+                        </div>
+                        <p class="font-body-md text-body-md italic text-on-surface-variant dark:text-outline-variant mb-6">
+                            "Perside showed great autonomy during her internship. Her rigorous integration of Figma designs into WordPress and her clear focus on environment security were highly appreciated."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden bg-secondary/10 flex items-center justify-center text-secondary font-bold shrink-0">
+                            <img class="w-full h-full object-cover hidden" alt="OMEGA-TECH" src="images/rec_omega.jpeg" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"/>
+                            <span class="text-sm" translate="no">OT</span>
+                        </div>
+                        <div>
+                            <div class="font-bold text-primary dark:text-inverse-on-surface text-sm">Internship Supervisor</div>
+                            <div class="text-caption text-on-surface-variant dark:text-outline-variant uppercase">OMEGA-TECH, Benin</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 : École des Métiers du Numérique -->
+                <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.33%-16px)] glass-card p-stack-md rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex gap-1 text-secondary mb-4">
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
+                        </div>
+                        <p class="font-body-md text-body-md italic text-on-surface-variant dark:text-outline-variant mb-6">
+                            "A serious student who is deeply passionate about network defense challenges. Her technical lab work on SOC attack simulations like the EMN Machine shows excellent methodology."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden bg-secondary/10 flex items-center justify-center text-secondary font-bold shrink-0">
+                            <img class="w-full h-full object-cover hidden" alt="EMN" src="images/rec_emn.jpeg" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"/>
+                            <span class="text-sm" translate="no">EM</span>
+                        </div>
+                        <div>
+                            <div class="font-bold text-primary dark:text-inverse-on-surface text-sm">Faculty Board</div>
+                            <div class="text-caption text-on-surface-variant dark:text-outline-variant uppercase">École des Métiers du Numérique</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 : Université / Projets Académiques -->
+                <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.33%-16px)] glass-card p-stack-md rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex gap-1 text-secondary mb-4">
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
+                        </div>
+                        <p class="font-body-md text-body-md italic text-on-surface-variant dark:text-outline-variant mb-6">
+                            "Perside possesses a very compelling dual skill set in code and security. Her engagement in the secure HTML/PHP telemedicine management platform project was exemplary."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden bg-secondary/10 flex items-center justify-center text-secondary font-bold shrink-0">
+                            <img class="w-full h-full object-cover hidden" alt="Université" src="images/rec_univ.jpeg" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"/>
+                            <span class="text-sm" translate="no">UP</span>
+                        </div>
+                        <div>
+                            <div class="font-bold text-primary dark:text-inverse-on-surface text-sm">Research Professor</div>
+                            <div class="text-caption text-on-surface-variant dark:text-outline-variant uppercase">Academic Degree, Parakou</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-all" id="prevBtn">
+                <span class="material-symbols-outlined" translate="no">chevron_left</span>
+            </button>
+            <button class="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-all" id="nextBtn">
+                <span class="material-symbols-outlined" translate="no">chevron_right</span>
+            </button>
+        </div>
+    </div>
+</section>
+<!-- CTA Final -->
+<section class="py-stack-lg relative overflow-hidden" id="contact">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop relative z-10">
+        <div class="bg-primary text-on-primary rounded-[3rem] p-stack-lg text-center shadow-2xl" data-aos="zoom-in">
+            <h2 class="font-bold text-2xl md:text-4xl mb-6">Ready to Secure Your Infrastructure?</h2>
+            <p class="font-body-lg text-body-lg text-on-primary/70 mb-stack-md max-w-2xl mx-auto">
+                Looking for a rigorous collaborator to reinforce your SOC operations or audit your web applications? Let's discuss your cybersecurity challenges.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <!-- Lien direct vers votre boîte email -->
+                <a class="bg-on-primary text-primary px-10 py-5 rounded-2xl font-headline-md text-headline-md transition-all hover:scale-105 active:scale-95 shadow-lg flex items-center justify-center gap-2" href="mailto:degbeperside@gmail.com">
+                    <span class="material-symbols-outlined text-xl" translate="no">mail</span> Start a Conversation
+                </a>
+                <!-- Lien direct vers votre profil LinkedIn -->
+                <a class="border border-on-primary/30 text-on-primary px-10 py-5 rounded-2xl font-headline-md text-headline-md transition-all hover:bg-on-primary/10 active:scale-95 flex items-center justify-center gap-2" href="https://www.linkedin.com/in/perside-degbe-154454273/" target="_blank">
+                    Follow on LinkedIn
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-surface-container-lowest dark:bg-tertiary-container border-t border-outline-variant dark:border-outline">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter items-start">
+        <div class="space-y-4">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary dark:text-secondary-fixed" style="font-size: 28px;" translate="no">shield</span>
+                <span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-on-surface" translate="no">CYBERSEC.PRO</span>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant max-w-xs">
+                Audit, secure coding practices, and digital threat surveillance services.
+            </p>
+        </div>
+        <div class="grid grid-cols-2 gap-stack-md">
+            <!-- Remplacement de la navigation par vos expertises métiers avec alignement strict des polices -->
+            <div class="flex flex-col gap-2">
+                <span class="font-label-md text-label-md text-primary dark:text-inverse-on-surface font-bold uppercase mb-2">Core Focus</span>
+                <span class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">SOC Operations</span>
+                <span class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">AppSec Testing</span>
+                <span class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">Risk Analysis</span>
+            </div>
+            <div class="flex flex-col gap-2">
+                <span class="font-label-md text-label-md text-primary dark:text-inverse-on-surface font-bold uppercase mb-2" translate="no">Networks</span>
+                <a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-all" href="https://www.linkedin.com/in/perside-degbe-154454273/" target="_blank">LinkedIn</a>
+                <a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-all" href="https://github.com/Perside18" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="flex flex-col gap-4">
+            <span class="font-label-md text-label-md text-primary dark:text-inverse-on-surface font-bold uppercase mb-2" translate="no">Contact</span>
+            <div class="flex items-center gap-3 text-on-surface-variant dark:text-outline-variant">
+                <span class="material-symbols-outlined" translate="no">mail</span>
+                <a href="mailto:degbeperside@gmail.com" class="font-body-md text-body-md hover:text-secondary transition-all">degbeperside@gmail.com</a>
+            </div>
+            <!-- Contact WhatsApp direct configuré avec votre numéro -->
+            <div class="flex items-center gap-3 text-on-surface-variant dark:text-outline-variant">
+                <span class="material-symbols-outlined text-emerald-500" translate="no">chat</span>
+                <a href="https://wa.me" target="_blank" class="font-body-md text-body-md hover:text-secondary transition-all font-semibold text-emerald-600 dark:text-emerald-400">+229 01 59 53 10 38</a>
+            </div>
+            <div class="flex items-center gap-3 text-on-surface-variant dark:text-outline-variant">
+                <span class="material-symbols-outlined" translate="no">location_on</span>
+                <span class="font-body-md text-body-md" translate="no">Cotonou, Benin / Remote</span>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop mt-stack-lg pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between gap-4 text-caption text-on-surface-variant dark:text-outline-variant">
+        <span>© 2026 Perside DEGBE. All rights reserved.</span>
+        <div class="flex gap-4">
+            <a class="hover:text-primary" href="#">Legal Terms</a>
+            <a class="hover:text-primary" href="#">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+<!-- AOS & Custom Scripts -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"> </script> 
+<script>
+    // Initialization
+    AOS.init({
+        duration: 800,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 120
+    });
 
-  <!-- Scripts -->
-  <script src="js/main.js"></script>
-  <script src="js/navigation.js"></script>
-  <script src="js/animations.js"></script>
+    // Testimonial Slider Logic
+    const slider = document.getElementById('testimonial-slider');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentIdx = 0;
+
+    function updateSlider() {
+        if (!slider || !slider.firstElementChild) return;
+        const cardWidth = slider.firstElementChild.offsetWidth + 24; // Width + gutter
+        slider.style.transform = `translateX(-${currentIdx * cardWidth}px)`;
+    }
+
+    if (nextBtn && prevBtn && slider) {
+        nextBtn.addEventListener('click', () => {
+            const maxIdx = slider.children.length - (window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1);
+            if (currentIdx < maxIdx) {
+                currentIdx++;
+                updateSlider();
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIdx > 0) {
+                currentIdx--;
+                updateSlider();
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            currentIdx = 0;
+            updateSlider();
+        });
+    }
+
+    // Navbar Scroll Effect
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (!header) return;
+        if (window.scrollY > 50) {
+            header.classList.add('shadow-xl', 'h-16');
+            header.classList.remove('h-20');
+        } else {
+            header.classList.remove('shadow-xl', 'h-16');
+            header.classList.add('h-20');
+        }
+    });
+</script>
 </body>
 </html>

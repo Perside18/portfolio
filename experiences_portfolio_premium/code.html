@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>À Propos | ARCHITECT.PRO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hover-float {
+            transition: transform 0.2s ease-in-out;
+        }
+        .hover-float:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2f3131",
+                        "tertiary-fixed": "#e0e3e5",
+                        "outline-variant": "#c6c6cd",
+                        "on-background": "#1a1c1c",
+                        "tertiary": "#000000",
+                        "background": "#f9f9f9",
+                        "on-tertiary-fixed": "#191c1e",
+                        "primary-container": "#131b2e",
+                        "inverse-on-surface": "#f0f1f1",
+                        "tertiary-fixed-dim": "#c4c7c9",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-variant": "#e2e2e2",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "surface": "#f9f9f9",
+                        "outline": "#76777d",
+                        "secondary-container": "#2170e4",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#d8e2ff",
+                        "surface-tint": "#565e74",
+                        "on-primary-container": "#7c839b",
+                        "surface-dim": "#dadada",
+                        "surface-container-highest": "#e2e2e2",
+                        "primary": "#000000",
+                        "surface-container-low": "#f3f3f4",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-container": "#191c1e",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "on-surface-variant": "#45464d",
+                        "on-primary-fixed": "#131b2e",
+                        "secondary": "#0058be",
+                        "inverse-primary": "#bec6e0",
+                        "on-tertiary-container": "#818486",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#fefcff",
+                        "on-secondary-fixed": "#001a42",
+                        "surface-container": "#eeeeee",
+                        "on-secondary-fixed-variant": "#004395",
+                        "surface-bright": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#dae2fd",
+                        "primary-fixed-dim": "#bec6e0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "stack-sm": "16px",
+                        "stack-lg": "80px",
+                        "margin-desktop": "64px",
+                        "stack-md": "32px"
+                    },
+                    "fontFamily": {
+                        "caption": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "caption": ["12px", {"lineHeight": "1.4", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-container/20 backdrop-blur-md border-b border-white/30 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition-all duration-300">
+<div class="max-w-[1200px] mx-auto px-margin-desktop h-20 flex items-center justify-between">
+    
+    <!-- Bloc Logo (Gauche) -->
+    <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-secondary text-3xl" translate="no">shield</span>
+        <span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-on-surface tracking-tight" translate="no">CYBERSEC.PRO</span>
+    </div>
+
+    <!-- Bloc Menu de Liens (Milieu) relié à vos 5 pages réelles -->
+    <nav class="hidden md:flex items-center gap-8">
+        <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="../index.html">Home</a>
+        <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="../portfolio_portfolio_premium/code.html">Projects</a>
+        <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="../comp_tences_portfolio_premium/code.html">Skills</a>
+        <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="../certifications_portfolio_premium/code.html">Certifications</a>
+        <a class="font-label-md text-label-md uppercase tracking-wider text-secondary relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-secondary after:rounded-full" href="code.html">Experiences</a> 
+        <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="../contact_portfolio_premium/code.html">Contact</a>
+       
+        <!-- Bouton de changement de mode global -->
+        <span class="material-symbols-outlined text-primary dark:text-inverse-on-surface cursor-pointer active:scale-95 transition-transform" onclick="document.documentElement.classList.toggle('dark')" translate="no">dark_mode</span>
+    </nav>
+    
+    <!-- Bouton Mobile Menu -->
+    <button class="md:hidden material-symbols-outlined text-primary dark:text-inverse-on-surface" translate="no">menu</button>
+</div>
+</header>
+
+<main class="pt-32 pb-stack-lg bg-surface text-on-surface dark:bg-inverse-surface dark:text-inverse-on-surface transition-colors duration-300 min-h-screen">
+<!-- Hero Section / Biography -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md items-center">
+<div class="order-2 md:order-1 text-left">
+    <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-slate-900 dark:text-white font-bold tracking-tight mb-stack-sm transition-colors">Securing the Future, <span class="text-secondary dark:text-blue-400">Byte by Byte.</span></h2>
+    <p class="font-body-lg text-body-lg text-on-surface-variant dark:text-slate-300 mb-stack-md max-w-xl leading-relaxed transition-colors">
+        As a dedicated Cybersecurity Analyst specializing in defensive Blue Team operations and secure software ecosystems, I inspect infrastructure logs and audit applications to dismantle threats before execution.
+    </p>
+    <p class="font-body-md text-sm text-on-surface-variant dark:text-slate-400 leading-relaxed transition-colors">
+        Graduated from the École des Métiers du Numérique (EMN) and holding a Bachelor's Degree in Management Information Systems, I combine tactical network telemetry monitoring (Zeek, Wireshark) with strict code sanitization auditing (OWASP Top 10) to construct resilient digital boundaries.
+    </p>
+</div>
+<div class="order-1 md:order-2 flex justify-center">
+<div class="relative w-full aspect-square max-w-md">
+<div class="absolute inset-0 bg-secondary rounded-full opacity-5 blur-3xl"></div>
+<!-- Utilisation de la photo professionnelle fournie à la place de l'image par défaut -->
+<img class="w-full h-full object-cover rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" alt="Perside DEGBE - Cybersecurity Analyst" src="../images/Portfolio_DPUS.jpeg"/>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Vision & Values (Bento Grid Layout) -->
+<section class="bg-surface-container-low py-stack-lg border-t border-b border-slate-100 dark:border-zinc-700/40">
+<div class="max-w-[1200px] mx-auto px-margin-desktop">
+<div class="mb-stack-md text-center">
+<h2 class="font-headline-lg text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">Vision &amp; Core Values</h2>
+<div class="w-12 h-1 bg-secondary mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Value 1 : Proactive Defense -->
+<div class="bg-white dark:bg-zinc-800 border border-slate-100 dark:border-zinc-700/50 p-stack-md rounded-3xl shadow-[0_10px_30px_rgba(15,23,42,0.04)] h-auto min-h-[220px] transition-all duration-300">
+<span class="material-symbols-outlined text-secondary dark:text-blue-400 text-4xl mb-4" translate="no">lightbulb</span>
+<h3 class="font-headline-md text-lg font-bold text-slate-900 dark:text-white mb-2">Proactive Defense</h3>
+<p class="font-body-md text-sm text-slate-600 dark:text-zinc-300 leading-relaxed">Anticipating vector trends by combining active network monitoring analytics with rigorous penetration testing routines.</p>
+</div>
+<!-- Value 2 : Data Resilience -->
+<div class="bg-white dark:bg-zinc-800 border border-slate-100 dark:border-zinc-700/50 p-stack-md rounded-3xl shadow-[0_10px_30px_rgba(15,23,42,0.04)] h-auto min-h-[220px] transition-all duration-300">
+<span class="material-symbols-outlined text-secondary dark:text-blue-400 text-4xl mb-4" translate="no">shield</span>
+<h3 class="font-headline-md text-lg font-bold text-slate-900 dark:text-white mb-2">Data Resilience</h3>
+<p class="font-body-md text-sm text-slate-600 dark:text-zinc-300 leading-relaxed">Securing information boundaries, implementing clean input sanitization, and safeguarding critical database instances.</p>
+</div>
+<!-- Value 3 : Zero-Trust Governance -->
+<div class="bg-white dark:bg-zinc-800 border border-slate-100 dark:border-zinc-700/50 p-stack-md rounded-3xl shadow-[0_10px_30px_rgba(15,23,42,0.04)] h-auto min-h-[220px] transition-all duration-300">
+<span class="material-symbols-outlined text-secondary dark:text-blue-400 text-4xl mb-4" translate="no">policy</span>
+<h3 class="font-headline-md text-lg font-bold text-slate-900 dark:text-white mb-2">Zero-Trust Governance</h3>
+<p class="font-body-md text-sm text-slate-600 dark:text-zinc-300 leading-relaxed">Structuring strategic threat modeling benchmarks and risk evaluations using vetted national frameworks like EBIOS RM.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Career & Internships Timeline Section -->
+<section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg">
+    <h2 class="font-headline-lg text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-stack-md text-left">Professional Experience</h2>
+    <div class="relative border-l-2 border-slate-200 dark:border-zinc-700 ml-4 pl-8 space-y-stack-md text-left">
+        
+        <!-- Stage 1 : Moov Africa (Stage Actuel) -->
+        <div class="relative" data-aos="fade-up">
+            <div class="absolute -left-[41px] top-1 w-4 h-4 bg-secondary rounded-full ring-4 ring-white dark:ring-zinc-900"></div>
+            <span class="font-label-md text-xs font-bold text-secondary uppercase tracking-widest">2026 - Present</span>
+            <h3 class="font-headline-md text-lg font-bold text-slate-900 dark:text-white mt-1">Cybersecurity Analyst Intern — Moov Africa (Executive Management)</h3>
+            <p class="font-body-md text-sm text-slate-600 dark:text-zinc-300 mt-2 max-w-2xl leading-relaxed">
+                Active operational engagement within the corporate cybersecurity defense perimeter. Managing real-time data monitoring protocols, triaging incoming SIEM event streams, resolving architectural detection alerts, and enforcing security baseline configurations.
+            </p>
+        </div>
+
+        <!-- Stage 2 : Université de Parakou -->
+        <div class="relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="absolute -left-[41px] top-1 w-4 h-4 bg-slate-300 dark:bg-zinc-600 rounded-full ring-4 ring-white dark:ring-zinc-900"></div>
+            <span class="font-label-md text-xs font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-widest">Apr 2025 - Jul 2025</span>
+            <h3 class="font-headline-md text-lg font-bold text-slate-900 dark:text-white mt-1">IT &amp; Systems Security Intern — University of Parakou</h3>
+            <p class="font-body-md text-sm text-slate-600 dark:text-zinc-300 mt-2 max-w-2xl leading-relaxed">
+                Maintained infrastructure endpoints, conducted workstation diagnostic evaluations, and deployed remediation patterns for system hardening. Collaborated actively in the internal workflow digitization initiatives across university departments.
+            </p>
+        </div>
+
+        <!-- Stage 3 : OMEGA-TECH -->
+        <div class="relative" data-aos="fade-up" data-aos-delay="200">
+            <div class="absolute -left-[41px] top-1 w-4 h-4 bg-slate-300 dark:bg-zinc-600 rounded-full ring-4 ring-white dark:ring-zinc-900"></div>
+            <span class="font-label-md text-xs font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-widest">Jun 2024 - Sep 2024</span>
+            <h3 class="font-headline-md text-lg font-bold text-slate-900 dark:text-white mt-1">Web Development &amp; Database Intern — OMEGA-TECH</h3>
+            <p class="font-body-md text-sm text-slate-600 dark:text-zinc-300 mt-2 max-w-2xl leading-relaxed">
+                Engineered custom corporate layouts translating Figma structural blueprints into active responsive WordPress ecosystems. Hardened application database layers using structured SQL input controls and sanitized backend application workflows.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Personal Attributes & Future Objectives -->
+<section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-stack-lg pb-stack-lg">
+    <!-- Professional Attributes based on your CV -->
+    <div class="text-left" data-aos="fade-right">
+        <h2 class="font-headline-lg text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-stack-md">Core Competencies</h2>
+        <div class="space-y-4">
+            <div class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-slate-100 dark:bg-zinc-800 dark:border-zinc-700/40 shadow-sm">
+                <span class="material-symbols-outlined text-secondary dark:text-blue-400" translate="no">verified_user</span>
+                <span class="font-body-md text-sm text-slate-800 dark:text-zinc-200 font-bold">Log Carving &amp; Incident Triage (Zeek, MITRE ATT&CK)</span>
+            </div>
+            <div class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-slate-100 dark:bg-zinc-800 dark:border-zinc-700/40 shadow-sm">
+                <span class="material-symbols-outlined text-secondary dark:text-blue-400" translate="no">gavel</span>
+                <span class="font-body-md text-sm text-slate-800 dark:text-zinc-200 font-bold">Vulnerability Assessment &amp; Code Hardening (OWASP)</span>
+            </div>
+            <div class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-slate-100 dark:bg-zinc-800 dark:border-zinc-700/40 shadow-sm">
+                <span class="material-symbols-outlined text-secondary dark:text-blue-400" translate="no">terminal</span>
+                <span class="font-body-md text-sm text-slate-800 dark:text-zinc-200 font-bold">Defensive Scripting &amp; Database Controls (PHP, SQL)</span>
+            </div>
+            <div class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-slate-100 dark:bg-zinc-800 dark:border-zinc-700/40 shadow-sm">
+                <span class="material-symbols-outlined text-secondary dark:text-blue-400" translate="no">psychology</span>
+                <span class="font-body-md text-sm text-slate-800 dark:text-zinc-200 font-bold">Analytical Rigor, Resilience &amp; Adaptive Learning</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Future Goals -->
+    <div class="bg-slate-900 text-white p-stack-md rounded-3xl flex flex-col justify-center relative overflow-hidden text-left shadow-lg" data-aos="fade-left">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+        <h2 class="font-headline-lg text-2xl font-bold mb-4 relative z-10">Strategic Objectives</h2>
+        <p class="font-body-md text-sm text-slate-300 mb-6 relative z-10 leading-relaxed">
+            My objective is to systematically strengthen information infrastructure resilience by integrating advanced automated validation models. I am actively working to safeguard enterprise assets and expand detection capabilities across multi-region telecom perimeters.
+        </p>
+        <div class="relative z-10">
+            <a class="inline-block px-8 py-3 bg-secondary text-white rounded-xl font-label-md text-xs font-bold uppercase tracking-widest hover:bg-blue-600 transition-all active:scale-95 shadow-md text-center" href="../contact_portfolio_premium/code.html">
+                Initiate Consultation
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-surface-container-lowest dark:bg-tertiary-container border-t border-outline-variant dark:border-outline">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter items-start">
+        <div class="space-y-4">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary dark:text-secondary-fixed" style="font-size: 28px;" translate="no">shield</span>
+                <span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-on-surface" translate="no">CYBERSEC.PRO</span>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant max-w-xs">
+                Audit, secure coding practices, and digital threat surveillance services.
+            </p>
+        </div>
+        <div class="grid grid-cols-2 gap-stack-md">
+            <!-- Remplacement de la navigation par vos expertises métiers avec alignement strict des polices -->
+            <div class="flex flex-col gap-2">
+                <span class="font-label-md text-label-md text-primary dark:text-inverse-on-surface font-bold uppercase mb-2">Core Focus</span>
+                <span class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">SOC Operations</span>
+                <span class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">AppSec Testing</span>
+                <span class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">Risk Analysis</span>
+            </div>
+            <div class="flex flex-col gap-2">
+                <span class="font-label-md text-label-md text-primary dark:text-inverse-on-surface font-bold uppercase mb-2" translate="no">Networks</span>
+                <a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-all" href="https://www.linkedin.com/in/perside-degbe-154454273/" target="_blank">LinkedIn</a>
+                <a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-all" href="https://github.com/Perside18" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="flex flex-col gap-4">
+            <span class="font-label-md text-label-md text-primary dark:text-inverse-on-surface font-bold uppercase mb-2" translate="no">Contact</span>
+            <div class="flex items-center gap-3 text-on-surface-variant dark:text-outline-variant">
+                <span class="material-symbols-outlined" translate="no">mail</span>
+                <a href="mailto:degbeperside@gmail.com" class="font-body-md text-body-md hover:text-secondary transition-all">degbeperside@gmail.com</a>
+            </div>
+            <!-- Contact WhatsApp direct configuré avec votre numéro -->
+            <div class="flex items-center gap-3 text-on-surface-variant dark:text-outline-variant">
+                <span class="material-symbols-outlined text-emerald-500" translate="no">chat</span>
+                <a href="https://wa.me" target="_blank" class="font-body-md text-body-md hover:text-secondary transition-all font-semibold text-emerald-600 dark:text-emerald-400">+229 01 59 53 10 38</a>
+            </div>
+            <div class="flex items-center gap-3 text-on-surface-variant dark:text-outline-variant">
+                <span class="material-symbols-outlined" translate="no">location_on</span>
+                <span class="font-body-md text-body-md" translate="no">Cotonou, Benin / Remote</span>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop mt-stack-lg pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between gap-4 text-caption text-on-surface-variant dark:text-outline-variant">
+        <span>© 2026 Perside DEGBE. All rights reserved.</span>
+        <div class="flex gap-4">
+            <a class="hover:text-primary" href="#">Legal Terms</a>
+            <a class="hover:text-primary" href="#">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+<script>
+        // Simple Intersection Observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
+            observer.observe(section);
+        });
+    </script>
+</body></html>

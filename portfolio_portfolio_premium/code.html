@@ -148,142 +148,152 @@
   </head>
 <body class="font-body-md text-on-surface selection:bg-secondary/20 overflow-x-hidden">
 <!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-surface-container/20 backdrop-blur-md border-b border-white/30 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
+<header class="fixed top-0 w-full z-50 bg-surface-container/20 backdrop-blur-md border-b border-white/30 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition-all duration-300">
 <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop h-20 flex items-center justify-between">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary text-headline-md">architecture</span>
-<span class="font-headline-md text-headline-md font-bold text-primary tracking-tight">ARCHITECT.PRO</span>
-</div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
-<a class="font-label-md text-label-md uppercase tracking-wider text-secondary relative nav-dot-active" href="#">Portfolio</a>
-<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Services</a>
-<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+    
+    <!-- Bloc Logo (Gauche) -->
+    <div class="flex items-center gap-3">
+        <span class="material-symbols-outlined text-secondary text-headline-md" translate="no">shield</span>
+        <span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-on-surface tracking-tight">CYBERSEC.PRO</span>
+    </div>
+
+    <!-- Bloc Menu de Liens (Milieu) -->
+    <nav class="hidden md:flex items-center gap-8">
+    <!-- Corrigé : Sort du dossier actuel pour pointer directement vers l'index à la racine -->
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="../index.html">Home</a>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-secondary relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-secondary after:rounded-full" href="code.html">Projects</a>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="../comp_tences_portfolio_premium/code.html">Skills</a>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="../certifications_portfolio_premium/code.html">Certifications</a>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="../experiences_portfolio_premium/code.html">Experiences</a>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="../contact_portfolio_premium/code.html">Contact</a>
 </nav>
-<button class="active:scale-95 transition-transform text-primary">
-<span class="material-symbols-outlined">dark_mode</span>
-</button>
+    <!-- Bloc Boutons Action (Droite) -->
+    <button class="active:scale-95 transition-transform text-primary dark:text-inverse-on-surface" onclick="document.documentElement.classList.toggle('dark')" translate="no">
+        <span class="material-symbols-outlined">dark_mode</span>
+    </button>
+
 </div>
 </header>
-<main class="pt-32 pb-stack-lg">
+<main class="pt-32 pb-stack-lg bg-surface text-on-surface dark:bg-inverse-surface dark:text-inverse-on-surface transition-colors duration-300 min-h-screen">
 <!-- Hero Section -->
 <section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop mb-stack-lg" data-aos="fade-up">
-<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-stack-sm max-w-3xl">
-                Engineering <span class="text-secondary">Digital</span> Architectures.
-            </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-                A showcase of high-performance technical solutions, cloud infrastructures, and complex system designs built for scale and reliability.
-            </p>
+    <!-- Le titre principal bascule en blanc pur en mode sombre et s'adapte au profil SecOps -->
+    <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-slate-900 dark:text-white mb-stack-sm max-w-3xl font-bold tracking-tight transition-colors">
+        Engineering <span class="text-secondary dark:text-blue-400">Secure Defensive</span> Architectures
+    </h1>
+    <!-- La description passe d'un gris foncé à un argenté lisible sur fond noir -->
+    <p class="font-body-lg text-body-lg text-on-surface-variant dark:text-slate-300 max-w-2xl leading-relaxed transition-colors">
+        A showcase of high-performance security monitoring labs, structural risk remediation workflows, and secure web applications built to mitigate active threat vectors.
+    </p>
 </section>
 <!-- Filters Section -->
 <section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop mb-stack-md" data-aos="fade-up" data-aos-delay="100">
 <div class="flex flex-wrap gap-3">
-<button class="filter-btn active px-6 py-2 rounded-full border border-outline-variant font-label-md text-label-md transition-all duration-200" onclick="filterProjects('all')">All Work</button>
-<button class="filter-btn px-6 py-2 rounded-full border border-outline-variant font-label-md text-label-md transition-all duration-200 hover:border-primary" onclick="filterProjects('cloud')">Cloud Infrastructure</button>
-<button class="filter-btn px-6 py-2 rounded-full border border-outline-variant font-label-md text-label-md transition-all duration-200 hover:border-primary" onclick="filterProjects('fintech')">FinTech Systems</button>
-<button class="filter-btn px-6 py-2 rounded-full border border-outline-variant font-label-md text-label-md transition-all duration-200 hover:border-primary" onclick="filterProjects('ai')">AI Platforms</button>
+<button class="filter-btn active px-6 py-2 rounded-full border border-slate-200 dark:border-zinc-700 bg-secondary text-white font-label-md text-label-md transition-all duration-200" onclick="filterProjects('all')">All Labs</button>
+<button class="filter-btn px-6 py-2 rounded-full border border-slate-200 dark:border-zinc-700 font-label-md text-label-md text-slate-700 dark:text-zinc-300 transition-all duration-200 hover:border-secondary dark:hover:border-blue-400" onclick="filterProjects('soc')">SOC &amp; Def Ops</button>
+<button class="filter-btn px-6 py-2 rounded-full border border-slate-200 dark:border-zinc-700 font-label-md text-label-md text-slate-700 dark:text-zinc-300 transition-all duration-200 hover:border-secondary dark:hover:border-blue-400" onclick="filterProjects('appsec')">AppSec Testing</button>
+<button class="filter-btn px-6 py-2 rounded-full border border-slate-200 dark:border-zinc-700 font-label-md text-label-md text-slate-700 dark:text-zinc-300 transition-all duration-200 hover:border-secondary dark:hover:border-blue-400" onclick="filterProjects('risk')">Risk Management</button>
 </div>
 </section>
+
 <!-- Projects Grid -->
 <section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter" id="projects-grid">
-<!-- Project 1 -->
-<div class="project-card group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-category="cloud">
+<!-- Project 1: EMN Machine SOC Lab -->
+<div class="project-card group relative bg-white dark:bg-zinc-800 rounded-3xl border border-slate-100 dark:border-zinc-700/50 overflow-hidden shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-category="soc">
 <div class="relative aspect-video overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A futuristic data center visualized with clean white servers and vibrant blue neon lighting cables. The atmosphere is professional and high-tech, showcasing a premium minimalist aesthetic. Soft ambient shadows and clear reflections on polished surfaces emphasize a sense of immense scale and technological precision in a bright environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv8VApMzDa5QxgDBbUTPpR5nKVfqSwMSD3JWA4jR2ZI-SUiEARwVBA6LgLVwSciW-ASciW02Zwf0qCZduAMOIJtlNMknSzh6BHD98LZ1QIJW72c864xu3mxloeS78yvZr9Xnbjtwb54Fh_MsajYCkM-BlTsqa6xiVQiKZxldpqHDPpDqYUnKflIewK6FVQaucj3C9NlLcpVW2rQPwUZGVwYGbpm0zXoEMSHRqwJfv1SS3ysKov9-XuSEexEhEDpA43RVDanImPfvw2"/>
-<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
-<button class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform">
-<span class="material-symbols-outlined text-[18px]">visibility</span> Démonstration
-                            </button>
-<button class="bg-surface-container-lowest text-primary px-6 py-3 rounded-lg font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform border border-outline-variant">
-<span class="material-symbols-outlined text-[18px]">code</span> GitHub
-                            </button>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="SOC Security Monitoring Workspace" src="../images/rien_que_des_ecrans.jpg"/>
+<div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
+<a class="bg-secondary text-white px-6 py-3 rounded-xl font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform" href="https://github.com" target="_blank">
+<span class="material-symbols-outlined text-[18px]" translate="no">visibility</span> Live Demo
+                            </a>
+<a class="bg-white text-slate-900 px-6 py-3 rounded-xl font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform border border-slate-200" href="https://github.com" target="_blank">
+<span class="material-symbols-outlined text-[18px]" translate="no">code</span> GitHub
+                            </a>
 </div>
 </div>
-<div class="p-stack-md">
+<div class="p-stack-md text-left">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-surface-container-low text-on-primary-fixed font-label-md text-caption rounded-full">AWS Cloud</span>
-<span class="px-3 py-1 bg-surface-container-low text-on-primary-fixed font-label-md text-caption rounded-full">Terraform</span>
-<span class="px-3 py-1 bg-surface-container-low text-on-primary-fixed font-label-md text-caption rounded-full">Kubernetes</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-zinc-700 text-slate-800 dark:text-zinc-200 font-label-md text-xs font-semibold rounded-full" translate="no">Zeek SIEM</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-zinc-700 text-slate-800 dark:text-zinc-200 font-label-md text-xs font-semibold rounded-full" translate="no">MITRE ATT&amp;CK</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-zinc-700 text-slate-800 dark:text-zinc-200 font-label-md text-xs font-semibold rounded-full" translate="no">Hardening</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Nexus Cloud Orchestrator</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                            A highly scalable multi-region deployment framework automating the orchestration of microservices across heterogeneous cloud environments.
+<h3 class="font-headline-md text-xl font-bold text-slate-900 dark:text-white mb-2">EMN Machine: Defensive SOC Simulation</h3>
+<p class="font-body-md text-sm text-slate-600 dark:text-zinc-300 leading-relaxed">
+                            Deployment of an enterprise-grade threat detection environment. Automated capture log analytics parsed through Zeek network stream monitoring to isolate active cyberattack indicators and map infrastructure patches.
                         </p>
 </div>
 </div>
-<!-- Project 2 -->
-<div class="project-card group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100" data-category="fintech">
+
+<!-- Project 2: Secure Telemedicine Management Platform -->
+<div class="project-card group relative bg-white dark:bg-zinc-800 rounded-3xl border border-slate-100 dark:border-zinc-700/50 overflow-hidden shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100" data-category="appsec">
 <div class="relative aspect-video overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of a premium digital banking interface displaying complex data visualizations and financial charts. The design uses a sophisticated light mode palette with deep navy accents and subtle glassmorphism effects on the dashboard cards. High-end typography and precise spacing convey a sense of executive financial security and modern technical innovation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnW4H8IZKqNnkvsYIiopRoT5NwoAQU9rOkJRuIU9a_dR0bdjaKbN61OU_GHQZPELz5vQ5H9snru4TBw5srSm8mJxlkYEWQa5sFhcx9A_MDBfsoKv941pc1SlOGYmC6JHXaopNVrhFOLbN4HfxyKUXNg-lS2_p90jAopWJp-13Vz1otQ28EdPQOMnGvPdHramxM9C1c8Wr8NF3nQr1IwQpPYtCSryN3rIbeHIG27X9VFKHMU_fIuqVSdRBZcFVZ1BOT0IMCIBDVAG0S"/>
-<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
-<button class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform">
-<span class="material-symbols-outlined text-[18px]">visibility</span> Démonstration
-                            </button>
-<button class="bg-surface-container-lowest text-primary px-6 py-3 rounded-lg font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform border border-outline-variant">
-<span class="material-symbols-outlined text-[18px]">code</span> GitHub
-                            </button>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Secure Web Application Dashboard" src="../images/server-room.jpg"/>
+<div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
+<a class="bg-secondary text-white px-6 py-3 rounded-xl font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform" href="https://github.com" target="_blank">
+<span class="material-symbols-outlined text-[18px]" translate="no">visibility</span> Live Demo
+                            </a>
+<a class="bg-white text-slate-900 px-6 py-3 rounded-xl font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform border border-slate-200" href="https://github.com" target="_blank">
+<span class="material-symbols-outlined text-[18px]" translate="no">code</span> GitHub
+                            </a>
 </div>
 </div>
-<div class="p-stack-md">
+<div class="p-stack-md text-left">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-surface-container-low text-on-primary-fixed font-label-md text-caption rounded-full">React</span>
-<span class="px-3 py-1 bg-surface-container-low text-on-primary-fixed font-label-md text-caption rounded-full">Node.js</span>
-<span class="px-3 py-1 bg-surface-container-low text-on-primary-fixed font-label-md text-caption rounded-full">PostgreSQL</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-zinc-700 text-slate-800 dark:text-zinc-200 font-label-md text-xs font-semibold rounded-full" translate="no">HTML / PHP</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-zinc-700 text-slate-800 dark:text-zinc-200 font-label-md text-xs font-semibold rounded-full" translate="no">OWASP Top 10</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-zinc-700 text-slate-800 dark:text-zinc-200 font-label-md text-xs font-semibold rounded-full" translate="no">SQL Injection Prevention</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Equilibrium Ledger</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                            A distributed ledger system designed for real-time transaction processing with bank-grade encryption and audited security protocols.
+<h3 class="font-headline-md text-xl font-bold text-slate-900 dark:text-white mb-2">Secure Telemedicine Management Platform</h3>
+<p class="font-body-md text-sm text-slate-600 dark:text-zinc-300 leading-relaxed">
+                            Architecture and coding of a highly secure medical dashboard platform. Implementing strict input sanitization workflows, robust cryptographic parameters, and cross-site shielding mechanism to deflect OWASP exploitation vectors.
                         </p>
 </div>
 </div>
-<!-- Project 3 -->
-<div class="project-card group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-category="ai">
+<!-- Project 3: Kioptrix Vulnerability Assessment Lab -->
+<div class="project-card group relative bg-white dark:bg-zinc-800 rounded-3xl border border-slate-100 dark:border-zinc-700/50 overflow-hidden shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-category="appsec">
 <div class="relative aspect-video overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A clean, minimalist 3D rendering of abstract neural network nodes connected by glowing silver threads in a bright, white studio space. Soft global illumination and shallow depth of field create an expensive, gallery-like feel. The palette is dominated by whites and grays with electric blue highlights representing data flow and machine learning intelligence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsxbS-GLXtiBpBrNsiTLroLTwB6zgH5UfHHSQKXTcYH-ImyjrQFDSzqF6sIDZZzzt1F-xBg-SgLbTsI1MkBmDIYHt9Jowul13oOkW-A-MXgZp8OFxeRt_SwcUVagy2XmJT8Cf09v-zwCUU6vNPh96QQxSanftoIRpNutmo8-T85Dh356b2gnKbEOwQ-cMppU0sBPaQQtw9xjfWA6jWYN67j8jWYlJBTBM-RpGNLFeQsYaCYgyCqDKFWarAFvqE3mfmJNm1H1S82DkS"/>
-<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
-<button class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform">
-<span class="material-symbols-outlined text-[18px]">visibility</span> Démonstration
-                            </button>
-<button class="bg-surface-container-lowest text-primary px-6 py-3 rounded-lg font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform border border-outline-variant">
-<span class="material-symbols-outlined text-[18px]">code</span> GitHub
-                            </button>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Penetration Testing Laboratory Work" src="../images/cloud-bg.jpg"/>
+<div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
+<!-- Bouton d'action unique GitHub -->
+<a class="bg-white text-slate-900 px-8 py-3 rounded-xl font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform border border-slate-200 shadow-md font-bold" href="https://github.com" target="_blank">
+<span class="material-symbols-outlined text-[18px]" translate="no">code</span> View Technical Report on GitHub
+</a>
 </div>
 </div>
-<div class="p-stack-md">
+<div class="p-stack-md text-left">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-surface-container-low text-on-primary-fixed font-label-md text-caption rounded-full">Python</span>
-<span class="px-3 py-1 bg-surface-container-low text-on-primary-fixed font-label-md text-caption rounded-full">PyTorch</span>
-<span class="px-3 py-1 bg-surface-container-low text-on-primary-fixed font-label-md text-caption rounded-full">FastAPI</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-zinc-700 text-slate-800 dark:text-zinc-200 font-label-md text-xs font-semibold rounded-full" translate="no">Metasploit</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-zinc-700 text-slate-800 dark:text-zinc-200 font-label-md text-xs font-semibold rounded-full" translate="no">Nmap Audit</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-zinc-700 text-slate-800 dark:text-zinc-200 font-label-md text-xs font-semibold rounded-full" translate="no">Privilege Escalation</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Cortex Analytics Platform</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                            Next-generation predictive engine leveraging deep learning for large-scale enterprise behavioral analysis and market forecasting.
+<h3 class="font-headline-md text-xl font-bold text-slate-900 dark:text-white mb-2">Kioptrix: Penetration Testing &amp; Vulnerability Exploitation</h3>
+<p class="font-body-md text-sm text-slate-600 dark:text-zinc-300 leading-relaxed">
+                            Controlled offensive simulation on the Kioptrix system architecture. Execution of scanning routines, network enumeration, exploit deployment targeting legacy demons, and local privilege escalation vectors to acquire root nodes.
                         </p>
 </div>
 </div>
-<!-- Project 4 -->
-<div class="project-card group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_10_30px_rgba(15,23,42,0.05)] transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100" data-category="cloud">
+
+<!-- Project 4: EBIOS RM Risk Assessment Mapping -->
+<div class="project-card group relative bg-white dark:bg-zinc-800 rounded-3xl border border-slate-100 dark:border-zinc-700/50 overflow-hidden shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100" data-category="risk">
 <div class="relative aspect-video overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Elegant architectural visualization of a modern smart building where internal systems are revealed through translucent blueprint-style overlays. The image is bright with high contrast between deep black structure lines and white backgrounds. The scene conveys complex integration of IoT devices and infrastructure in a high-end commercial property context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACg1AZTTa397EwAv9FHCcLynNPrLmwlCEBtAVdzoRJORSAqawwGV9Y6FnqoWcs0ZwJKQcNnqXyiC0ZrhSfaWscWThU3L5YtRp2aqwmOOIruGqG46nEqoxK29-ujYccD6bVj0V3X0I8L6oqJWDdw55go59_90R1JSqoEwJ-9DaHJ5KEdl_ROGgse4bbcLB7IRw5gxzrj-BAaAkXGwbxw4768oN95KmmHkZgcqyeAOHqHBq0cCWf-fzJZPpL8TCbfUwIETb9-jpu95lO"/>
-<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
-<button class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform">
-<span class="material-symbols-outlined text-[18px]">visibility</span> Démonstration
-                            </button>
-<button class="bg-surface-container-lowest text-primary px-6 py-3 rounded-lg font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform border border-outline-variant">
-<span class="material-symbols-outlined text-[18px]">code</span> GitHub
-                            </button>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Secure Corporate Servers Infrastructure" src="../images/serveur_vert.jpg"/>
+<div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
+<!-- Bouton d'action unique GitHub -->
+<a class="bg-white text-slate-900 px-8 py-3 rounded-xl font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform border border-slate-200 shadow-md font-bold" href="https://github.com" target="_blank">
+<span class="material-symbols-outlined text-[18px]" translate="no">code</span> View Risk Mapping on GitHub
+</a>
 </div>
 </div>
-<div class="p-stack-md">
+<div class="p-stack-md text-left">
 <div class="flex flex-wrap gap-2 mb-4">
-<span class="px-3 py-1 bg-surface-container-low text-on-primary-fixed font-label-md text-caption rounded-full">GoLang</span>
-<span class="px-3 py-1 bg-surface-container-low text-on-primary-fixed font-label-md text-caption rounded-full">gRPC</span>
-<span class="px-3 py-1 bg-surface-container-low text-on-primary-fixed font-label-md text-caption rounded-full">Docker</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-zinc-700 text-slate-800 dark:text-zinc-200 font-label-md text-xs font-semibold rounded-full" translate="no">EBIOS RM</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-zinc-700 text-slate-800 dark:text-slate-200 font-label-md text-xs font-semibold rounded-full" translate="no">Risk Matrix</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-zinc-700 text-slate-800 dark:text-zinc-200 font-label-md text-xs font-semibold rounded-full" translate="no">ISMS Governance</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">SmartGrid IoT Hub</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                            Low-latency messaging gateway connecting thousands of industrial IoT sensors to a central monitoring dashboard with real-time alerts.
+<h3 class="font-headline-md text-xl font-bold text-slate-900 dark:text-white mb-2">EBIOS RM: Operational Threat Landscape Modeling</h3>
+<p class="font-body-md text-sm text-slate-600 dark:text-zinc-300 leading-relaxed">
+                            Development of an information security risk blueprint following national ANSSI methods. Analysis of ecosystem target values, threat source motivation indexing, and security controls mitigation maps.
                         </p>
 </div>
 </div>
@@ -291,32 +301,55 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full py-stack-lg bg-surface-container-lowest border-t border-outline-variant">
-<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter items-start">
-<div class="space-y-4">
-<span class="font-headline-md text-headline-md text-primary font-bold">ARCHITECT.PRO</span>
-<p class="text-on-surface-variant max-w-xs font-body-md text-body-md">
-                    Designing the future of robust technical infrastructures with elegance and precision.
-                </p>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div class="space-y-3">
-<h4 class="font-label-md text-label-md text-primary uppercase font-bold">Network</h4>
-<a class="block text-on-surface-variant hover:text-secondary transition-all" href="#">LinkedIn</a>
-<a class="block text-on-surface-variant hover:text-secondary transition-all" href="#">GitHub</a>
-</div>
-<div class="space-y-3">
-<h4 class="font-label-md text-label-md text-primary uppercase font-bold">Links</h4>
-<a class="block text-on-surface-variant hover:text-secondary transition-all" href="#">Services</a>
-<a class="block text-on-surface-variant hover:text-secondary transition-all" href="#">Contact</a>
-</div>
-</div>
-<div class="md:text-right">
-<p class="text-on-surface-variant font-body-md text-body-md">
-                    © 2024 Senior Architect Portfolio. <br/> All rights reserved.
-                </p>
-</div>
-</div>
+<footer class="w-full py-stack-lg bg-surface-container-lowest dark:bg-tertiary-container border-t border-outline-variant dark:border-outline">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter items-start">
+        <div class="space-y-4">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary dark:text-secondary-fixed" style="font-size: 28px;" translate="no">shield</span>
+                <span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-on-surface" translate="no">CYBERSEC.PRO</span>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant max-w-xs">
+                Audit, secure coding practices, and digital threat surveillance services.
+            </p>
+        </div>
+        <div class="grid grid-cols-2 gap-stack-md">
+            <!-- Remplacement de la navigation par vos expertises métiers avec alignement strict des polices -->
+            <div class="flex flex-col gap-2">
+                <span class="font-label-md text-label-md text-primary dark:text-inverse-on-surface font-bold uppercase mb-2">Core Focus</span>
+                <span class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">SOC Operations</span>
+                <span class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">AppSec Testing</span>
+                <span class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">Risk Analysis</span>
+            </div>
+            <div class="flex flex-col gap-2">
+                <span class="font-label-md text-label-md text-primary dark:text-inverse-on-surface font-bold uppercase mb-2" translate="no">Networks</span>
+                <a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-all" href="https://www.linkedin.com/in/perside-degbe-154454273/" target="_blank">LinkedIn</a>
+                <a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-all" href="https://github.com/Perside18" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="flex flex-col gap-4">
+            <span class="font-label-md text-label-md text-primary dark:text-inverse-on-surface font-bold uppercase mb-2" translate="no">Contact</span>
+            <div class="flex items-center gap-3 text-on-surface-variant dark:text-outline-variant">
+                <span class="material-symbols-outlined" translate="no">mail</span>
+                <a href="mailto:degbeperside@gmail.com" class="font-body-md text-body-md hover:text-secondary transition-all">degbeperside@gmail.com</a>
+            </div>
+            <!-- Contact WhatsApp direct configuré avec votre numéro -->
+            <div class="flex items-center gap-3 text-on-surface-variant dark:text-outline-variant">
+                <span class="material-symbols-outlined text-emerald-500" translate="no">chat</span>
+                <a href="https://wa.me" target="_blank" class="font-body-md text-body-md hover:text-secondary transition-all font-semibold text-emerald-600 dark:text-emerald-400">+229 01 59 53 10 38</a>
+            </div>
+            <div class="flex items-center gap-3 text-on-surface-variant dark:text-outline-variant">
+                <span class="material-symbols-outlined" translate="no">location_on</span>
+                <span class="font-body-md text-body-md" translate="no">Cotonou, Benin / Remote</span>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop mt-stack-lg pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between gap-4 text-caption text-on-surface-variant dark:text-outline-variant">
+        <span>© 2026 Perside DEGBE. All rights reserved.</span>
+        <div class="flex gap-4">
+            <a class="hover:text-primary" href="#">Legal Terms</a>
+            <a class="hover:text-primary" href="#">Privacy Policy</a>
+        </div>
+    </div>
 </footer>
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
