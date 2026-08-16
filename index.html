@@ -1,613 +1,1161 @@
 <!DOCTYPE html>
+<html lang="fr" class="dark scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- Primary Meta Tags -->
+  <title>Perside DEGBE | Analyste Cybersécurité, Spécialiste SOC & AppSec</title>
+  <meta name="title" content="Perside DEGBE | Analyste Cybersécurité, Spécialiste SOC & AppSec"/>
+  <meta name="description" content="Portfolio de Perside DEGBE — Analyste Cybersécurité spécialisée en Opérations SOC, Analyse de menaces, Sécurité Applicative (AppSec), Tests d'Intrusion et Durcissement Système."/>
+  <meta name="keywords" content="Perside DEGBE, Analyste Cybersécurité, SOC Analyst, Application Security, AppSec, Penetration Testing, EBIOS RM, Zeek, Wireshark, MITRE ATT&CK, Cybersécurité Bénin, Cotonou"/>
+  <meta name="author" content="Perside DEGBE"/>
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://perside18.github.io/portfolio/"/>
+  <meta property="og:title" content="Perside DEGBE | Analyste Cybersécurité & Spécialiste SOC"/>
+  <meta property="og:description" content="Découvrez les études de cas de sécurité, labs de détection SOC, audits de pentest et certifications de Perside DEGBE."/>
+  <meta property="og:image" content="assets/images/perside_profile.jpeg"/>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>CYBERSEC.PRO | Portfolio Junior Consultant cybersécurité</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "inverse-surface": "#2f3131",
-                    "tertiary-fixed": "#e0e3e5",
-                    "outline-variant": "#c6c6cd",
-                    "on-background": "#1a1c1c",
-                    "tertiary": "#000000",
-                    "background": "#f9f9f9",
-                    "on-tertiary-fixed": "#191c1e",
-                    "primary-container": "#131b2e",
-                    "inverse-on-surface": "#f0f1f1",
-                    "tertiary-fixed-dim": "#c4c7c9",
-                    "surface-container-high": "#e8e8e8",
-                    "surface-variant": "#e2e2e2",
-                    "on-primary": "#ffffff",
-                    "on-tertiary": "#ffffff",
-                    "on-tertiary-fixed-variant": "#444749",
-                    "surface": "#f9f9f9",
-                    "outline": "#76777d",
-                    "secondary-container": "#2170e4",
-                    "error-container": "#ffdad6",
-                    "error": "#ba1a1a",
-                    "secondary-fixed": "#d8e2ff",
-                    "surface-tint": "#565e74",
-                    "on-primary-container": "#7c839b",
-                    "surface-dim": "#dadada",
-                    "surface-container-highest": "#e2e2e2",
-                    "primary": "#000000",
-                    "surface-container-low": "#f3f3f4",
-                    "on-surface": "#1a1c1c",
-                    "tertiary-fixed-dim": "#c4c7c9",
-                    "on-surface-variant": "#45464d",
-                    "on-primary-fixed": "#131b2e",
-                    "secondary": "#0058be",
-                    "inverse-primary": "#bec6e0",
-                    "on-tertiary-container": "#818486",
-                    "on-secondary": "#ffffff",
-                    "on-error": "#ffffff",
-                    "surface-container-lowest": "#ffffff",
-                    "on-secondary-container": "#fefcff",
-                    "on-secondary-fixed": "#001a42",
-                    "surface-container": "#eeeeee",
-                    "on-secondary-fixed-variant": "#004395",
-                    "surface-bright": "#f9f9f9",
-                    "on-error-container": "#93000a",
-                    "primary-fixed": "#dae2fd",
-                    "primary-fixed-dim": "#bec6e0"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "gutter": "24px",
-                    "container-max": "1200px",
-                    "unit": "8px",
-                    "margin-mobile": "20px",
-                    "stack-sm": "16px",
-                    "stack-lg": "80px",
-                    "margin-desktop": "64px",
-                    "stack-md": "32px"
-            },
-            "fontFamily": {
-                    "caption": ["Inter"],
-                    "headline-lg": ["Inter"],
-                    "label-md": ["Inter"],
-                    "headline-lg-mobile": ["Inter"],
-                    "display-lg": ["Inter"],
-                    "display-lg-mobile": ["Inter"],
-                    "body-md": ["Inter"],
-                    "body-lg": ["Inter"],
-                    "headline-md": ["Inter"]
-            },
-            "fontSize": {
-                    "caption": ["12px", {"lineHeight": "1.4", "letterSpacing": "0em", "fontWeight": "400"}],
-                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
-                    "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
-                    "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
-                    "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
-                    "display-lg-mobile": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
-                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
-                    "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+  <!-- Google Fonts & Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Custom Design System Styles -->
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            cyber: {
+              cyan: 'var(--cyan-primary)',
+              blue: 'var(--blue-accent)',
+              accent: 'var(--blue-primary)'
             }
-          },
-        },
+          }
+        }
       }
-    </script>
-<style>
-        body {
-            background-color: #f9f9f9;
-            color: #1a1c1c;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        /* CORRECTION CORE DU MODE SOMBRE : Applique un fond sombre global */
-        .dark body {
-            background-color: #121314 !important;
-            color: #f0f1f1 !important;
-        }
-        
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-             /* Empêche la traduction de toutes les icônes Google du site */
-            content-visibility: auto;
-             unicode-bidi: isolate;
-
-        }
-
-        /* Ajustement des cartes pour les deux modes */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.8) !important;
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(15, 23, 42, 0.08);
-            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.03);
-            transition: all 0.3s ease;
-        }
-        /* Devient sombre et lisible quand la classe .dark est active */
-        .dark .glass-card {
-            background: rgba(35, 37, 38, 0.9) !important;
-            border: 1px solid rgba(255, 255, 255, 0.08) !important;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Correction forcée des couleurs de texte pour tout le site en mode sombre */
-        .dark h1, .dark h2, .dark h3, .dark h4, .dark font, .dark strong {
-            color: #ffffff !important;
-        }
-        .dark p, .dark span:not(.material-symbols-outlined) {
-            color: #c6c6cd !important;
-        }
-        .dark a:not(.bg-primary):not(.bg-secondary) {
-            color: #bec6e0 !important;
-        }
-
-        .hero-float {
-            animation: float 6s ease-in-out infinite;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        .active-dot::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 4px;
-            height: 4px;
-            background-color: #0058be;
-            border-radius: 9999px;
-        }
-        /* Correction du footer pour le mode sombre */
-            .dark footer {
-                background-color: #17181a !important;
-                border-top-color: rgba(255, 255, 255, 0.08) !important;
-            }
-            .dark footer span, .dark footer p {
-                color: #9ca3af !important;
-            }
-            .dark footer a {
-                color: #e5e7eb !important;
-            }
-            .dark footer a:hover {
-                color: #0058be !important;
-            }
-            /* Empêche les bugs de traduction et le mélange des textes */
-.glass-card, .group.relative.h-80 {
-    height: auto !important;
-    min-height: 20rem !important; /* Équivalent à h-80 pour garder le design initial */
-    padding-bottom: 2rem !important;
-}
-
-/* Force les grilles Bento à s'adapter si le texte grandit */
-.grid {
-    align-items: stretch !important;
-}
-</style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
     }
-  </style>
+  </script>
 </head>
-<body class="font-body-md text-body-md antialiased">
-<!-- Top Navigation -->
-<header class="fixed top-0 w-full z-50 bg-surface-container/20 backdrop-blur-md border-b border-white/30 dark:bg-inverse-surface/20 dark:border-outline-variant/10 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition-all duration-300">
-    <nav class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop h-20 flex items-center justify-between">
-        
-        <!-- Bloc Logo (Gauche) -->
-        <div class="flex items-center gap-2">
-            <span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-on-surface tracking-tight">CYBERSEC.PRO</span>
-        </div>
 
-        <!-- Bloc Menu de Liens (Milieu) -->
-        <div class="hidden md:flex items-center gap-stack-md">
-    <a class="relative font-label-md text-label-md uppercase tracking-wider text-secondary active-dot transition-colors" href="index.html">Home</a>
-    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="portfolio_portfolio_premium/code.html">Projects</a>
-    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="comp_tences_portfolio_premium/code.html">Skills</a>
-    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="certifications_portfolio_premium/code.html">Certifications</a>
-    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-200" href="experiences_portfolio_premium/code.html">Experiences</a>
-    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="contact_portfolio_premium/code.html">Contact</a>
-</div>
-        <!-- Bloc Boutons Action (Droite) -->
-        <div class="flex items-center gap-4">
-            <button class="p-2 rounded-full hover:bg-surface-variant dark:hover:bg-outline-variant/10 transition-colors active:scale-95" onclick="document.documentElement.classList.toggle('dark')">
-                <span class="material-symbols-outlined text-on-surface-variant dark:text-inverse-on-surface" translate="no">dark_mode</span>
-            </button>
+<body class="antialiased selection:bg-cyan-500/20 selection:text-cyan-400">
+
+  <!-- CHIC CYBERSECURITY PRELOADER OVERLAY -->
+  <div id="cyberPreloader" class="fixed inset-0 z-[9999] bg-[#030712] flex flex-col items-center justify-center transition-opacity duration-700">
+    <div class="relative flex items-center justify-center mb-6">
+      <div class="w-20 h-20 rounded-2xl bg-blue-600/10 border-2 border-cyan-400/50 flex items-center justify-center text-cyan-400 shadow-[0_0_40px_rgba(0,240,255,0.3)]">
+        <span class="material-symbols-outlined text-4xl" translate="no">shield_lock</span>
+      </div>
+      <div class="absolute -inset-3 rounded-3xl border border-cyan-400/20 animate-ping"></div>
+    </div>
+    
+    <div class="flex flex-col items-center space-y-2 text-center">
+      <span class="font-headline font-bold text-xl tracking-wider text-white">CYBERSEC<span class="text-cyan-400">.PRO</span></span>
+      <div class="flex items-center gap-2 text-xs font-mono text-cyan-400">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>INITIALIZING SECURITY TELEMETRY MATRIX...</span>
+      </div>
+    </div>
+
+    <div class="w-56 h-1.5 bg-slate-800 rounded-full mt-6 overflow-hidden border border-white/10">
+      <div id="preloaderBar" class="h-full bg-gradient-to-r from-blue-500 via-cyan-400 to-emerald-400 w-0 transition-all duration-300"></div>
+    </div>
+  </div>
+
+  <!-- TOP STICKY NAVIGATION BAR -->
+  <header class="fixed top-0 w-full z-50 navbar-glass transition-all duration-300">
+    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="flex items-center gap-3 group text-decoration-none">
+        <div class="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-cyan-400 group-hover:scale-105 group-hover:border-cyan-400 transition-all">
+          <span class="material-symbols-outlined text-2xl" translate="no">shield_lock</span>
         </div>
+        <div class="flex flex-col">
+          <span class="font-headline font-bold text-lg tracking-wider text-[var(--text-primary)]">CYBERSEC<span class="text-[var(--cyan-primary)]">.PRO</span></span>
+          <span class="text-[10px] font-mono text-[var(--text-muted)] uppercase tracking-widest -mt-1">Perside DEGBE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden lg:flex items-center gap-10">
+        <a href="#about" class="nav-link" data-i18n="nav_about">À propos</a>
+        <a href="#expertise" class="nav-link" data-i18n="nav_expertise">Expertise</a>
+        <a href="#projects" class="nav-link" data-i18n="nav_labs">Labs</a>
+        <a href="#certifications" class="nav-link" data-i18n="nav_credentials">Diplômes &amp; Certifs</a>
+      </div>
+
+      <!-- Action Buttons, Language Pill & Theme Switcher -->
+      <div class="hidden sm:flex items-center gap-3">
+        <!-- Language Switcher Pill Button (FR / EN) -->
+        <button class="lang-toggle-btn" aria-label="Toggle FR/EN Language" title="Passer en Anglais (EN)">
+          <span class="material-symbols-outlined text-sm" translate="no">language</span>
+          <span class="font-mono text-xs font-bold tracking-wider">🌐 FR</span>
+        </button>
+
+        <!-- Theme Toggle Button (Light White / Dark Black Mode) -->
+        <button class="theme-toggle-btn" aria-label="Toggle White Light / Black Dark Mode">
+          <span class="material-symbols-outlined text-xl" translate="no">light_mode</span>
+        </button>
+
+        <a href="assets/docs/CV_Perside_DEGBE.pdf" download="CV_Perside_DEGBE.pdf" class="btn-secondary text-xs">
+          <span class="material-symbols-outlined text-base" translate="no">download</span> <span data-i18n="btn_cv">Mon CV</span>
+        </a>
+        <a href="#contact" class="btn-primary text-xs" data-i18n="btn_talk">
+          Me Contacter
+        </a>
+      </div>
+
+      <!-- Mobile Controls -->
+      <div class="flex items-center gap-2 lg:hidden">
+        <button class="lang-toggle-btn" aria-label="Toggle Language">
+          <span class="material-symbols-outlined text-sm" translate="no">language</span>
+          <span class="font-mono text-xs font-bold tracking-wider">🌐 FR</span>
+        </button>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <span class="material-symbols-outlined text-xl" translate="no">light_mode</span>
+        </button>
+        <button id="mobileMenuToggle" class="p-2 text-[var(--text-primary)]" aria-label="Toggle Navigation">
+          <span class="material-symbols-outlined text-2xl" translate="no">menu</span>
+        </button>
+      </div>
 
     </nav>
-</header>
-<main class="pt-20">
-<section class="relative min-h-[795px] flex items-center overflow-hidden" id="hero">
 
-<div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center relative z-10">
-<div class="order-2 lg:order-1" data-aos="fade-up">
-<span class="inline-block px-4 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md uppercase mb-4">Available for Employment</span>
-<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4 text-primary leading-tight">Perside DEGBE</h1>
-<h2 class="font-headline-md text-headline-md text-secondary mb-6">SOC Analyst &amp; Application Security</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md max-w-lg">
-    Passionate about securing systems and developing robust applications. I combine technical expertise in threat analysis (SOC, Zeek, MITRE ATT&CK) and secure programming (HTML/PHP) to protect digital infrastructures.
-</p>
-<div class="flex flex-col sm:flex-row gap-4">
-    <!-- Lien CV corrigé : pointe directement vers le dossier images à la racine -->
-    <a class="bg-primary text-on-primary px-8 py-4 rounded-xl flex items-center justify-center gap-2 font-label-md text-label-md uppercase transition-all hover:shadow-lg active:scale-95" href="images/CV_Perside_DEGBE.pdf" download="CV_Perside_DEGBE.pdf">
-        <span class="material-symbols-outlined" translate="no">download</span> Download CV
-    </a>
-    <!-- Lien Contact corrigé : entre directement dans le sous-dossier sans remonter -->
-    <a class="border border-primary text-primary px-8 py-4 rounded-xl flex items-center justify-center gap-2 font-label-md text-label-md uppercase transition-all hover:bg-primary/5 active:scale-95" href="contact_portfolio_premium/code.html">
-        Contact Me
-    </a>
-</div>
-</div>
-<div class="order-1 lg:order-2 flex justify-center lg:justify-end" data-aos="fade-left">
-<div class="relative w-full max-w-[450px] aspect-square rounded-[2rem] overflow-hidden shadow-2xl hero-float">
-<img class="w-full h-full object-cover" data-alt="Perside DEGBE — SOC Analyst &amp; Application Security" src="images/Portfolio_DPUS.jpeg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
-</div>
-</div>
-</div>
-</section>
-<!-- Stats Section -->
-<!-- Stats Section -->
-<section class="py-stack-lg bg-surface-container-lowest">
-<div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
-    <!-- Stat 1: Années d'expérience -->
-    <div class="p-stack-md rounded-3xl bg-white border border-slate-100 shadow-[0_10px_30px_rgba(15,23,42,0.04)] dark:bg-zinc-800 dark:border-zinc-700/50" data-aos="fade-up" data-aos-delay="0">
-        <div class="font-display-lg-mobile text-display-lg-mobile text-slate-900 dark:text-white font-bold mb-2 tracking-tight" translate="no">2+</div>
-        <div class="font-label-md text-xs font-semibold text-slate-500 dark:text-zinc-400 uppercase tracking-wider">Années d'expérience</div>
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-[var(--bg-elevated)] border-b border-[var(--border-subtle)] px-6 py-6 space-y-4 shadow-xl">
+      <a href="#about" class="block mobile-nav-link text-[var(--text-primary)] hover:text-[var(--cyan-primary)] text-sm font-semibold uppercase" data-i18n="nav_about">À propos</a>
+      <a href="#expertise" class="block mobile-nav-link text-[var(--text-primary)] hover:text-[var(--cyan-primary)] text-sm font-semibold uppercase" data-i18n="nav_expertise">Expertise</a>
+      <a href="#projects" class="block mobile-nav-link text-[var(--text-primary)] hover:text-[var(--cyan-primary)] text-sm font-semibold uppercase" data-i18n="nav_labs">Labs</a>
+      <a href="#certifications" class="block mobile-nav-link text-[var(--text-primary)] hover:text-[var(--cyan-primary)] text-sm font-semibold uppercase" data-i18n="nav_credentials">Diplômes &amp; Certifs</a>
+      <div class="pt-4 border-t border-[var(--border-subtle)] flex flex-col gap-3">
+        <a href="assets/docs/CV_Perside_DEGBE.pdf" download class="btn-secondary text-xs w-full text-center" data-i18n="hero_cta_cv">Télécharger CV</a>
+        <a href="#contact" class="btn-primary text-xs w-full text-center mobile-nav-link" data-i18n="btn_talk">Me Contacter</a>
+      </div>
     </div>
-    <!-- Stat 2: Projets livrés -->
-    <div class="p-stack-md rounded-3xl bg-white border border-slate-100 shadow-[0_10px_30px_rgba(15,23,42,0.04)] dark:bg-zinc-800 dark:border-zinc-700/50" data-aos="fade-up" data-aos-delay="100">
-        <div class="font-display-lg-mobile text-display-lg-mobile text-slate-900 dark:text-white font-bold mb-2 tracking-tight" translate="no">20+</div>
-        <div class="font-label-md text-xs font-semibold text-slate-500 dark:text-zinc-400 uppercase tracking-wider">Delivered projects</div>
-    </div>
-    <!-- Stat 3: Clients satisfaits -->
-    <div class="p-stack-md rounded-3xl bg-white border border-slate-100 shadow-[0_10px_30px_rgba(15,23,42,0.04)] dark:bg-zinc-800 dark:border-zinc-700/50" data-aos="fade-up" data-aos-delay="200">
-        <div class="font-display-lg-mobile text-display-lg-mobile text-slate-900 dark:text-white font-bold mb-2 tracking-tight" translate="no">5+</div>
-        <div class="font-label-md text-xs font-semibold text-slate-500 dark:text-zinc-400 uppercase tracking-wider">Satisfied clients</div>
-    </div>
-    <!-- Stat 4: Taux de rétention -->
-    <div class="p-stack-md rounded-3xl bg-white border border-slate-100 shadow-[0_10px_30px_rgba(15,23,42,0.04)] dark:bg-zinc-800 dark:border-zinc-700/50" data-aos="fade-up" data-aos-delay="300">
-        <div class="font-display-lg-mobile text-display-lg-mobile text-slate-900 dark:text-white font-bold mb-2 tracking-tight" translate="no">99%</div>
-        <div class="font-label-md text-xs font-semibold text-slate-500 dark:text-zinc-400 uppercase tracking-wider">Retention rate</div>
-    </div>
-</div>
-</section>
-<!-- Services Section (Bento Grid) -->
-<section class="py-stack-lg" id="services">
-<div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop">
-<div class="text-center mb-stack-lg">
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Expertise &amp; Services</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">A comprehensive approach to digital defense, aligning real-time threat auditing with robust application hardening workflows.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<!-- Service 1 -->
-<!-- Service 1 : Opérations SOC & Surveillance (Grande carte sombre) -->
-<div class="md:col-span-2 group relative min-h-[20rem] h-auto rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-end" data-aos="fade-right">
-    <div class="absolute inset-0 bg-primary-container">
-        <img class="w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700" alt="SOC Operations and Monitoring" src="images/soc_surveillance.jpeg"/>
-    </div>
-    <div class="absolute inset-0 p-stack-md flex flex-col justify-end bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent z-10">
-        <span class="material-symbols-outlined text-secondary dark:text-secondary-fixed text-4xl mb-2" translate="no">policy</span>
-        <h3 class="font-headline-md text-headline-md text-on-primary mb-2">SOC Operations and Monitoring</h3>
-        <p class="font-body-md text-body-md text-on-primary/80 max-w-md leading-relaxed">Continuous perimeter monitoring, telemetry data analysis, and log correlation (Zeek, Wireshark). Implementing defensive strategies aligned with the MITRE ATT&CK framework.</p>
-    </div>
-</div>
+  </header>
 
-<!-- Service 2 : Tests d'Intrusion & Pentest (Petite carte claire) -->
-<div class="group relative min-h-[20rem] h-auto rounded-3xl overflow-hidden bg-white border border-slate-100 shadow-[0_10px_30px_rgba(15,23,42,0.04)] dark:bg-zinc-800 dark:border-zinc-700/50 p-stack-md flex flex-col justify-between transition-all duration-300" data-aos="fade-left">
-    <div>
-        <div class="w-16 h-16 rounded-2xl bg-secondary-container flex items-center justify-center mb-4">
-            <span class="material-symbols-outlined text-on-secondary-container text-3xl" translate="no">terminal</span>
-        </div>
-        <div>
-            <h3 class="font-headline-md text-headline-md text-slate-900 dark:text-white mb-2">Audits and Penetration Testing</h3>
-            <p class="font-body-md text-body-md text-slate-600 dark:text-zinc-300 leading-relaxed mb-6">Offensive simulations are executed in deployment environments (Kioptrix labs), mapping infrastructure weaknesses, testing lateral mobility, and identifying privilege escalation vectors.</p>
-        </div>
-    </div>
-    <div class="pt-4 border-t border-slate-100 dark:border-zinc-700/50">
-        <a class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all" href="#projets">
-            Explore my labs <span class="material-symbols-outlined" translate="no">arrow_forward</span>
-        </a>
-    </div>
-</div>
-<!-- Service 3 : Sécurité Applicative / Code Sécurisé (Petite carte claire) -->
-<div class="group relative h-80 rounded-3xl overflow-hidden glass-card p-stack-md flex flex-col justify-between" data-aos="fade-up">
-    <div class="w-16 h-16 rounded-2xl bg-surface-container-high dark:bg-white/10 flex items-center justify-center mb-4">
-        <span class="material-symbols-outlined text-primary dark:text-inverse-on-surface text-3xl" translate="no">gavel</span>
-    </div>
-    <div>
-        <h3 class="font-headline-md text-headline-md text-primary dark:text-inverse-on-surface mb-2">Application Security (AppSec)</h3>
-        <p class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">Static and dynamic analysis of source code, payload input filtering controls, and structural shielding against active OWASP Top 10 exploits.</p>
-    </div>
-</div>
+  <main class="pt-24">
 
-<!-- Service 4 : Durcissement Système & Gestion des Risques (Grande carte claire avec image) -->
-<div class="md:col-span-2 group relative h-80 rounded-3xl overflow-hidden glass-card p-stack-md flex items-center gap-stack-md" data-aos="fade-up">
-    <div class="flex-1">
-        <h3 class="font-headline-md text-headline-md text-primary dark:text-inverse-on-surface mb-2">System Hardening &amp; Remediation</h3>
-        <p class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant mb-4">Secure node provision blueprints across target systems (Linux/Windows OS), automated tracking workflows, and system patching sequences triggered via EMN Machine event logs.</p>
-        <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 rounded-full bg-surface-container dark:bg-white/10 text-on-surface dark:text-inverse-on-surface font-label-md text-label-md" translate="no">OWASP</span>
-            <span class="px-3 py-1 rounded-full bg-surface-container dark:bg-white/10 text-on-surface dark:text-inverse-on-surface font-label-md text-label-md" >Hardening</span>
-            <span class="px-3 py-1 rounded-full bg-surface-container dark:bg-white/10 text-on-surface dark:text-inverse-on-surface font-label-md text-label-md" >Patch Management</span>
-        </div>
-    </div>
-    <div class="hidden sm:block w-1/3 aspect-square rounded-2xl overflow-hidden">
-        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Secure Infrastructure" src="images/cloud-nine-logo.png"/>
-    </div>
-</div>
-</section>
-<!-- About Section -->
-<section class="py-stack-lg bg-surface dark:bg-inverse-surface" id="about">
-    <div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
-        <div data-aos="fade-right">
-            <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary dark:text-inverse-on-surface mb-6">Technical Rigor at the Service of Your Security</h2>
-            <p class="font-body-lg text-body-lg text-on-surface-variant dark:text-outline-variant mb-6">
-                Graduated from the École des Métiers du Numérique (EMN) and holding a Bachelor's Degree, I have built a strong engineering culture centered around defensive strategies and systemic threat remediation.
-            </p>
-            <p class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant mb-8">
-                My operational commitment remains distinct: auditing application stacks against edge vectors (OWASP Top 10) and hardening nodes to dismantle threat models. Converging infrastructure engineering and defensive analysis empowers me to inspect software systems from within.
-            </p>
-            <a class="inline-flex items-center gap-4 text-primary dark:text-inverse-on-surface font-bold text-lg group" href="#parcours">
-                Explore my full background
-                <span class="w-12 h-12 rounded-full border border-primary dark:border-inverse-on-surface flex items-center justify-center group-hover:bg-primary dark:group-hover:bg-inverse-on-surface group-hover:text-on-primary dark:group-hover:text-primary transition-all" translate="no">
-                    <span class="material-symbols-outlined" translate="no">arrow_forward</span>
-                </span>
+    <!-- HERO SECTION -->
+    <section id="home" class="min-h-[88vh] flex items-center relative py-12">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-6" data-reveal>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-[var(--status-emerald)] text-xs font-semibold uppercase tracking-wider">
+            <span class="status-pulse"></span> <span data-i18n="hero_badge">Disponible pour Opportunités SOC &amp; AppSec</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[var(--text-primary)] leading-tight tracking-tight">
+            Perside <span class="text-gradient" data-i18n="hero_title_name">DEGBE</span>
+          </h1>
+
+          <p class="text-xl font-headline font-semibold text-[var(--cyan-primary)] tracking-wide" data-i18n="hero_tagline">
+            Analyste Cybersécurité &middot; SOC &middot; Sécurité Applicative
+          </p>
+
+          <p class="text-[var(--text-secondary)] text-base sm:text-lg max-w-2xl leading-relaxed" data-i18n="hero_statement">
+            "Je sécurise les systèmes en comprenant comment ils peuvent être attaqués." Alliance d'expertise pratique en analyse de menaces (Zeek, MITRE ATT&amp;CK), développement sécurisé (PHP/HTML/SQL) et durcissement d'infrastructures.
+          </p>
+
+          <div class="pt-4 flex flex-wrap gap-4">
+            <a href="#projects" class="btn-primary">
+              <span class="material-symbols-outlined text-lg" translate="no">terminal</span> <span data-i18n="hero_cta_labs">Explorer mes Labs</span>
             </a>
+            <a href="assets/docs/CV_Perside_DEGBE.pdf" download="CV_Perside_DEGBE.pdf" class="btn-secondary">
+              <span class="material-symbols-outlined text-lg" translate="no">download</span> <span data-i18n="hero_cta_cv">Télécharger CV</span>
+            </a>
+            <a href="#contact" class="btn-secondary border-[var(--cyan-primary)] text-[var(--cyan-primary)]">
+              <span class="material-symbols-outlined text-lg" translate="no">mail</span> <span data-i18n="hero_cta_talk">Discutons</span>
+            </a>
+          </div>
+
+          <!-- Quick Specs List -->
+          <div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-[var(--border-subtle)] text-xs text-[var(--text-muted)] font-mono">
+            <div><span class="text-[var(--text-primary)] font-bold block" data-i18n="hero_spec_soc">SOC / SIEM</span> Zeek &amp; Wireshark</div>
+            <div><span class="text-[var(--text-primary)] font-bold block" data-i18n="hero_spec_appsec">AppSec</span> OWASP Top 10</div>
+            <div><span class="text-[var(--text-primary)] font-bold block" data-i18n="hero_spec_pentest">Pentest</span> Kioptrix &amp; Nmap</div>
+            <div><span class="text-[var(--text-primary)] font-bold block" data-i18n="hero_spec_risk">Cadre de Risque</span> EBIOS RM (ANSSI)</div>
+          </div>
         </div>
-        <div class="grid grid-cols-2 gap-4" data-aos="zoom-in">
-            <div class="pt-12">
-                <!-- Image 1 : Écran de code / Monitoring -->
-                <img class="w-full h-64 object-cover rounded-3xl mb-4 shadow-lg" alt="Log analysis and network security" src="images/server-room.jpg"/>
-                <!-- Image 2 : Structure ou infrastructure -->
-                <img class="w-full h-48 object-cover rounded-3xl shadow-lg" alt="Secured digital infrastructure" src="images/cloud-bg.jpg"/>
+
+        <!-- Right Visual: SOC Telemetry & Threat Monitor Simulator -->
+        <div class="lg:col-span-5" data-reveal data-reveal-delay="200">
+          <div class="terminal-window hero-float">
+            <div class="terminal-header">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-500 inline-block"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span>
+                <span class="text-xs text-slate-400 font-bold ml-2">SOC_OPS_TELEMETRY.v2</span>
+              </div>
+              <span class="status-badge emerald text-[10px]">
+                <span class="status-pulse"></span> ONLINE
+              </span>
             </div>
+
+            <!-- Terminal Stream Body -->
+            <div class="terminal-body" id="terminalLogs">
+              <!-- Logs appended dynamically via js/app.js -->
+            </div>
+
+            <!-- Terminal Footer Specs -->
+            <div class="p-3 bg-[#0a0f1d] border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-slate-400">
+              <div><span class="text-cyan-400">HOST:</span> Moov Africa / EMN</div>
+              <div><span class="text-emerald-400">THREAT LEVEL:</span> LOW</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL POSITIONING & DIFFERENTIATORS -->
+    <section id="about" class="py-20 border-t border-[var(--border-subtle)]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Image Column -->
+          <div class="lg:col-span-5" data-reveal>
+            <div class="relative max-w-md mx-auto">
+              <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-blue-600 to-cyan-400 opacity-20 blur-xl"></div>
+              <div class="relative rounded-3xl overflow-hidden border border-[var(--border-subtle)] shadow-2xl">
+                <img src="assets/images/perside_profile.jpeg" alt="Perside DEGBE — Cybersecurity Analyst" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"/>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text Column -->
+          <div class="lg:col-span-7 space-y-6" data-reveal data-reveal-delay="200">
+            <div class="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono font-semibold uppercase tracking-wider" data-i18n="about_tag">
+              Positionnement Professionnel
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl font-bold text-[var(--text-primary)] leading-snug" data-i18n="about_title">
+              Sécurité + Développement + Ingénierie Système
+            </h2>
+
+            <p class="text-[var(--text-secondary)] text-base leading-relaxed" data-i18n="about_p1">
+              Titulaire d'une Licence en Informatique de Gestion (Mention Bien) de l'Institut Universitaire de Technologie (IUT) de l'Université de Parakou et formée à l'École des Métiers du Numérique (EMN), Perside fait le pont entre la découverte offensive de vulnérabilités et le développement logiciel sécurisé.
+            </p>
+
+            <p class="text-[var(--text-secondary)] text-base leading-relaxed" data-i18n="about_p2">
+              Actuellement Analyste Cybersécurité Stagiaire chez Moov Africa (Direction Générale), elle effectue le tri des événements SIEM, applique le durcissement des baselines de sécurité, audite le code web (OWASP Top 10) et cartographie les risques avec la méthode EBIOS RM de l'ANSSI.
+            </p>
+
+            <!-- Key Differentiator Triad -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+              <div class="cyber-card p-4">
+                <span class="material-symbols-outlined text-[var(--cyan-primary)] text-2xl mb-2" translate="no">shield</span>
+                <h3 class="text-sm font-bold text-[var(--text-primary)] mb-1" data-i18n="about_triad1_title">Sécurité Défensive</h3>
+                <p class="text-xs text-[var(--text-muted)]" data-i18n="about_triad1_desc">Tri SIEM, surveillance de flux Zeek, analyse MITRE ATT&amp;CK.</p>
+              </div>
+
+              <div class="cyber-card p-4">
+                <span class="material-symbols-outlined text-[var(--cyan-primary)] text-2xl mb-2" translate="no">code</span>
+                <h3 class="text-sm font-bold text-[var(--text-primary)] mb-1" data-i18n="about_triad2_title">AppSec &amp; Code</h3>
+                <p class="text-xs text-[var(--text-muted)]" data-i18n="about_triad2_desc">Protection OWASP Top 10, assainissement SQLi &amp; XSS (PHP/SQL).</p>
+              </div>
+
+              <div class="cyber-card p-4">
+                <span class="material-symbols-outlined text-[var(--cyan-primary)] text-2xl mb-2" translate="no">dns</span>
+                <h3 class="text-sm font-bold text-[var(--text-primary)] mb-1" data-i18n="about_triad3_title">Infrastructures</h3>
+                <p class="text-xs text-[var(--text-muted)]" data-i18n="about_triad3_desc">Durcissement Linux &amp; Windows Server, gestion des patchs.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY STATISTICS SECTION -->
+    <section class="py-16 border-t border-b border-[var(--border-subtle)]">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        
+        <div class="cyber-card p-6" data-reveal data-reveal-delay="100">
+          <div class="text-4xl font-extrabold text-[var(--text-primary)] font-headline mb-1" data-i18n="stat1_val">2+</div>
+          <div class="text-xs font-mono uppercase tracking-wider text-[var(--text-secondary)]" data-i18n="stat1_label">Années d'Expérience</div>
+          <div class="text-[11px] text-[var(--text-muted)] mt-1" data-i18n="stat1_sub">Stages Télécom &amp; Entreprise</div>
+        </div>
+
+        <div class="cyber-card p-6" data-reveal data-reveal-delay="200">
+          <div class="text-4xl font-extrabold text-[var(--cyan-primary)] font-headline mb-1" data-i18n="stat2_val">20+</div>
+          <div class="text-xs font-mono uppercase tracking-wider text-[var(--text-secondary)]" data-i18n="stat2_label">Labs &amp; Audits de Sécurité</div>
+          <div class="text-[11px] text-[var(--text-muted)] mt-1" data-i18n="stat2_sub">SOC, Pentest &amp; AppSec</div>
+        </div>
+
+        <div class="cyber-card p-6" data-reveal data-reveal-delay="300">
+          <div class="text-4xl font-extrabold text-[var(--text-primary)] font-headline mb-1" data-i18n="stat3_val">5+</div>
+          <div class="text-xs font-mono uppercase tracking-wider text-[var(--text-secondary)]" data-i18n="stat3_label">Certifications &amp; Diplômes</div>
+          <div class="text-[11px] text-[var(--text-muted)] mt-1" data-i18n="stat3_sub">Licence (Bien), Cisco, EBIOS</div>
+        </div>
+
+        <div class="cyber-card p-6" data-reveal data-reveal-delay="400">
+          <div class="text-4xl font-extrabold text-[var(--status-emerald)] font-headline mb-1" data-i18n="stat4_val">100%</div>
+          <div class="text-xs font-mono uppercase tracking-wider text-[var(--text-secondary)]" data-i18n="stat4_label">Focus Défensif</div>
+          <div class="text-[11px] text-[var(--text-muted)] mt-1" data-i18n="stat4_sub">Remédiation Systémique</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERTISE & SERVICES SECTION -->
+    <section id="expertise" class="py-24 max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16" data-reveal>
+        <span class="text-xs font-mono text-[var(--cyan-primary)] uppercase tracking-widest font-semibold block mb-2" data-i18n="exp_tag">Domaines Cœur</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-[var(--text-primary)]" data-i18n="exp_title">Expertise Technique &amp; Piliers Défensifs</h2>
+        <p class="text-[var(--text-secondary)] text-sm mt-3" data-i18n="exp_subtitle">Une approche rigoureuse combinant surveillance continue des menaces, protection du code applicatif, tests d'intrusion offensifs et durcissement des infrastructures.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Expertise 1: SOC -->
+        <div class="cyber-card p-8 flex flex-col justify-between" data-reveal data-reveal-delay="100">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-[var(--cyan-primary)] mb-6">
+              <span class="material-symbols-outlined text-2xl" translate="no">monitor_heart</span>
+            </div>
+            <h3 class="text-xl font-bold text-[var(--text-primary)] mb-3" data-i18n="exp1_title">Opérations SOC &amp; Détection de Menaces</h3>
+            <p class="text-[var(--text-secondary)] text-sm leading-relaxed mb-6" data-i18n="exp1_desc">
+              Surveillance télémétrique en temps réel, analyse de logs et capture de paquets réseau (Zeek, Wireshark). Classification des TTPs d'attaques avec la matrice MITRE ATT&amp;CK et tri des flux d'événements SIEM.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-[var(--border-subtle)]">
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">Zeek SIEM</span>
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">Wireshark</span>
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">MITRE ATT&amp;CK</span>
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">Log Analysis</span>
+          </div>
+        </div>
+
+        <!-- Expertise 2: AppSec -->
+        <div class="cyber-card p-8 flex flex-col justify-between" data-reveal data-reveal-delay="200">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-[var(--cyan-primary)] mb-6">
+              <span class="material-symbols-outlined text-2xl" translate="no">code_off</span>
+            </div>
+            <h3 class="text-xl font-bold text-[var(--text-primary)] mb-3" data-i18n="exp2_title">Sécurité Applicative (AppSec)</h3>
+            <p class="text-[var(--text-secondary)] text-sm leading-relaxed mb-6" data-i18n="exp2_desc">
+              Audit statique (SAST) et dynamique (DAST) du code source, filtrage des payloads SQLi et XSS, développement PHP/HTML sécurisé et protection contre les vulnérabilités OWASP Top 10.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-[var(--border-subtle)]">
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">OWASP Top 10</span>
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">SQLi / XSS Shielding</span>
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">PHP &amp; SQL</span>
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">Secure Coding</span>
+          </div>
+        </div>
+
+        <!-- Expertise 3: Pentest -->
+        <div class="cyber-card p-8 flex flex-col justify-between" data-reveal data-reveal-delay="300">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-[var(--cyan-primary)] mb-6">
+              <span class="material-symbols-outlined text-2xl" translate="no">terminal</span>
+            </div>
+            <h3 class="text-xl font-bold text-[var(--text-primary)] mb-3" data-i18n="exp3_title">Tests d'Intrusion &amp; Audits de Vulnérabilités</h3>
+            <p class="text-[var(--text-secondary)] text-sm leading-relaxed mb-6" data-i18n="exp3_desc">
+              Simulations offensives en environnement contrôlé (Kioptrix), énumération de ports (Nmap), vérification d'exploits (Metasploit), escalade de privilèges et rapports de remédiation.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-[var(--border-subtle)]">
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">Nmap Audit</span>
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">Metasploit</span>
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">Privilege Escalation</span>
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">Vulnerability Audit</span>
+          </div>
+        </div>
+
+        <!-- Expertise 4: Hardening & Governance -->
+        <div class="cyber-card p-8 flex flex-col justify-between" data-reveal data-reveal-delay="400">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-[var(--cyan-primary)] mb-6">
+              <span class="material-symbols-outlined text-2xl" translate="no">admin_panel_settings</span>
+            </div>
+            <h3 class="text-xl font-bold text-[var(--text-primary)] mb-3" data-i18n="exp4_title">Durcissement Système &amp; Risque EBIOS RM</h3>
+            <p class="text-[var(--text-secondary)] text-sm leading-relaxed mb-6" data-i18n="exp4_desc">
+              Durcissement des baselines de configuration sous Linux et Windows Server, workflows de suivi des correctifs et cartographie des risques cybersécurité avec la méthode EBIOS RM (ANSSI).
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-[var(--border-subtle)]">
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">EBIOS RM (ANSSI)</span>
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">Linux Hardening</span>
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">Patch Management</span>
+            <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded-full">Risk Governance</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECURITY LABS & CASE STUDIES SECTION -->
+    <section id="projects" class="py-24 border-t border-[var(--border-subtle)]">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12" data-reveal>
+          <div>
+            <span class="text-xs font-mono text-[var(--cyan-primary)] uppercase tracking-widest font-semibold block mb-2" data-i18n="labs_tag">Portfolio Technique</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-[var(--text-primary)]" data-i18n="labs_title">Labs de Sécurité &amp; Études de Cas</h2>
+          </div>
+
+          <!-- Category Filters -->
+          <div class="flex flex-wrap gap-2 mt-6 md:mt-0">
+            <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Tous les Labs</button>
+            <button class="filter-btn" data-filter="soc" data-i18n="filter_soc">SOC &amp; Défense</button>
+            <button class="filter-btn" data-filter="appsec" data-i18n="filter_appsec">AppSec &amp; Code</button>
+            <button class="filter-btn" data-filter="risk" data-i18n="filter_risk">Risque &amp; Pentest</button>
+          </div>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="labsGrid">
+          
+          <!-- Lab 1: EMN Machine -->
+          <div class="cyber-card lab-card flex flex-col justify-between p-6 sm:p-8" data-category="soc" data-reveal data-reveal-delay="100">
             <div>
-                <!-- Image 3 : Espace de travail / Analyse -->
-                <img class="w-full h-48 object-cover rounded-3xl mb-4 shadow-lg" alt="Cybersecurity analysis workspace" src="images/rien_que_des_ecrans.jpg"/>
-                <!-- Image 4 : Salle des serveurs / Protection -->
-                <img class="w-full h-64 object-cover rounded-3xl shadow-lg" alt="Servers and data protection" src="images/serveur_vert.jpg"/>
+              <div class="relative aspect-video rounded-xl overflow-hidden mb-6 border border-[var(--border-subtle)]">
+                <img src="assets/images/rien_que_des_ecrans.jpg" alt="EMN Machine SOC Monitoring" class="w-full h-full object-cover"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <span class="absolute top-3 left-3 px-3 py-1 bg-blue-600/90 text-white font-mono text-xs font-semibold rounded-full backdrop-blur-md">SOC Operation</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2">EMN Machine : Simulation SOC &amp; Détection Défensive</h3>
+              <p class="text-[var(--text-secondary)] text-sm leading-relaxed mb-4">
+                Déploiement d'un environnement de détection de menaces d'entreprise. Analyse automatisée des logs avec Zeek pour isoler les indicateurs d'attaque et guider les correctifs.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="px-2.5 py-0.5 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded">Zeek SIEM</span>
+                <span class="px-2.5 py-0.5 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded">Wireshark</span>
+                <span class="px-2.5 py-0.5 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded">MITRE ATT&amp;CK</span>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- Testimonials -->
-<section class="py-stack-lg bg-surface-container-lowest dark:bg-inverse-surface/10 overflow-hidden">
-    <div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop">
-        <div class="mb-stack-md text-center">
-            <span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Endorsements</span>
-            <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary dark:text-inverse-on-surface">Academic &amp; Professional Support</h2>
-        </div>
-        <div class="relative px-12">
-            <div class="flex gap-gutter transition-transform duration-500 ease-in-out" id="testimonial-slider">
-                <!-- Testimonial 1 : Stage OMEGA-TECH -->
-                <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.33%-16px)] glass-card p-stack-md rounded-3xl flex flex-col justify-between">
-                    <div>
-                        <div class="flex gap-1 text-secondary mb-4">
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
-                        </div>
-                        <p class="font-body-md text-body-md italic text-on-surface-variant dark:text-outline-variant mb-6">
-                            "Perside showed great autonomy during her internship. Her rigorous integration of Figma designs into WordPress and her clear focus on environment security were highly appreciated."
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-full overflow-hidden bg-secondary/10 flex items-center justify-center text-secondary font-bold shrink-0">
-                            <img class="w-full h-full object-cover hidden" alt="OMEGA-TECH" src="images/rec_omega.jpeg" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"/>
-                            <span class="text-sm" translate="no">OT</span>
-                        </div>
-                        <div>
-                            <div class="font-bold text-primary dark:text-inverse-on-surface text-sm">Internship Supervisor</div>
-                            <div class="text-caption text-on-surface-variant dark:text-outline-variant uppercase">OMEGA-TECH, Benin</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Testimonial 2 : École des Métiers du Numérique -->
-                <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.33%-16px)] glass-card p-stack-md rounded-3xl flex flex-col justify-between">
-                    <div>
-                        <div class="flex gap-1 text-secondary mb-4">
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
-                        </div>
-                        <p class="font-body-md text-body-md italic text-on-surface-variant dark:text-outline-variant mb-6">
-                            "A serious student who is deeply passionate about network defense challenges. Her technical lab work on SOC attack simulations like the EMN Machine shows excellent methodology."
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-full overflow-hidden bg-secondary/10 flex items-center justify-center text-secondary font-bold shrink-0">
-                            <img class="w-full h-full object-cover hidden" alt="EMN" src="images/rec_emn.jpeg" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"/>
-                            <span class="text-sm" translate="no">EM</span>
-                        </div>
-                        <div>
-                            <div class="font-bold text-primary dark:text-inverse-on-surface text-sm">Faculty Board</div>
-                            <div class="text-caption text-on-surface-variant dark:text-outline-variant uppercase">École des Métiers du Numérique</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Testimonial 3 : Université / Projets Académiques -->
-                <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.33%-16px)] glass-card p-stack-md rounded-3xl flex flex-col justify-between">
-                    <div>
-                        <div class="flex gap-1 text-secondary mb-4">
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;" translate="no">star</span>
-                        </div>
-                        <p class="font-body-md text-body-md italic text-on-surface-variant dark:text-outline-variant mb-6">
-                            "Perside possesses a very compelling dual skill set in code and security. Her engagement in the secure HTML/PHP telemedicine management platform project was exemplary."
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-full overflow-hidden bg-secondary/10 flex items-center justify-center text-secondary font-bold shrink-0">
-                            <img class="w-full h-full object-cover hidden" alt="Université" src="images/rec_univ.jpeg" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"/>
-                            <span class="text-sm" translate="no">UP</span>
-                        </div>
-                        <div>
-                            <div class="font-bold text-primary dark:text-inverse-on-surface text-sm">Research Professor</div>
-                            <div class="text-caption text-on-surface-variant dark:text-outline-variant uppercase">Academic Degree, Parakou</div>
-                        </div>
-                    </div>
-                </div>
+
+            <!-- Action Buttons -->
+            <div class="pt-5 pb-2 px-1 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
+              <button data-case-study="emn" class="card-btn-primary">
+                <span data-i18n="btn_case_study">Explorer l'Étude de Cas</span> <span class="material-symbols-outlined" translate="no">arrow_forward</span>
+              </button>
+              <a href="https://github.com/Perside18" target="_blank" class="card-btn-secondary">
+                <span class="material-symbols-outlined" translate="no">code</span> GitHub
+              </a>
             </div>
-            <button class="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-all" id="prevBtn">
-                <span class="material-symbols-outlined" translate="no">chevron_left</span>
+          </div>
+
+          <!-- Lab 2: Telemedicine -->
+          <div class="cyber-card lab-card flex flex-col justify-between p-6 sm:p-8" data-category="appsec" data-reveal data-reveal-delay="200">
+            <div>
+              <div class="relative aspect-video rounded-xl overflow-hidden mb-6 border border-[var(--border-subtle)]">
+                <img src="assets/images/server-room.jpg" alt="Secure Telemedicine Web Application" class="w-full h-full object-cover"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <span class="absolute top-3 left-3 px-3 py-1 bg-cyan-600/90 text-white font-mono text-xs font-semibold rounded-full backdrop-blur-md">AppSec &amp; Dev</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2">Plateforme Télémédecine Sécurisée</h3>
+              <p class="text-[var(--text-secondary)] text-sm leading-relaxed mb-4">
+                Conception et développement d'un tableau de bord médical sécurisé. Intégration de requêtes préparées, filtrage des entrées et protection CSRF contre les failles OWASP.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="px-2.5 py-0.5 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded">HTML5 / PHP</span>
+                <span class="px-2.5 py-0.5 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded">OWASP Top 10</span>
+                <span class="px-2.5 py-0.5 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded">Prévention SQLi</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="pt-5 pb-2 px-1 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
+              <button data-case-study="telemed" class="card-btn-primary">
+                <span data-i18n="btn_case_study">Explorer l'Étude de Cas</span> <span class="material-symbols-outlined" translate="no">arrow_forward</span>
+              </button>
+              <a href="https://github.com/Perside18" target="_blank" class="card-btn-secondary">
+                <span class="material-symbols-outlined" translate="no">code</span> GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Lab 3: Kioptrix Pentest -->
+          <div class="cyber-card lab-card flex flex-col justify-between p-6 sm:p-8" data-category="risk" data-reveal data-reveal-delay="300">
+            <div>
+              <div class="relative aspect-video rounded-xl overflow-hidden mb-6 border border-[var(--border-subtle)]">
+                <img src="assets/images/cloud-bg.jpg" alt="Kioptrix Vulnerability Audit Lab" class="w-full h-full object-cover"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <span class="absolute top-3 left-3 px-3 py-1 bg-amber-600/90 text-white font-mono text-xs font-semibold rounded-full backdrop-blur-md">Penetration Test</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2">Kioptrix : Audit d'Intrusion &amp; Escalade de Privilèges</h3>
+              <p class="text-[var(--text-secondary)] text-sm leading-relaxed mb-4">
+                Audit offensif contrôlé sur système cible. Scans Nmap, énumération de services, injection d'exploits Metasploit et escalade de privilèges locale Linux vers le compte root.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="px-2.5 py-0.5 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded">Nmap</span>
+                <span class="px-2.5 py-0.5 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded">Metasploit</span>
+                <span class="px-2.5 py-0.5 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded">Escalade de Privilèges</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="pt-5 pb-2 px-1 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
+              <button data-case-study="kioptrix" class="card-btn-primary">
+                <span data-i18n="btn_case_study">Explorer l'Étude de Cas</span> <span class="material-symbols-outlined" translate="no">arrow_forward</span>
+              </button>
+              <a href="https://github.com/Perside18" target="_blank" class="card-btn-secondary">
+                <span class="material-symbols-outlined" translate="no">code</span> GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Lab 4: EBIOS RM -->
+          <div class="cyber-card lab-card flex flex-col justify-between p-6 sm:p-8" data-category="risk" data-reveal data-reveal-delay="400">
+            <div>
+              <div class="relative aspect-video rounded-xl overflow-hidden mb-6 border border-[var(--border-subtle)]">
+                <img src="assets/images/serveur_vert.jpg" alt="EBIOS Risk Mapping Infrastructure" class="w-full h-full object-cover"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <span class="absolute top-3 left-3 px-3 py-1 bg-emerald-600/90 text-white font-mono text-xs font-semibold rounded-full backdrop-blur-md">Risk Governance</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2">Cartographie des Risques Cybersécurité EBIOS RM</h3>
+              <p class="text-[var(--text-secondary)] text-sm leading-relaxed mb-4">
+                Modélisation des risques de sécurité de l'information selon la méthode EBIOS Risk Manager (ANSSI). Cartographie des biens essentiels, scénarios stratégiques et mesures de sécurité.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="px-2.5 py-0.5 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded">EBIOS Risk Manager</span>
+                <span class="px-2.5 py-0.5 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded">Méthode ANSSI</span>
+                <span class="px-2.5 py-0.5 bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono rounded">Matrice de Risque</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="pt-5 pb-2 px-1 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
+              <button data-case-study="ebios" class="card-btn-primary">
+                <span data-i18n="btn_case_study">Explorer l'Étude de Cas</span> <span class="material-symbols-outlined" translate="no">arrow_forward</span>
+              </button>
+              <a href="https://github.com/Perside18" target="_blank" class="card-btn-secondary">
+                <span class="material-symbols-outlined" translate="no">code</span> GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CREDENTIALS & PROFESSIONAL TIMELINE SECTION -->
+    <section id="certifications" class="py-24 border-t border-[var(--border-subtle)]">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16" data-reveal>
+          <span class="text-xs font-mono text-[var(--cyan-primary)] uppercase tracking-widest font-semibold block mb-2" data-i18n="certs_tag">Certifications Vérifiées</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-[var(--text-primary)]" data-i18n="certs_title">Diplômes Acquis &amp; Certifications</h2>
+          <p class="text-[var(--text-secondary)] text-sm mt-3" data-i18n="certs_subtitle">Cliquez sur n'importe quel certificat pour visualiser le document en aperçu modale sécurisée.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          
+          <!-- Cert 1: Bachelor's Degree (Opens PDF Modal Viewer) -->
+          <div class="cyber-card p-8 flex flex-col justify-between border-l-4 border-l-cyan-500 cursor-pointer group" data-cert-preview="bac" data-reveal data-reveal-delay="100">
+            <div>
+              <div class="flex items-start justify-between gap-4 mb-4">
+                <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] font-mono text-xs font-semibold rounded-full border border-blue-500/20 uppercase" data-i18n="cert1_tag">Diplôme Académique</span>
+                <span class="text-xs text-[var(--text-muted)] font-mono">15 FÉV 2026</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2 group-hover:text-[var(--cyan-primary)] transition-colors" data-i18n="cert1_title">Licence en Informatique de Gestion (MIS)</h3>
+              <h4 class="text-sm font-semibold text-[var(--text-secondary)] mb-4" data-i18n="cert1_school">Université de Parakou (IUT) &middot; Mention Bien</h4>
+
+              <p class="text-[var(--text-secondary)] text-sm leading-relaxed mb-6" data-i18n="cert1_desc">
+                Diplôme national obtenu suite à la validation du cursus à l'Institut Universitaire de Technologie (IUT). Spécialisation Informatique de Gestion.
+              </p>
+            </div>
+
+            <!-- Chic Card Action Buttons (Modal Preview Trigger) -->
+            <div class="pt-5 pb-2 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
+              <span class="text-xs text-[var(--status-emerald)] font-mono flex items-center gap-1">
+                <span class="material-symbols-outlined text-base" translate="no">verified</span> Diplôme Officiel
+              </span>
+              <button data-cert-preview="bac" class="card-btn-primary">
+                <span class="material-symbols-outlined text-base" translate="no">visibility</span> <span data-i18n="btn_view_pdf">Consulter PDF</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 2: Cisco Cybersecurity Defense Analyst (Opens PDF Modal Viewer) -->
+          <div class="cyber-card p-8 flex flex-col justify-between border-l-4 border-l-blue-500 cursor-pointer group" data-cert-preview="cisco" data-reveal data-reveal-delay="200">
+            <div>
+              <div class="flex items-start justify-between gap-4 mb-4">
+                <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] font-mono text-xs font-semibold rounded-full border border-blue-500/20 uppercase" data-i18n="cert2_tag">Parcours SOC Analyst</span>
+                <span class="text-xs text-[var(--text-muted)] font-mono">08 JUIN 2026</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2 group-hover:text-[var(--cyan-primary)] transition-colors" data-i18n="cert2_title">Examen Cybersecurity Defense Analyst Pathway</h3>
+              <h4 class="text-sm font-semibold text-[var(--text-secondary)] mb-4" data-i18n="cert2_school">Cybastion IT Academy / Cisco</h4>
+
+              <p class="text-[var(--text-secondary)] text-sm leading-relaxed mb-4" data-i18n="cert2_desc">
+                Validation des compétences avancées en surveillance réseau, réponse aux incidents et stratégies de remédiation en centre SOC.
+              </p>
+
+              <div class="text-[11px] font-mono text-[var(--text-muted)] mb-6">ID: 857a2a27-0c94-4d87-ac26-ecd22ec8e2ce</div>
+            </div>
+
+            <!-- Chic Card Action Buttons (Modal Preview Trigger) -->
+            <div class="pt-5 pb-2 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
+              <span class="text-xs text-[var(--status-emerald)] font-mono flex items-center gap-1">
+                <span class="material-symbols-outlined text-base" translate="no">verified</span> Certificat Cisco
+              </span>
+              <button data-cert-preview="cisco" class="card-btn-primary">
+                <span class="material-symbols-outlined text-base" translate="no">visibility</span> <span data-i18n="btn_view_pdf">Consulter PDF</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 3: Club EBIOS (Opens PDF Modal Viewer) -->
+          <div class="cyber-card p-8 flex flex-col justify-between border-l-4 border-l-purple-500 cursor-pointer group" data-cert-preview="ebios" data-reveal data-reveal-delay="300">
+            <div>
+              <div class="flex items-start justify-between gap-4 mb-4">
+                <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] font-mono text-xs font-semibold rounded-full border border-blue-500/20 uppercase" data-i18n="cert3_tag">Gouvernance des Risques</span>
+                <span class="text-xs text-[var(--text-muted)] font-mono">13 JUIL 2026</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2 group-hover:text-[var(--cyan-primary)] transition-colors" data-i18n="cert3_title">Certification Risk Manager Club EBIOS</h3>
+              <h4 class="text-sm font-semibold text-[var(--text-secondary)] mb-4" data-i18n="cert3_school">Club EBIOS / ANSSI (Paris)</h4>
+
+              <p class="text-[var(--text-secondary)] text-sm leading-relaxed mb-6" data-i18n="cert3_desc">
+                Validation officielle de l'expertise de la méthode EBIOS Risk Manager soutenue par l'ANSSI pour la cartographie des risques numériques.
+              </p>
+            </div>
+
+            <!-- Chic Card Action Buttons (Modal Preview Trigger) -->
+            <div class="pt-5 pb-2 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
+              <span class="text-xs text-[var(--status-emerald)] font-mono flex items-center gap-1">
+                <span class="material-symbols-outlined text-base" translate="no">verified</span> Méthode ANSSI
+              </span>
+              <button data-cert-preview="ebios" class="card-btn-primary">
+                <span class="material-symbols-outlined text-base" translate="no">visibility</span> <span data-i18n="btn_view_pdf">Consulter PDF</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 4: DCLIC Web Dev (Opens PDF Modal Viewer) -->
+          <div class="cyber-card p-8 flex flex-col justify-between border-l-4 border-l-emerald-500 cursor-pointer group" data-cert-preview="dclic" data-reveal data-reveal-delay="400">
+            <div>
+              <div class="flex items-start justify-between gap-4 mb-4">
+                <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] font-mono text-xs font-semibold rounded-full border border-blue-500/20 uppercase" data-i18n="cert4_tag">Développement Web</span>
+                <span class="text-xs text-[var(--text-muted)] font-mono">17 SEP 2025</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2 group-hover:text-[var(--cyan-primary)] transition-colors" data-i18n="cert4_title">Attestation Programme DCLIC — Développement Web</h3>
+              <h4 class="text-sm font-semibold text-[var(--text-secondary)] mb-4" data-i18n="cert4_school">Organisation internationale de la Francophonie (OIF)</h4>
+
+              <p class="text-[var(--text-secondary)] text-sm leading-relaxed mb-4" data-i18n="cert4_desc">
+                Certification attestant la maîtrise de l'architecture HTML5/CSS3, la programmation JavaScript et la sécurisation des échanges web.
+              </p>
+
+              <div class="text-[11px] font-mono text-[var(--text-muted)] mb-6">Code: rA9IF8O44k</div>
+            </div>
+
+            <!-- Chic Card Action Buttons (Modal Preview Trigger) -->
+            <div class="pt-5 pb-2 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
+              <span class="text-xs text-[var(--status-emerald)] font-mono flex items-center gap-1">
+                <span class="material-symbols-outlined text-base" translate="no">verified</span> Attestation OIF
+              </span>
+              <button data-cert-preview="dclic" class="card-btn-primary">
+                <span class="material-symbols-outlined text-base" translate="no">visibility</span> <span data-i18n="btn_view_pdf">Consulter PDF</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- In-Progress Certifications Banner -->
+        <div class="mt-12 cyber-card p-6 border border-amber-500/30 bg-amber-500/5" data-reveal>
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center text-[var(--status-amber)]">
+                <span class="material-symbols-outlined text-xl" translate="no">school</span>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-[var(--text-primary)]" data-i18n="cert_ongoing_title">Certifications en Cours (Objectif 2026)</h4>
+                <p class="text-xs text-[var(--text-secondary)]" data-i18n="cert_ongoing_desc">Cisco CCNA 1 (Introduction aux Réseaux) &amp; Cisco Certified CyberOps Associate</p>
+              </div>
+            </div>
+            <span class="status-badge amber text-[10px]">
+              <span class="status-pulse"></span> IN PROGRESS
+            </span>
+          </div>
+        </div>
+
+        <!-- Career Timeline Sub-Section -->
+        <div id="experience" class="pt-12 border-t border-[var(--border-subtle)]">
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-xs font-mono text-[var(--cyan-primary)] uppercase tracking-widest font-semibold block mb-2" data-i18n="timeline_tag">Parcours Professionnel</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-[var(--text-primary)]" data-i18n="timeline_title">Expériences &amp; Stages</h3>
+          </div>
+
+          <div class="relative border-l-2 border-[var(--border-subtle)] max-w-4xl mx-auto pl-6 sm:pl-10 space-y-12">
+            
+            <!-- Experience 1: Moov Africa -->
+            <div class="relative" data-reveal data-reveal-delay="100">
+              <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-5 h-5 rounded-full bg-blue-600 border-4 border-[var(--bg-main)] shadow-lg"></div>
+              
+              <div class="cyber-card p-6 sm:p-8">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                  <span class="text-xs font-mono text-[var(--cyan-primary)] font-bold uppercase tracking-wider" data-i18n="exp1_date">2026 &mdash; PRÉSENT</span>
+                  <span class="status-badge emerald text-[11px]"><span class="status-pulse"></span> <span data-i18n="exp1_status">POSTE ACTUEL</span></span>
+                </div>
+                
+                <h4 class="text-xl font-bold text-[var(--text-primary)]" data-i18n="exp1_role">Stagiaire Analyste Cybersécurité</h4>
+                <h5 class="text-sm font-semibold text-[var(--text-secondary)] mb-4" data-i18n="exp1_company">Moov Africa &middot; Direction Générale</h5>
+                
+                <p class="text-[var(--text-secondary)] text-sm leading-relaxed mb-4" data-i18n="exp1_desc">
+                  Engagement opérationnel au sein du périmètre cybersécurité télécom :
+                </p>
+                
+                <ul class="list-disc list-inside text-xs text-[var(--text-secondary)] space-y-2 font-sans leading-relaxed">
+                  <li data-i18n="exp1_bullet1">Surveillance des flux télémétriques et tri des alertes de détection SIEM.</li>
+                  <li data-i18n="exp1_bullet2">Résolution d'anomalies de périmètre et durcissement des configurations système.</li>
+                  <li data-i18n="exp1_bullet3">Participation aux procédures de réponse aux incidents et rédactions de playbooks.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Experience 2: Univ Parakou -->
+            <div class="relative" data-reveal data-reveal-delay="200">
+              <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-5 h-5 rounded-full bg-slate-400 border-4 border-[var(--bg-main)]"></div>
+              
+              <div class="cyber-card p-6 sm:p-8">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs font-mono text-[var(--text-muted)] font-bold uppercase tracking-wider" data-i18n="exp2_date">AVR 2025 &mdash; JUL 2025</span>
+                  <span class="text-xs text-[var(--text-muted)] font-mono">Parakou, Bénin</span>
+                </div>
+
+                <h4 class="text-xl font-bold text-[var(--text-primary)]" data-i18n="exp2_role">Stagiaire Sécurité Informatique &amp; Systèmes</h4>
+                <h5 class="text-sm font-semibold text-[var(--text-secondary)] mb-4" data-i18n="exp2_company">Université de Parakou</h5>
+
+                <p class="text-[var(--text-secondary)] text-sm leading-relaxed mb-4" data-i18n="exp2_desc">
+                  Maintenance des équipements réseau, diagnostics des postes de travail, déploiement des mises à jour de durcissement et soutien aux projets de digitalisation interne.
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience 3: OMEGA-TECH -->
+            <div class="relative" data-reveal data-reveal-delay="300">
+              <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-5 h-5 rounded-full bg-slate-400 border-4 border-[var(--bg-main)]"></div>
+              
+              <div class="cyber-card p-6 sm:p-8">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs font-mono text-[var(--text-muted)] font-bold uppercase tracking-wider" data-i18n="exp3_date">JUIN 2024 &mdash; SEP 2024</span>
+                  <span class="text-xs text-[var(--text-muted)] font-mono">Cotonou, Bénin</span>
+                </div>
+
+                <h4 class="text-xl font-bold text-[var(--text-primary)]" data-i18n="exp3_role">Stagiaire Développement Web &amp; Base de Données</h4>
+                <h5 class="text-sm font-semibold text-[var(--text-secondary)] mb-4" data-i18n="exp3_company">OMEGA-TECH</h5>
+
+                <p class="text-[var(--text-secondary)] text-sm leading-relaxed mb-4" data-i18n="exp3_desc">
+                  Intégration de maquettes Figma vers des architectures WordPress réactives et sécurisation des requêtes de base de données SQL contre les injections.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VISUAL SKILLS STACK SECTION -->
+    <section id="skills" class="py-24 max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16" data-reveal>
+        <span class="text-xs font-mono text-[var(--cyan-primary)] uppercase tracking-widest font-semibold block mb-2" data-i18n="skills_tag">Matrice Technique</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-[var(--text-primary)]" data-i18n="skills_title">Compétences Techniques &amp; Stack Sécurité</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Category 1: Security & SOC -->
+        <div class="cyber-card p-6" data-reveal data-reveal-delay="100">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-[var(--cyan-primary)] text-2xl" translate="no">security</span>
+            <h3 class="text-lg font-bold text-[var(--text-primary)]" data-i18n="skill_cat1">Sécurité Opérationnelle &amp; AppSec</h3>
+          </div>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between text-xs font-mono mb-1">
+                <span class="text-[var(--text-secondary)]">SOC Monitoring &amp; Zeek</span>
+                <span class="text-[var(--cyan-primary)] font-bold">95%</span>
+              </div>
+              <div class="w-full h-1.5 bg-blue-500/10 rounded-full overflow-hidden">
+                <div class="h-full bg-[var(--cyan-primary)] w-[95%]"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-mono mb-1">
+                <span class="text-[var(--text-secondary)]">OWASP Top 10 &amp; AppSec</span>
+                <span class="text-[var(--cyan-primary)] font-bold">90%</span>
+              </div>
+              <div class="w-full h-1.5 bg-blue-500/10 rounded-full overflow-hidden">
+                <div class="h-full bg-[var(--cyan-primary)] w-[90%]"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-mono mb-1">
+                <span class="text-[var(--text-secondary)]">EBIOS RM Risk Mapping</span>
+                <span class="text-[var(--cyan-primary)] font-bold">88%</span>
+              </div>
+              <div class="w-full h-1.5 bg-blue-500/10 rounded-full overflow-hidden">
+                <div class="h-full bg-[var(--cyan-primary)] w-[88%]"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-mono mb-1">
+                <span class="text-[var(--text-secondary)]">Vulnerability Assessment</span>
+                <span class="text-[var(--cyan-primary)] font-bold">85%</span>
+              </div>
+              <div class="w-full h-1.5 bg-blue-500/10 rounded-full overflow-hidden">
+                <div class="h-full bg-[var(--cyan-primary)] w-[85%]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Networking & Dev -->
+        <div class="cyber-card p-6" data-reveal data-reveal-delay="200">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-[var(--cyan-primary)] text-2xl" translate="no">lan</span>
+            <h3 class="text-lg font-bold text-[var(--text-primary)]" data-i18n="skill_cat2">Réseaux &amp; Développement</h3>
+          </div>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between text-xs font-mono mb-1">
+                <span class="text-[var(--text-secondary)]">Wireshark &amp; TCP/IP Traffic</span>
+                <span class="text-[var(--cyan-primary)] font-bold">92%</span>
+              </div>
+              <div class="w-full h-1.5 bg-blue-500/10 rounded-full overflow-hidden">
+                <div class="h-full bg-[var(--blue-primary)] w-[92%]"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-mono mb-1">
+                <span class="text-[var(--text-secondary)]">HTML5 / CSS3 / JavaScript</span>
+                <span class="text-[var(--cyan-primary)] font-bold">88%</span>
+              </div>
+              <div class="w-full h-1.5 bg-blue-500/10 rounded-full overflow-hidden">
+                <div class="h-full bg-[var(--blue-primary)] w-[88%]"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-mono mb-1">
+                <span class="text-[var(--text-secondary)]">PHP &amp; MySQL Sanitization</span>
+                <span class="text-[var(--cyan-primary)] font-bold">85%</span>
+              </div>
+              <div class="w-full h-1.5 bg-blue-500/10 rounded-full overflow-hidden">
+                <div class="h-full bg-[var(--blue-primary)] w-[85%]"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-mono mb-1">
+                <span class="text-[var(--text-secondary)]">Git &amp; Version Control</span>
+                <span class="text-[var(--cyan-primary)] font-bold">90%</span>
+              </div>
+              <div class="w-full h-1.5 bg-blue-500/10 rounded-full overflow-hidden">
+                <div class="h-full bg-[var(--blue-primary)] w-[90%]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Systems & Tools -->
+        <div class="cyber-card p-6" data-reveal data-reveal-delay="300">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-[var(--cyan-primary)] text-2xl" translate="no">terminal</span>
+            <h3 class="text-lg font-bold text-[var(--text-primary)]" data-i18n="skill_cat3">Systèmes &amp; Outils</h3>
+          </div>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between text-xs font-mono mb-1">
+                <span class="text-[var(--text-secondary)]">Linux Hardening (Ubuntu/Debian)</span>
+                <span class="text-[var(--cyan-primary)] font-bold">90%</span>
+              </div>
+              <div class="w-full h-1.5 bg-blue-500/10 rounded-full overflow-hidden">
+                <div class="h-full bg-[var(--status-emerald)] w-[90%]"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-mono mb-1">
+                <span class="text-[var(--text-secondary)]">Windows Server Hardening</span>
+                <span class="text-[var(--cyan-primary)] font-bold">85%</span>
+              </div>
+              <div class="w-full h-1.5 bg-blue-500/10 rounded-full overflow-hidden">
+                <div class="h-full bg-[var(--status-emerald)] w-[85%]"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-mono mb-1">
+                <span class="text-[var(--text-secondary)]">Nmap &amp; Metasploit</span>
+                <span class="text-[var(--cyan-primary)] font-bold">82%</span>
+              </div>
+              <div class="w-full h-1.5 bg-blue-500/10 rounded-full overflow-hidden">
+                <div class="h-full bg-[var(--status-emerald)] w-[82%]"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-mono mb-1">
+                <span class="text-[var(--text-secondary)]">Patch Management &amp; Audit</span>
+                <span class="text-[var(--cyan-primary)] font-bold">88%</span>
+              </div>
+              <div class="w-full h-1.5 bg-blue-500/10 rounded-full overflow-hidden">
+                <div class="h-full bg-[var(--status-emerald)] w-[88%]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS & ENDORSEMENTS SECTION -->
+    <section id="testimonials" class="py-24 border-t border-[var(--border-subtle)] overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="flex items-center justify-between mb-12" data-reveal>
+          <div>
+            <span class="text-xs font-mono text-[var(--cyan-primary)] uppercase tracking-widest font-semibold block mb-2" data-i18n="test_tag">Recommandations</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-[var(--text-primary)]" data-i18n="test_title">Soutien Académique &amp; Professionnel</h2>
+          </div>
+
+          <div class="flex gap-2">
+            <button id="prevTestimonial" aria-label="Previous Endorsement" class="w-10 h-10 rounded-full cyber-card flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--cyan-primary)] transition-all">
+              <span class="material-symbols-outlined text-lg" translate="no">chevron_left</span>
             </button>
-            <button class="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-all" id="nextBtn">
-                <span class="material-symbols-outlined" translate="no">chevron_right</span>
+            <button id="nextTestimonial" aria-label="Next Endorsement" class="w-10 h-10 rounded-full cyber-card flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--cyan-primary)] transition-all">
+              <span class="material-symbols-outlined text-lg" translate="no">chevron_right</span>
             </button>
+          </div>
         </div>
-    </div>
-</section>
-<!-- CTA Final -->
-<section class="py-stack-lg relative overflow-hidden" id="contact">
-    <div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop relative z-10">
-        <div class="bg-primary text-on-primary rounded-[3rem] p-stack-lg text-center shadow-2xl" data-aos="zoom-in">
-            <h2 class="font-bold text-2xl md:text-4xl mb-6">Ready to Secure Your Infrastructure?</h2>
-            <p class="font-body-lg text-body-lg text-on-primary/70 mb-stack-md max-w-2xl mx-auto">
-                Looking for a rigorous collaborator to reinforce your SOC operations or audit your web applications? Let's discuss your cybersecurity challenges.
+
+        <div class="relative overflow-hidden">
+          <div id="testimonialTrack" class="flex gap-6 transition-transform duration-500 ease-in-out">
+            
+            <!-- Card 1 -->
+            <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.33%-16px)] cyber-card p-6 flex flex-col justify-between">
+              <div>
+                <div class="flex text-amber-500 gap-1 mb-4">
+                  <span class="material-symbols-outlined text-sm" translate="no">star</span>
+                  <span class="material-symbols-outlined text-sm" translate="no">star</span>
+                  <span class="material-symbols-outlined text-sm" translate="no">star</span>
+                  <span class="material-symbols-outlined text-sm" translate="no">star</span>
+                  <span class="material-symbols-outlined text-sm" translate="no">star</span>
+                </div>
+                <p class="text-[var(--text-secondary)] text-sm italic leading-relaxed mb-6">
+                  "Perside showed great autonomy during her internship. Her integration of Figma designs into WordPress and her clear focus on environment security were highly appreciated."
+                </p>
+              </div>
+              <div class="flex items-center gap-3 pt-4 border-t border-[var(--border-subtle)]">
+                <div class="w-10 h-10 rounded-full bg-blue-600/20 border border-blue-400/40 flex items-center justify-center text-[var(--cyan-primary)] font-bold text-xs">OT</div>
+                <div>
+                  <div class="text-sm font-bold text-[var(--text-primary)]">Internship Supervisor</div>
+                  <div class="text-xs text-[var(--text-muted)] font-mono uppercase">OMEGA-TECH, Benin</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.33%-16px)] cyber-card p-6 flex flex-col justify-between">
+              <div>
+                <div class="flex text-amber-500 gap-1 mb-4">
+                  <span class="material-symbols-outlined text-sm" translate="no">star</span>
+                  <span class="material-symbols-outlined text-sm" translate="no">star</span>
+                  <span class="material-symbols-outlined text-sm" translate="no">star</span>
+                  <span class="material-symbols-outlined text-sm" translate="no">star</span>
+                  <span class="material-symbols-outlined text-sm" translate="no">star</span>
+                </div>
+                <p class="text-[var(--text-secondary)] text-sm italic leading-relaxed mb-6">
+                  "A serious student deeply passionate about network defense. Her technical lab work on SOC attack simulations like the EMN Machine shows excellent methodology."
+                </p>
+              </div>
+              <div class="flex items-center gap-3 pt-4 border-t border-[var(--border-subtle)]">
+                <div class="w-10 h-10 rounded-full bg-blue-600/20 border border-blue-400/40 flex items-center justify-center text-[var(--cyan-primary)] font-bold text-xs">EM</div>
+                <div>
+                  <div class="text-sm font-bold text-[var(--text-primary)]">Faculty Board</div>
+                  <div class="text-xs text-[var(--text-muted)] font-mono uppercase">École des Métiers du Numérique</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.33%-16px)] cyber-card p-6 flex flex-col justify-between">
+              <div>
+                <div class="flex text-amber-500 gap-1 mb-4">
+                  <span class="material-symbols-outlined text-sm" translate="no">star</span>
+                  <span class="material-symbols-outlined text-sm" translate="no">star</span>
+                  <span class="material-symbols-outlined text-sm" translate="no">star</span>
+                  <span class="material-symbols-outlined text-sm" translate="no">star</span>
+                  <span class="material-symbols-outlined text-sm" translate="no">star</span>
+                </div>
+                <p class="text-[var(--text-secondary)] text-sm italic leading-relaxed mb-6">
+                  "Perside possesses a compelling dual skill set in code and security. Her engagement in the secure HTML/PHP telemedicine management platform was exemplary."
+                </p>
+              </div>
+              <div class="flex items-center gap-3 pt-4 border-t border-[var(--border-subtle)]">
+                <div class="w-10 h-10 rounded-full bg-blue-600/20 border border-blue-400/40 flex items-center justify-center text-[var(--cyan-primary)] font-bold text-xs">UP</div>
+                <div>
+                  <div class="text-sm font-bold text-[var(--text-primary)]">Research Professor</div>
+                  <div class="text-xs text-[var(--text-muted)] font-mono uppercase">University of Parakou (IUT)</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & FINAL CALL TO ACTION -->
+    <section id="contact" class="py-24 max-w-7xl mx-auto px-6 relative">
+      <div class="cyber-card p-8 sm:p-12 border-[var(--border-glow)] relative overflow-hidden" data-reveal>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Contact Details -->
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-[var(--cyan-primary)] text-xs font-mono font-semibold uppercase tracking-wider" data-i18n="contact_tag">
+              Prendre Contact
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl font-bold text-[var(--text-primary)]" data-i18n="contact_title">Sécurisons Vos Infrastructures Ensemble.</h2>
+            
+            <p class="text-[var(--text-secondary)] text-sm leading-relaxed" data-i18n="contact_desc">
+              Vous recherchez une analyste cybersécurité rigoureuse, du soutien en sécurité applicative ou une développeuse axée sur la sécurité ? Contactez-moi directement.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <!-- Lien direct vers votre boîte email -->
-                <a class="bg-on-primary text-primary px-10 py-5 rounded-2xl font-headline-md text-headline-md transition-all hover:scale-105 active:scale-95 shadow-lg flex items-center justify-center gap-2" href="mailto:degbeperside@gmail.com">
-                    <span class="material-symbols-outlined text-xl" translate="no">mail</span> Start a Conversation
-                </a>
-                <!-- Lien direct vers votre profil LinkedIn -->
-                <a class="border border-on-primary/30 text-on-primary px-10 py-5 rounded-2xl font-headline-md text-headline-md transition-all hover:bg-on-primary/10 active:scale-95 flex items-center justify-center gap-2" href="https://www.linkedin.com/in/perside-degbe-154454273/" target="_blank">
-                    Follow on LinkedIn
-                </a>
+
+            <div class="space-y-4 pt-2">
+              <a href="mailto:degbeperside@gmail.com" class="flex items-center gap-4 p-4 rounded-xl cyber-card hover:border-[var(--cyan-primary)] transition-all text-decoration-none group">
+                <span class="material-symbols-outlined text-[var(--cyan-primary)] text-2xl" translate="no">mail</span>
+                <div>
+                  <div class="text-xs font-mono uppercase text-[var(--text-muted)]" data-i18n="contact_email_lbl">Email Professionnel</div>
+                  <div class="text-[var(--text-primary)] font-bold text-sm group-hover:text-[var(--cyan-primary)] transition-colors">degbeperside@gmail.com</div>
+                </div>
+              </a>
+
+              <a href="https://wa.me/2290159531038" target="_blank" class="flex items-center gap-4 p-4 rounded-xl cyber-card hover:border-emerald-500 transition-all text-decoration-none group">
+                <span class="material-symbols-outlined text-[var(--status-emerald)] text-2xl" translate="no">chat</span>
+                <div>
+                  <div class="text-xs font-mono uppercase text-[var(--text-muted)]" data-i18n="contact_wa_lbl">Discussion WhatsApp Directe</div>
+                  <div class="text-[var(--status-emerald)] font-bold text-sm">+229 01 59 53 10 38</div>
+                </div>
+              </a>
+
+              <div class="flex items-center gap-4 p-4 rounded-xl cyber-card">
+                <span class="material-symbols-outlined text-[var(--cyan-primary)] text-2xl" translate="no">location_on</span>
+                <div>
+                  <div class="text-xs font-mono uppercase text-[var(--text-muted)]" data-i18n="contact_loc_lbl">Localisation Opérationnelle</div>
+                  <div class="text-[var(--text-primary)] font-bold text-sm" data-i18n="contact_loc_val">Cotonou, Bénin &middot; Disponible en Télétravail</div>
+                </div>
+              </div>
             </div>
+
+            <!-- Social Links -->
+            <div class="pt-4 flex gap-4">
+              <a href="https://www.linkedin.com/in/perside-degbe-154454273/" target="_blank" class="btn-secondary text-xs">
+                LinkedIn Profile
+              </a>
+              <a href="https://github.com/Perside18" target="_blank" class="btn-secondary text-xs">
+                GitHub Repositories
+              </a>
+            </div>
+          </div>
+
+          <!-- Hardened Contact Form -->
+          <div class="lg:col-span-6 cyber-card p-6 sm:p-8 rounded-2xl">
+            <form id="contactForm" class="space-y-4">
+              <div>
+                <label for="contactName" class="block text-xs font-mono text-[var(--text-muted)] uppercase mb-1" data-i18n="form_name_lbl">Votre Nom complet</label>
+                <input type="text" id="contactName" required placeholder="John Doe" class="w-full bg-[var(--bg-input)] border border-[var(--border-subtle)] rounded-lg px-4 py-3 text-sm text-[var(--text-primary)] focus:outline-none focus:border-[var(--cyan-primary)] transition-colors"/>
+              </div>
+
+              <div>
+                <label for="contactEmail" class="block text-xs font-mono text-[var(--text-muted)] uppercase mb-1" data-i18n="form_email_lbl">Adresse Email</label>
+                <input type="email" id="contactEmail" required placeholder="john.doe@company.com" class="w-full bg-[var(--bg-input)] border border-[var(--border-subtle)] rounded-lg px-4 py-3 text-sm text-[var(--text-primary)] focus:outline-none focus:border-[var(--cyan-primary)] transition-colors"/>
+              </div>
+
+              <div>
+                <label for="contactMessage" class="block text-xs font-mono text-[var(--text-muted)] uppercase mb-1" data-i18n="form_msg_lbl">Objectif / Détails de votre projet</label>
+                <textarea id="contactMessage" required rows="4" placeholder="Spécifiez vos exigences de sécurité ou vos questions..." class="w-full bg-[var(--bg-input)] border border-[var(--border-subtle)] rounded-lg px-4 py-3 text-sm text-[var(--text-primary)] focus:outline-none focus:border-[var(--cyan-primary)] transition-colors resize-none"></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary w-full text-center">
+                <span data-i18n="form_submit_btn">Envoyer le Message</span> <span class="material-symbols-outlined text-base" translate="no">send</span>
+              </button>
+            </form>
+
+            <div id="contactSuccess" class="hidden text-center py-8 space-y-3">
+              <span class="material-symbols-outlined text-[var(--status-emerald)] text-4xl" translate="no">check_circle</span>
+              <h3 class="text-lg font-bold text-[var(--text-primary)]" data-i18n="form_success_title">Message Transmis avec Succès</h3>
+              <p class="text-xs text-[var(--text-secondary)]" data-i18n="form_success_desc">Merci. Perside étudiera votre demande et vous répondra sous 24 à 48h.</p>
+            </div>
+          </div>
+
         </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-12 border-t border-[var(--border-subtle)] bg-[var(--bg-main)] text-xs text-[var(--text-muted)]">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-[var(--cyan-primary)] text-lg" translate="no">shield</span>
+        <span class="font-headline font-bold text-[var(--text-primary)] text-sm">CYBERSEC.PRO</span>
+        <span>&mdash; Portfolio Perside DEGBE</span>
+      </div>
+
+      <div data-i18n="footer_copy">
+        &copy; 2026 Perside DEGBE. Tous droits réservés. Vérifié GitHub Pages.
+      </div>
+
+      <div class="flex gap-4">
+        <a href="https://www.linkedin.com/in/perside-degbe-154454273/" target="_blank" class="hover:text-[var(--cyan-primary)]">LinkedIn</a>
+        <a href="https://github.com/Perside18" target="_blank" class="hover:text-[var(--cyan-primary)]">GitHub</a>
+        <a href="mailto:degbeperside@gmail.com" class="hover:text-[var(--cyan-primary)]">Email</a>
+      </div>
     </div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full py-stack-lg bg-surface-container-lowest dark:bg-tertiary-container border-t border-outline-variant dark:border-outline">
-    <div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter items-start">
-        <div class="space-y-4">
-            <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-secondary dark:text-secondary-fixed" style="font-size: 28px;" translate="no">shield</span>
-                <span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-on-surface" translate="no">CYBERSEC.PRO</span>
-            </div>
-            <p class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant max-w-xs">
-                Audit, secure coding practices, and digital threat surveillance services.
-            </p>
-        </div>
-        <div class="grid grid-cols-2 gap-stack-md">
-            <!-- Remplacement de la navigation par vos expertises métiers avec alignement strict des polices -->
-            <div class="flex flex-col gap-2">
-                <span class="font-label-md text-label-md text-primary dark:text-inverse-on-surface font-bold uppercase mb-2">Core Focus</span>
-                <span class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">SOC Operations</span>
-                <span class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">AppSec Testing</span>
-                <span class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">Risk Analysis</span>
-            </div>
-            <div class="flex flex-col gap-2">
-                <span class="font-label-md text-label-md text-primary dark:text-inverse-on-surface font-bold uppercase mb-2" translate="no">Networks</span>
-                <a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-all" href="https://www.linkedin.com/in/perside-degbe-154454273/" target="_blank">LinkedIn</a>
-                <a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-all" href="https://github.com/Perside18" target="_blank">GitHub</a>
-            </div>
-        </div>
-        <div class="flex flex-col gap-4">
-            <span class="font-label-md text-label-md text-primary dark:text-inverse-on-surface font-bold uppercase mb-2" translate="no">Contact</span>
-            <div class="flex items-center gap-3 text-on-surface-variant dark:text-outline-variant">
-                <span class="material-symbols-outlined" translate="no">mail</span>
-                <a href="mailto:degbeperside@gmail.com" class="font-body-md text-body-md hover:text-secondary transition-all">degbeperside@gmail.com</a>
-            </div>
-            <!-- Contact WhatsApp direct configuré avec votre numéro -->
-            <div class="flex items-center gap-3 text-on-surface-variant dark:text-outline-variant">
-                <span class="material-symbols-outlined text-emerald-500" translate="no">chat</span>
-                <a href="https://wa.me" target="_blank" class="font-body-md text-body-md hover:text-secondary transition-all font-semibold text-emerald-600 dark:text-emerald-400">+229 01 59 53 10 38</a>
-            </div>
-            <div class="flex items-center gap-3 text-on-surface-variant dark:text-outline-variant">
-                <span class="material-symbols-outlined" translate="no">location_on</span>
-                <span class="font-body-md text-body-md" translate="no">Cotonou, Benin / Remote</span>
-            </div>
-        </div>
+  </footer>
+
+  <!-- CASE STUDY & CERTIFICATE MODAL BACKDROP -->
+  <div id="caseStudyModal" class="modal-backdrop">
+    <div class="modal-container relative">
+      <button id="closeModalBtn" aria-label="Close Modal" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-[var(--bg-input)] text-[var(--text-muted)] hover:text-[var(--text-primary)] flex items-center justify-center z-10 transition-colors">
+        <span class="material-symbols-outlined text-lg" translate="no">close</span>
+      </button>
+      <div id="modalBody">
+        <!-- Content injected dynamically via js/app.js -->
+      </div>
     </div>
-    <div class="max-w-[1200px] mx-auto px-6 md:px-margin-desktop mt-stack-lg pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between gap-4 text-caption text-on-surface-variant dark:text-outline-variant">
-        <span>© 2026 Perside DEGBE. All rights reserved.</span>
-        <div class="flex gap-4">
-            <a class="hover:text-primary" href="#">Legal Terms</a>
-            <a class="hover:text-primary" href="#">Privacy Policy</a>
-        </div>
-    </div>
-</footer>
-<!-- AOS & Custom Scripts -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"> </script> 
-<script>
-    // Initialization
-    AOS.init({
-        duration: 800,
-        easing: 'ease-out-cubic',
-        once: true,
-        offset: 120
-    });
+  </div>
 
-    // Testimonial Slider Logic
-    const slider = document.getElementById('testimonial-slider');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    let currentIdx = 0;
-
-    function updateSlider() {
-        if (!slider || !slider.firstElementChild) return;
-        const cardWidth = slider.firstElementChild.offsetWidth + 24; // Width + gutter
-        slider.style.transform = `translateX(-${currentIdx * cardWidth}px)`;
-    }
-
-    if (nextBtn && prevBtn && slider) {
-        nextBtn.addEventListener('click', () => {
-            const maxIdx = slider.children.length - (window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1);
-            if (currentIdx < maxIdx) {
-                currentIdx++;
-                updateSlider();
-            }
-        });
-
-        prevBtn.addEventListener('click', () => {
-            if (currentIdx > 0) {
-                currentIdx--;
-                updateSlider();
-            }
-        });
-
-        window.addEventListener('resize', () => {
-            currentIdx = 0;
-            updateSlider();
-        });
-    }
-
-    // Navbar Scroll Effect
-    window.addEventListener('scroll', () => {
-        const header = document.querySelector('header');
-        if (!header) return;
-        if (window.scrollY > 50) {
-            header.classList.add('shadow-xl', 'h-16');
-            header.classList.remove('h-20');
-        } else {
-            header.classList.remove('shadow-xl', 'h-16');
-            header.classList.add('h-20');
-        }
-    });
-</script>
+  <!-- Custom Scripts -->
+  <script src="js/app.js"></script>
 </body>
 </html>
