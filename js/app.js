@@ -165,7 +165,7 @@ const translations = {
     cert4_desc: "Certification attestant la maîtrise de l'architecture HTML5/CSS3, la programmation JavaScript et la sécurisation des échanges web.",
     cert_ongoing_title: "Certifications en Cours (Objectif 2026)",
     cert_ongoing_desc: "Cisco CCNA 1 (Introduction aux Réseaux) & Cisco Certified CyberOps Associate",
-    btn_view_pdf: "Aperçu Modal PDF",
+    btn_view_pdf: "Consulter PDF",
 
     // Skills Matrix
     skills_tag: "Matrice Technique",
@@ -472,11 +472,13 @@ function initMobileNav() {
   if (toggleBtn && mobileMenu) {
     toggleBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
+      toggleBtn.classList.toggle('active');
     });
 
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
+        toggleBtn.classList.remove('active');
       });
     });
   }

@@ -225,6 +225,35 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 10px var(--cyan-primary);
 }
 
+/* ==========================================================================
+   PREMIUM ANIMATED CYBER HAMBURGER BUTTON
+   ========================================================================== */
+.premium-hamburger-btn {
+  cursor: pointer;
+  outline: none;
+}
+
+.premium-hamburger-btn:hover {
+  box-shadow: 0 0 18px var(--cyan-glow);
+}
+
+.premium-hamburger-btn.active .hamburger-bar:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+  background-color: var(--cyan-primary);
+}
+
+.premium-hamburger-btn.active .hamburger-bar:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.premium-hamburger-btn.active .hamburger-bar:nth-child(3) {
+  width: 1.25rem !important;
+  margin-left: 0 !important;
+  transform: translateY(-6.5px) rotate(-45deg);
+  background-color: var(--cyan-primary);
+}
+
 /* Theme Toggle Button */
 .theme-toggle-btn {
   width: 40px;
