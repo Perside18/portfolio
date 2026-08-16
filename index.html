@@ -91,8 +91,8 @@
         <a href="#certifications" class="nav-link" data-i18n="nav_credentials">Diplômes &amp; Certifs</a>
       </div>
 
-      <!-- Action Buttons, Language Pill & Theme Switcher -->
-      <div class="hidden sm:flex items-center gap-3">
+      <!-- Desktop Action Buttons, Language Pill & Theme Switcher -->
+      <div class="hidden lg:flex items-center gap-3">
         <!-- Language Switcher Pill Button (FR / EN) -->
         <button class="lang-toggle-btn" aria-label="Toggle FR/EN Language" title="Passer en Anglais (EN)">
           <span class="material-symbols-outlined text-sm" translate="no">language</span>
@@ -112,31 +112,44 @@
         </a>
       </div>
 
-      <!-- Mobile Controls -->
+      <!-- Mobile Controls (Menu Toggle Button) -->
       <div class="flex items-center gap-2 lg:hidden">
-        <button class="lang-toggle-btn" aria-label="Toggle Language">
-          <span class="material-symbols-outlined text-sm" translate="no">language</span>
-          <span class="font-mono text-xs font-bold tracking-wider">🌐 FR</span>
-        </button>
-        <button class="theme-toggle-btn" aria-label="Toggle Theme">
-          <span class="material-symbols-outlined text-xl" translate="no">light_mode</span>
-        </button>
-        <button id="mobileMenuToggle" class="p-2 text-[var(--text-primary)]" aria-label="Toggle Navigation">
-          <span class="material-symbols-outlined text-2xl" translate="no">menu</span>
+        <button id="mobileMenuToggle" class="p-2 text-[var(--text-primary)] hover:text-[var(--cyan-primary)] transition-colors" aria-label="Toggle Navigation">
+          <span class="material-symbols-outlined text-3xl" translate="no">menu</span>
         </button>
       </div>
 
     </nav>
 
-    <!-- Mobile Drawer Menu -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-[var(--bg-elevated)] border-b border-[var(--border-subtle)] px-6 py-6 space-y-4 shadow-xl">
-      <a href="#about" class="block mobile-nav-link text-[var(--text-primary)] hover:text-[var(--cyan-primary)] text-sm font-semibold uppercase" data-i18n="nav_about">À propos</a>
-      <a href="#expertise" class="block mobile-nav-link text-[var(--text-primary)] hover:text-[var(--cyan-primary)] text-sm font-semibold uppercase" data-i18n="nav_expertise">Expertise</a>
-      <a href="#projects" class="block mobile-nav-link text-[var(--text-primary)] hover:text-[var(--cyan-primary)] text-sm font-semibold uppercase" data-i18n="nav_labs">Labs</a>
-      <a href="#certifications" class="block mobile-nav-link text-[var(--text-primary)] hover:text-[var(--cyan-primary)] text-sm font-semibold uppercase" data-i18n="nav_credentials">Diplômes &amp; Certifs</a>
-      <div class="pt-4 border-t border-[var(--border-subtle)] flex flex-col gap-3">
-        <a href="assets/docs/CV_Perside_DEGBE.pdf" download class="btn-secondary text-xs w-full text-center" data-i18n="hero_cta_cv">Télécharger CV</a>
-        <a href="#contact" class="btn-primary text-xs w-full text-center mobile-nav-link" data-i18n="btn_talk">Me Contacter</a>
+    <!-- Mobile Drawer Menu (Contains Language Switcher & Theme Switcher) -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-[var(--bg-elevated)] border-b border-[var(--border-subtle)] px-6 py-6 space-y-5 shadow-2xl transition-all duration-300">
+      <a href="#about" class="block mobile-nav-link text-[var(--text-primary)] hover:text-[var(--cyan-primary)] text-base font-bold uppercase tracking-wider" data-i18n="nav_about">À propos</a>
+      <a href="#expertise" class="block mobile-nav-link text-[var(--text-primary)] hover:text-[var(--cyan-primary)] text-base font-bold uppercase tracking-wider" data-i18n="nav_expertise">Expertise</a>
+      <a href="#projects" class="block mobile-nav-link text-[var(--text-primary)] hover:text-[var(--cyan-primary)] text-base font-bold uppercase tracking-wider" data-i18n="nav_labs">Labs</a>
+      <a href="#certifications" class="block mobile-nav-link text-[var(--text-primary)] hover:text-[var(--cyan-primary)] text-base font-bold uppercase tracking-wider" data-i18n="nav_credentials">Diplômes &amp; Certifs</a>
+      
+      <!-- Mobile Toggles Row (Language Switcher & Theme Switcher) -->
+      <div class="pt-4 border-t border-[var(--border-subtle)] flex items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-mono uppercase text-[var(--text-muted)] font-bold">Langue :</span>
+          <button class="lang-toggle-btn" aria-label="Toggle FR/EN Language">
+            <span class="material-symbols-outlined text-sm" translate="no">language</span>
+            <span class="font-mono text-xs font-bold tracking-wider">🌐 FR</span>
+          </button>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-mono uppercase text-[var(--text-muted)] font-bold">Thème :</span>
+          <button class="theme-toggle-btn" aria-label="Toggle Theme">
+            <span class="material-symbols-outlined text-xl" translate="no">light_mode</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Action Buttons Row -->
+      <div class="pt-2 flex flex-col gap-3">
+        <a href="assets/docs/CV_Perside_DEGBE.pdf" download class="btn-secondary text-xs w-full text-center flex justify-center" data-i18n="hero_cta_cv">Télécharger CV</a>
+        <a href="#contact" class="btn-primary text-xs w-full text-center flex justify-center mobile-nav-link" data-i18n="btn_talk">Me Contacter</a>
       </div>
     </div>
   </header>
@@ -580,7 +593,7 @@
               </p>
             </div>
 
-            <!-- Chic Card Action Buttons (Modal Preview Trigger) -->
+            <!-- Action Buttons (Modal Preview Trigger) -->
             <div class="pt-5 pb-2 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
               <span class="text-xs text-[var(--status-emerald)] font-mono flex items-center gap-1">
                 <span class="material-symbols-outlined text-base" translate="no">verified</span> Diplôme Officiel
@@ -609,7 +622,7 @@
               <div class="text-[11px] font-mono text-[var(--text-muted)] mb-6">ID: 857a2a27-0c94-4d87-ac26-ecd22ec8e2ce</div>
             </div>
 
-            <!-- Chic Card Action Buttons (Modal Preview Trigger) -->
+            <!-- Action Buttons (Modal Preview Trigger) -->
             <div class="pt-5 pb-2 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
               <span class="text-xs text-[var(--status-emerald)] font-mono flex items-center gap-1">
                 <span class="material-symbols-outlined text-base" translate="no">verified</span> Certificat Cisco
@@ -636,7 +649,7 @@
               </p>
             </div>
 
-            <!-- Chic Card Action Buttons (Modal Preview Trigger) -->
+            <!-- Action Buttons (Modal Preview Trigger) -->
             <div class="pt-5 pb-2 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
               <span class="text-xs text-[var(--status-emerald)] font-mono flex items-center gap-1">
                 <span class="material-symbols-outlined text-base" translate="no">verified</span> Méthode ANSSI
@@ -665,7 +678,7 @@
               <div class="text-[11px] font-mono text-[var(--text-muted)] mb-6">Code: rA9IF8O44k</div>
             </div>
 
-            <!-- Chic Card Action Buttons (Modal Preview Trigger) -->
+            <!-- Action Buttons (Modal Preview Trigger) -->
             <div class="pt-5 pb-2 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
               <span class="text-xs text-[var(--status-emerald)] font-mono flex items-center gap-1">
                 <span class="material-symbols-outlined text-base" translate="no">verified</span> Attestation OIF
