@@ -1104,6 +1104,9 @@
           <!-- Hardened Contact Form -->
           <div class="lg:col-span-6 cyber-card p-6 sm:p-8 rounded-2xl">
             <form id="contactForm" class="space-y-4">
+              <!-- Honeypot anti-spam field -->
+              <input type="text" id="contact_honeypot" name="website_hp" style="display:none !important;" tabindex="-1" autocomplete="off"/>
+
               <div>
                 <label for="contactName" class="block text-xs font-mono text-[var(--text-muted)] uppercase mb-1" data-i18n="form_name_lbl">Votre Nom complet</label>
                 <input type="text" id="contactName" required placeholder="John Doe" class="w-full bg-[var(--bg-input)] border border-[var(--border-subtle)] rounded-lg px-4 py-3 text-sm text-[var(--text-primary)] focus:outline-none focus:border-[var(--cyan-primary)] transition-colors"/>

@@ -794,6 +794,14 @@ function initModals() {
               </a>
             </div>
 
+            <!-- Security & Anti-Forgery Notice -->
+            <div class="p-3 bg-amber-500/10 border border-amber-500/30 rounded-lg text-amber-300 text-xs flex items-center gap-2">
+              <span class="material-symbols-outlined text-base flex-shrink-0" translate="no">security</span>
+              <span>${currentLang === 'fr' 
+                ? 'Document sous filigrane numérique à titre de spécimen. Toute contrefaçon, altération ou réemploi visuel est strictement interdit.' 
+                : 'Digitally watermarked specimen document. Unauthorised copying, alteration or visual reuse is strictly prohibited.'}</span>
+            </div>
+
             <!-- Embedded PDF Viewer -->
             <div class="w-full rounded-xl overflow-hidden border border-[var(--border-subtle)] bg-slate-900 shadow-2xl">
               <iframe src="${data.pdf}" class="w-full h-[60vh] sm:h-[68vh]" title="${data.title}"></iframe>
@@ -884,6 +892,14 @@ function initContactForm() {
   if (form && successMsg) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+
+      // Anti-bot honeypot check
+      const honeypot = document.getElementById('contact_honeypot')?.value;
+      if (honeypot) {
+        // Silently reject bot submission
+        console.warn('Bot submission blocked via honeypot.');
+        return;
+      }
 
       const name = document.getElementById('contactName').value.trim();
       const email = document.getElementById('contactEmail').value.trim();

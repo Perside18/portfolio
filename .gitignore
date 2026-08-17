@@ -1,0 +1,13 @@
+# GitIgnore - Privacy & Security Rules
+
+# Exclude private document sources & raw unwatermarked scans
+/assets/docs/private/
+*.pdf.bak
+*.raw.*
+
+# OS & Environment files
+.DS_Store
+Thumbs.db
+.env
+.vscode/
+.idea/
