@@ -104,8 +104,8 @@
           <span class="material-symbols-outlined text-xl" translate="no">light_mode</span>
         </button>
 
-        <a href="assets/docs/CV_Perside_DEGBE.pdf" download="CV_Perside_DEGBE.pdf" class="btn-secondary text-xs">
-          <span class="material-symbols-outlined text-base" translate="no">download</span> <span data-i18n="btn_cv">Mon CV</span>
+        <a href="#contact" class="btn-secondary text-xs">
+          <span class="material-symbols-outlined text-base" translate="no">description</span> <span data-i18n="btn_cv">Demander le CV</span>
         </a>
         <a href="#contact" class="btn-primary text-xs" data-i18n="btn_talk">
           Me Contacter
@@ -150,7 +150,7 @@
 
       <!-- Action Buttons Row -->
       <div class="pt-2 flex flex-col gap-3">
-        <a href="assets/docs/CV_Perside_DEGBE.pdf" download class="btn-secondary text-xs w-full text-center flex justify-center" data-i18n="hero_cta_cv">Télécharger CV</a>
+        <a href="#contact" class="btn-secondary text-xs w-full text-center flex justify-center mobile-nav-link" data-i18n="hero_cta_cv">Demander le CV</a>
         <a href="#contact" class="btn-primary text-xs w-full text-center flex justify-center mobile-nav-link" data-i18n="btn_talk">Me Contacter</a>
       </div>
     </div>
@@ -184,8 +184,8 @@
             <a href="#projects" class="btn-primary">
               <span class="material-symbols-outlined text-lg" translate="no">terminal</span> <span data-i18n="hero_cta_labs">Explorer mes Labs</span>
             </a>
-            <a href="assets/docs/CV_Perside_DEGBE.pdf" download="CV_Perside_DEGBE.pdf" class="btn-secondary">
-              <span class="material-symbols-outlined text-lg" translate="no">download</span> <span data-i18n="hero_cta_cv">Télécharger CV</span>
+            <a href="#contact" class="btn-secondary">
+              <span class="material-symbols-outlined text-lg" translate="no">mail</span> <span data-i18n="hero_cta_cv">Demander le CV</span>
             </a>
             <a href="#contact" class="btn-secondary border-[var(--cyan-primary)] text-[var(--cyan-primary)]">
               <span class="material-symbols-outlined text-lg" translate="no">mail</span> <span data-i18n="hero_cta_talk">Discutons</span>
@@ -579,8 +579,8 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           
-          <!-- Cert 1: Bachelor's Degree (Opens PDF Modal Viewer) -->
-          <div class="cyber-card p-8 flex flex-col justify-between border-l-4 border-l-cyan-500 cursor-pointer group" data-cert-preview="bac" data-reveal data-reveal-delay="100">
+          <!-- Cert 1: Bachelor's Degree -->
+          <div class="cyber-card p-8 flex flex-col justify-between border-l-4 border-l-cyan-500 group" data-reveal data-reveal-delay="100">
             <div>
               <div class="flex items-start justify-between gap-4 mb-4">
                 <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] font-mono text-xs font-semibold rounded-full border border-blue-500/20 uppercase" data-i18n="cert1_tag">Diplôme Académique</span>
@@ -595,19 +595,19 @@
               </p>
             </div>
 
-            <!-- Action Buttons (Modal Preview Trigger) -->
+            <!-- Action Info -->
             <div class="pt-5 pb-2 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
               <span class="text-xs text-[var(--status-emerald)] font-mono flex items-center gap-1">
                 <span class="material-symbols-outlined text-base" translate="no">verified</span> Diplôme Officiel
               </span>
-              <button data-cert-preview="bac" class="card-btn-primary">
-                <span class="material-symbols-outlined text-base" translate="no">visibility</span> <span data-i18n="btn_view_pdf">Consulter PDF</span>
-              </button>
+              <a href="#contact" class="text-xs text-[var(--text-muted)] hover:text-[var(--cyan-primary)] font-mono flex items-center gap-1 transition-colors">
+                <span class="material-symbols-outlined text-sm" translate="no">lock</span> Justificatif sur demande
+              </a>
             </div>
           </div>
 
-          <!-- Cert 2: Cisco Cybersecurity Defense Analyst (Opens PDF Modal Viewer) -->
-          <div class="cyber-card p-8 flex flex-col justify-between border-l-4 border-l-blue-500 cursor-pointer group" data-cert-preview="cisco" data-reveal data-reveal-delay="200">
+          <!-- Cert 2: Cisco Cybersecurity Defense Analyst -->
+          <div class="cyber-card p-8 flex flex-col justify-between border-l-4 border-l-blue-500 group" data-reveal data-reveal-delay="200">
             <div>
               <div class="flex items-start justify-between gap-4 mb-4">
                 <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] font-mono text-xs font-semibold rounded-full border border-blue-500/20 uppercase" data-i18n="cert2_tag">Parcours SOC Analyst</span>
@@ -624,19 +624,19 @@
               <div class="text-[11px] font-mono text-[var(--text-muted)] mb-6">ID: 857a2a27-0c94-4d87-ac26-ecd22ec8e2ce</div>
             </div>
 
-            <!-- Action Buttons (Modal Preview Trigger) -->
+            <!-- Action Info -->
             <div class="pt-5 pb-2 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
               <span class="text-xs text-[var(--status-emerald)] font-mono flex items-center gap-1">
                 <span class="material-symbols-outlined text-base" translate="no">verified</span> Certificat Cisco
               </span>
-              <button data-cert-preview="cisco" class="card-btn-primary">
-                <span class="material-symbols-outlined text-base" translate="no">visibility</span> <span data-i18n="btn_view_pdf">Consulter PDF</span>
-              </button>
+              <a href="#contact" class="text-xs text-[var(--text-muted)] hover:text-[var(--cyan-primary)] font-mono flex items-center gap-1 transition-colors">
+                <span class="material-symbols-outlined text-sm" translate="no">lock</span> Justificatif sur demande
+              </a>
             </div>
           </div>
 
-          <!-- Cert 3: Club EBIOS (Opens PDF Modal Viewer) -->
-          <div class="cyber-card p-8 flex flex-col justify-between border-l-4 border-l-purple-500 cursor-pointer group" data-cert-preview="ebios" data-reveal data-reveal-delay="300">
+          <!-- Cert 3: Club EBIOS -->
+          <div class="cyber-card p-8 flex flex-col justify-between border-l-4 border-l-purple-500 group" data-reveal data-reveal-delay="300">
             <div>
               <div class="flex items-start justify-between gap-4 mb-4">
                 <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] font-mono text-xs font-semibold rounded-full border border-blue-500/20 uppercase" data-i18n="cert3_tag">Gouvernance des Risques</span>
@@ -651,19 +651,19 @@
               </p>
             </div>
 
-            <!-- Action Buttons (Modal Preview Trigger) -->
+            <!-- Action Info -->
             <div class="pt-5 pb-2 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
               <span class="text-xs text-[var(--status-emerald)] font-mono flex items-center gap-1">
                 <span class="material-symbols-outlined text-base" translate="no">verified</span> Méthode ANSSI
               </span>
-              <button data-cert-preview="ebios" class="card-btn-primary">
-                <span class="material-symbols-outlined text-base" translate="no">visibility</span> <span data-i18n="btn_view_pdf">Consulter PDF</span>
-              </button>
+              <a href="#contact" class="text-xs text-[var(--text-muted)] hover:text-[var(--cyan-primary)] font-mono flex items-center gap-1 transition-colors">
+                <span class="material-symbols-outlined text-sm" translate="no">lock</span> Justificatif sur demande
+              </a>
             </div>
           </div>
 
-          <!-- Cert 4: DCLIC Web Dev (Opens PDF Modal Viewer) -->
-          <div class="cyber-card p-8 flex flex-col justify-between border-l-4 border-l-emerald-500 cursor-pointer group" data-cert-preview="dclic" data-reveal data-reveal-delay="400">
+          <!-- Cert 4: DCLIC Web Dev -->
+          <div class="cyber-card p-8 flex flex-col justify-between border-l-4 border-l-emerald-500 group" data-reveal data-reveal-delay="400">
             <div>
               <div class="flex items-start justify-between gap-4 mb-4">
                 <span class="px-3 py-1 bg-blue-500/10 text-[var(--cyan-primary)] font-mono text-xs font-semibold rounded-full border border-blue-500/20 uppercase" data-i18n="cert4_tag">Développement Web</span>
@@ -680,14 +680,14 @@
               <div class="text-[11px] font-mono text-[var(--text-muted)] mb-6">Code: rA9IF8O44k</div>
             </div>
 
-            <!-- Action Buttons (Modal Preview Trigger) -->
+            <!-- Action Info -->
             <div class="pt-5 pb-2 border-t border-[var(--border-subtle)] flex items-center justify-between flex-wrap gap-3">
               <span class="text-xs text-[var(--status-emerald)] font-mono flex items-center gap-1">
                 <span class="material-symbols-outlined text-base" translate="no">verified</span> Attestation OIF
               </span>
-              <button data-cert-preview="dclic" class="card-btn-primary">
-                <span class="material-symbols-outlined text-base" translate="no">visibility</span> <span data-i18n="btn_view_pdf">Consulter PDF</span>
-              </button>
+              <a href="#contact" class="text-xs text-[var(--text-muted)] hover:text-[var(--cyan-primary)] font-mono flex items-center gap-1 transition-colors">
+                <span class="material-symbols-outlined text-sm" translate="no">lock</span> Justificatif sur demande
+              </a>
             </div>
           </div>
 

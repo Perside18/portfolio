@@ -57,7 +57,7 @@ const translations = {
     nav_expertise: "Expertise",
     nav_labs: "Labs",
     nav_credentials: "Diplômes & Certifs",
-    btn_cv: "Mon CV",
+    btn_cv: "Demander le CV",
     btn_talk: "Me Contacter",
 
     // Hero
@@ -66,7 +66,7 @@ const translations = {
     hero_tagline: "Analyste Cybersécurité · SOC · Sécurité Applicative",
     hero_statement: '"Je sécurise les systèmes en comprenant comment ils peuvent être attaqués." Alliance d\'expertise pratique en analyse de menaces (Zeek, MITRE ATT&CK), développement sécurisé (PHP/HTML/SQL) et durcissement d\'infrastructures.',
     hero_cta_labs: "Explorer mes Labs",
-    hero_cta_cv: "Télécharger CV",
+    hero_cta_cv: "Demander le CV",
     hero_cta_talk: "Discutons",
     hero_spec_soc: "SOC / SIEM",
     hero_spec_appsec: "AppSec",
@@ -203,7 +203,7 @@ const translations = {
     nav_expertise: "Expertise",
     nav_labs: "Labs",
     nav_credentials: "Credentials",
-    btn_cv: "Download CV",
+    btn_cv: "Request CV",
     btn_talk: "Let's Talk",
 
     // Hero
@@ -212,7 +212,7 @@ const translations = {
     hero_tagline: "Cybersecurity Analyst · SOC · Application Security",
     hero_statement: '"I secure systems by understanding how they can be attacked." Combining practical experience in threat analysis (Zeek, MITRE ATT&CK), secure application development (PHP/HTML/SQL), and system hardening to protect corporate digital infrastructure.',
     hero_cta_labs: "View Security Labs",
-    hero_cta_cv: "Download CV",
+    hero_cta_cv: "Request CV",
     hero_cta_talk: "Let's Talk",
     hero_spec_soc: "SOC / SIEM",
     hero_spec_appsec: "AppSec",
