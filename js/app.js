@@ -189,9 +189,9 @@ const translations = {
     form_name_lbl: "Votre Nom complet",
     form_email_lbl: "Adresse Email",
     form_msg_lbl: "Objectif / Détails de votre projet",
-    form_submit_btn: "Envoyer le Message",
-    form_success_title: "Message Transmis avec Succès",
-    form_success_desc: "Merci. Perside étudiera votre demande et vous répondra sous 24 à 48h.",
+    form_submit_btn: "Envoyer sur WhatsApp",
+    form_success_title: "Redirection vers WhatsApp...",
+    form_success_desc: "Votre message a été préparé et WhatsApp va s'ouvrir pour finaliser l'envoi à Perside.",
 
     // Footer
     footer_copy: "© 2026 Perside DEGBE. Tous droits réservés. Vérifié GitHub Pages."
@@ -335,9 +335,9 @@ const translations = {
     form_name_lbl: "Your Full Name",
     form_email_lbl: "Email Address",
     form_msg_lbl: "Project Objective / Inquiry Details",
-    form_submit_btn: "Send Message",
-    form_success_title: "Message Transmitted Successfully",
-    form_success_desc: "Thank you. Perside will review your inquiry and respond within 24 to 48 business hours.",
+    form_submit_btn: "Send via WhatsApp",
+    form_success_title: "Redirecting to WhatsApp...",
+    form_success_desc: "Your message has been formatted and WhatsApp will open to send it to Perside.",
 
     // Footer
     footer_copy: "© 2026 Perside DEGBE. All rights reserved. GitHub Pages Verified."
@@ -896,7 +896,6 @@ function initContactForm() {
       // Anti-bot honeypot check
       const honeypot = document.getElementById('contact_honeypot')?.value;
       if (honeypot) {
-        // Silently reject bot submission
         console.warn('Bot submission blocked via honeypot.');
         return;
       }
@@ -906,8 +905,27 @@ function initContactForm() {
       const message = document.getElementById('contactMessage').value.trim();
 
       if (name && email && message) {
+        // Construct formatted WhatsApp message
+        const phone = '2290159531038';
+        const formattedMessage = `Bonjour Perside,\n\nNouveau message depuis votre portfolio :\n• Nom : ${name}\n• Email : ${email}\n• Message :\n${message}`;
+        const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(formattedMessage)}`;
+
+        // Open WhatsApp directly
+        window.open(waUrl, '_blank');
+
         form.classList.add('hidden');
         successMsg.classList.remove('hidden');
+
+        // Add a direct manual button if popup blocker prevents automatic opening
+        if (!document.getElementById('waDirectBtn')) {
+          const directBtn = document.createElement('a');
+          directBtn.id = 'waDirectBtn';
+          directBtn.href = waUrl;
+          directBtn.target = '_blank';
+          directBtn.className = 'btn-primary text-xs inline-flex items-center gap-2 mt-4';
+          directBtn.innerHTML = `<span class="material-symbols-outlined text-base" translate="no">chat</span> ${currentLang === 'fr' ? 'Ouvrir WhatsApp Manuellement' : 'Open WhatsApp Manually'}`;
+          successMsg.appendChild(directBtn);
+        }
       }
     });
   }
